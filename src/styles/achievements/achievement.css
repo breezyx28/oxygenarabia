@@ -1,0 +1,86 @@
+/* Define the styles for the orbiting circles */
+.app-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(80px) rotate(0deg);
+}
+
+/* Position the orbiting circles in a circular pattern */
+.app-orbit:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translateX(250px) rotate(0deg) !important;
+}
+
+.app-orbit:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(51.43deg) translateX(250px)
+    rotate(-51.43deg) !important;
+}
+
+.app-orbit:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(102.86deg) translateX(250px)
+    rotate(-102.86deg) !important;
+}
+
+.app-orbit:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(154.29deg) translateX(250px)
+    rotate(-154.29deg) !important;
+}
+
+.app-orbit:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(205.71deg) translateX(250px)
+    rotate(-205.71deg) !important;
+}
+
+.app-orbit:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(257.14deg) translateX(250px)
+    rotate(-257.14deg) !important;
+}
+
+.app-orbit:nth-child(7) {
+  transform: translate(-50%, -50%) rotate(308.57deg) translateX(250px)
+    rotate(-308.57deg) !important;
+}
+
+@media (max-width: 720px) {
+  .app-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) translateX(40px) rotate(0deg);
+  }
+
+  /* Position the orbiting circles in a circular pattern */
+  .app-orbit:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(125px) rotate(0deg) !important;
+  }
+
+  .app-orbit:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(51.43deg) translateX(125px)
+      rotate(-51.43deg) !important;
+  }
+
+  .app-orbit:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(102.86deg) translateX(125px)
+      rotate(-102.86deg) !important;
+  }
+
+  .app-orbit:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(154.29deg) translateX(125px)
+      rotate(-154.29deg) !important;
+  }
+
+  .app-orbit:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(205.71deg) translateX(125px)
+      rotate(-205.71deg) !important;
+  }
+
+  .app-orbit:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(257.14deg) translateX(125px)
+      rotate(-257.14deg) !important;
+  }
+
+  .app-orbit:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(308.57deg) translateX(125px)
+      rotate(-308.57deg) !important;
+  }
+}

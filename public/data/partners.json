@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "alt": "Sudani",
+    "src": "/partners/sudani_bw.png"
+  },
+  {
+    "id": 2,
+    "alt": "Zain",
+    "src": "/partners/zain.png"
+  },
+  {
+    "id": 3,
+    "alt": "MTN",
+    "src": "/partners/mtn_bw.png"
+  },
+  {
+    "id": 4,
+    "alt": "OZ",
+    "src": "/partners/oz_bw.png"
+  }
+]
