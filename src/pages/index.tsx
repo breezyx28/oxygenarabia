@@ -1,10 +1,11 @@
 import React from "react";
 import LoadingComponent from "../components/loading/Loading";
+import ContactUs from "./sections/ContactUs";
 
 const Hero = React.lazy(() => import("./sections/Hero"));
 const Services = React.lazy(() => import("./sections/Services"));
 const About = React.lazy(() => import("./sections/About"));
-const History = React.lazy(() => import("./sections/History"));
+// const History = React.lazy(() => import("./sections/History"));
 const Partners = React.lazy(() => import("./sections/Partners"));
 
 export default function Home() {
@@ -26,7 +27,8 @@ export default function Home() {
         <Partners />
         <Services />
         <About />
-        <History />
+        <ContactUs />
+        {/* <History /> */}
         {/* <Subscribe /> */}
       </main>
     </div>
