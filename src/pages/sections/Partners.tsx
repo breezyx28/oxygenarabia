@@ -32,18 +32,14 @@ const Partners = () => {
       className="partners relative bg-slate-50 w-full h-full min-h-[90px] py-[3rem]"
     >
       <div className="partners-wrapper w-full flex flex-col gap-y-6 items-center">
-        {/* <div className="gsap-from-bottom partner-title text-2xl text-slate-600 font-semibold capitalize">
-          our partners
-        </div> */}
-        <div className="w-full h-full flex flex-wrap md:gap-x-[100px] md:p-0 p-6 gap-8 justify-center items-center md:justify-center">
-          {/* <div className="w-full md:max-h-[300px] h-auto flex flex-wrap md:gap-x-[100px] gap-[50px] md:p-0 p-6 items-center md:justify-center"> */}
+        <div className="w-full h-full flex flex-wrap md:p-0 p-6 justify-evenly items-center">
           {partners?.map((item: any) => (
             <div
               key={item.id}
               className="gsap-partner-companies gsap-from-bottom"
             >
               <img
-                className="grayscale duration-100 ease-in hover:grayscale-0 opacity-60 hover:opacity-100"
+                className="grayscale duration-100 ease-in hover:grayscale-0 opacity-60 hover:opacity-100 md:scale-100 scale-75"
                 src={item.src}
                 alt={item.alt}
                 width={item.width / 1.5}

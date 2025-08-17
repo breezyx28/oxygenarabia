@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="section-container relative overflow-hidden z-20 flex flex-col h-full justify-center bg-primary"
+      className="section-container relative overflow-hidden z-20 flex flex-col h-full justify-center bg-primary md:py-[0] py-[70px]"
     >
       <div className="absolute pattern-wave z-10"></div>
       <div className="about-wrapper container px-6">

@@ -4,7 +4,6 @@ import VideoModal from "../../components/modals/VideoModal";
 import heroAnimation from "../../helper/animations/heroAnimation";
 import { DotBackgroundAnimateLayout } from "../../layouts/styled-layouts/dot-bg-animate-layout";
 import { Link } from "react-router-dom";
-// import { Globe } from "../../components/magicui/globe";
 
 const Object3D = React.lazy(() => import("../../components/3D/Object"));
 
@@ -23,7 +22,13 @@ const Hero = () => {
                 <span className="hero-gsap relative top-[100px] hero-detail-text opacity-0 text-sm font-semibold text-slate-500">
                   Revolutionize Your Customer Experience
                 </span>
-                <div className="relative hero-gsap top-[100px] opacity-0 hero-oxygen-phrase md:text-7xl text-slate-800 text-4xl font-bold capitalize">
+                <div
+                  style={{
+                    fontSize: "clamp(2rem, 5vw, 4.5rem)", // 2rem (32px) min, 5vw preferred, 4.5rem (72px) max
+                    lineHeight: "clamp(2.25rem, 5.5vw, 5rem)",
+                  }}
+                  className="relative hero-gsap top-[100px] opacity-0 hero-oxygen-phrase md:text-7xl text-slate-800 text-4xl font-bold capitalize"
+                >
                   Delight Customers, Every{" "}
                   <span className="text-gradient">Customers</span> Time
                 </div>

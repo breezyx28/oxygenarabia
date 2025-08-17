@@ -19,7 +19,7 @@
     @apply md:text-6xl text-4xl font-bold text-slate-700 capitalize;
   }
   .section-container {
-    @apply w-full h-auto min-h-screen md:p-20 py-8;
+    @apply w-full h-auto md:p-20 py-8;
   }
   .product-container {
     @apply w-full h-auto min-h-[70vh] p-20;
