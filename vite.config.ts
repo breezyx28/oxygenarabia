@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import { renameSync, existsSync } from "fs";
+import { renameSync, existsSync, cpSync } from "fs";
 import { resolve } from "path";
 import { execSync } from "child_process";
 import AdmZip from "adm-zip"; // Install: npm i adm-zip
@@ -28,6 +28,16 @@ export default defineConfig({
           } else {
             console.warn("⚠️ dist folder not found. Build might have failed.");
             return;
+          }
+
+          // 1.5️⃣ Copy server folder into Oxygen/server if present
+          const serverSrc = resolve(rootDir, "server");
+          const serverDest = resolve(oxygenPath, "server");
+          if (existsSync(serverSrc)) {
+            cpSync(serverSrc, serverDest, { recursive: true });
+            console.log("✅ Copied server → Oxygen/server");
+          } else {
+            console.warn("ℹ️ server folder not found. Skipping server copy.");
           }
 
           // 2️⃣ Zip Oxygen -> Oxygen.zip

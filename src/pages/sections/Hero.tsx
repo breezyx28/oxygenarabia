@@ -56,7 +56,7 @@ const Hero = () => {
             </div>
           </div>
           {/* Lazy loaded 3D object */}
-          <div className="relative h-[80%] w-[50%] md:flex justify-center hidden">
+          <div className="relative h-full w-full md:flex justify-center hidden">
             <Suspense
               fallback={<div className="text-white">Loading 3D...</div>}
             >

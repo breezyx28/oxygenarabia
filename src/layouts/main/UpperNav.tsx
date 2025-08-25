@@ -102,7 +102,7 @@ const UpperNav = () => {
             </li>
           </ul>
         </div>
-        <Link to={"/contact"} className="primary-btn shade-x">
+        <Link to={"/#contact-us-section"} className="primary-btn shade-x">
           Try Free Now
         </Link>
       </div>
@@ -201,7 +201,7 @@ const UpperNav = () => {
             </div>
           </div>
           <Link
-            to={"/contact"}
+            to={"/#contact-us-section"}
             onClick={() => setMenuOpend(false)}
             className="btn text-white bg-primary border-0 rounded-[20px] shadow-lg"
           >

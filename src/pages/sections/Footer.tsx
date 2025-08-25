@@ -46,7 +46,7 @@ const Footer = () => {
           <a href="/#about" className="link link-hover">
             About us
           </a>
-          <a href="/contact" className="link link-hover">
+          <a href="/#contact-us-section" className="link link-hover">
             Contact
           </a>
           <a href="/team" className="link link-hover">

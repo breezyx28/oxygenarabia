@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="section-container relative overflow-hidden z-20 flex flex-col h-full justify-center bg-primary md:py-[0] py-[70px]"
+      className="section-container relative overflow-hidden z-20 flex flex-col h-full justify-center bg-primary md:py-[70px] py-[20px]"
     >
       <div className="absolute pattern-wave z-10"></div>
       <div className="about-wrapper container px-6">
@@ -31,7 +31,7 @@ const About = () => {
               eveniet suscipit provident cumque blanditiis.
             </div>
             <Link
-              to={"/contact"}
+              to={"/#contact-us-section"}
               className="btn relative about-animation fade-left bg-slate-800 px-4 py-3 w-[200px] z-10 rounded-[20px] shade-x"
             >
               Explore More
