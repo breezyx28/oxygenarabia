@@ -29,8 +29,8 @@ const Hero = () => {
                   }}
                   className="relative hero-gsap top-[100px] opacity-0 hero-oxygen-phrase md:text-7xl text-slate-800 text-4xl font-bold capitalize"
                 >
-                  Delight <span className="text-primary">Customers</span>, Every
-                  Time
+                  Delight You <span className="text-primary">Customers</span>,
+                  Every Time
                 </div>
               </div>
               <div className="relative hero-gsap top-[100px] hero-description opacity-0 text-sm text-slate-500 w-[80%]">
