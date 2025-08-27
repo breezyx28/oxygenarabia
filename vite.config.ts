@@ -25,6 +25,17 @@ export default defineConfig({
           if (existsSync(distPath)) {
             renameSync(distPath, oxygenPath);
             console.log("✅ Renamed dist → Oxygen");
+            // Copy .htaccess into Oxygen folder
+            const htaccessSrc = resolve(rootDir, ".htaccess");
+            const htaccessDest = resolve(oxygenPath, ".htaccess");
+            if (existsSync(htaccessSrc)) {
+              cpSync(htaccessSrc, htaccessDest);
+              console.log("✅ Copied .htaccess → Oxygen/.htaccess");
+            } else {
+              console.warn(
+                "ℹ️ .htaccess file not found. Skipping .htaccess copy."
+              );
+            }
           } else {
             console.warn("⚠️ dist folder not found. Build might have failed.");
             return;
