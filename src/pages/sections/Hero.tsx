@@ -30,7 +30,7 @@ const Hero = () => {
                   className="relative hero-gsap top-[100px] opacity-0 hero-oxygen-phrase md:text-7xl text-slate-800 text-4xl font-bold capitalize"
                 >
                   Delight Customers, Every{" "}
-                  <span className="text-gradient">Customers</span> Time
+                  <span className="text-primary">Customers</span> Time
                 </div>
               </div>
               <div className="relative hero-gsap top-[100px] hero-description opacity-0 text-sm text-slate-500 w-[80%]">

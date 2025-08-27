@@ -62,6 +62,10 @@ body {
   animation: loading-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+iframe > a.spline-watermark {
+  display: none !important;
+}
+
 @keyframes loading-ping {
   0% {
     opacity: 1;
@@ -271,4 +275,8 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+a.spline-watermark {
+  display: none !important;
 }

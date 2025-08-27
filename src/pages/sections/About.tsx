@@ -14,7 +14,7 @@ const About = () => {
       id="about"
       className="section-container relative overflow-hidden z-20 flex flex-col h-full justify-center bg-primary md:py-[70px] py-[20px]"
     >
-      <div className="absolute pattern-wave z-10"></div>
+      {/* <div className="absolute pattern-wave z-10"></div> */}
       <div className="about-wrapper container px-6">
         <div className="grid grid-flow-cols md:grid-cols-2 grid-cols-1 w-full h-full">
           <div className="h-full flex flex-col gap-y-10">
@@ -40,8 +40,8 @@ const About = () => {
           <div className="relative about-animation fade-left md:flex flex-col items-center hidden">
             <div className="flex flex-col justify-center items-center w-full h-full z-10">
               <img
-                src="/icons/oxygen_3d.png"
-                className="w-1/2 h-1/2 object-contain"
+                src="/images/about-us/analytics.jpeg"
+                className="w-full h-full object-contain rounded-[16px]"
               />
               {/* <Object /> */}
               {/* <CanvasPlayground /> */}

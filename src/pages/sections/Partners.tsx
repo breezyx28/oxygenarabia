@@ -29,7 +29,7 @@ const Partners = () => {
   return (
     <section
       id="partners"
-      className="partners relative bg-slate-50 w-full h-full min-h-[90px] py-[3rem]"
+      className="partners relative w-full h-full min-h-[90px] py-[3rem]"
     >
       <div className="partners-wrapper w-full flex flex-col gap-y-6 items-center">
         <div className="w-full h-full flex flex-wrap md:p-0 p-6 justify-evenly items-center">
