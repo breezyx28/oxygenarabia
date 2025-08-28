@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import { InfiniteSlider } from "@/components/core/infinite-slider";

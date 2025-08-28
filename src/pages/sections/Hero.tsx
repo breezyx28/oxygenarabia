@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="grid grid-flow-cols place-items-center md:grid-cols-2 grid-cols-1 md:gap-x-10 gap-x-4 h-full">
           <div className="w-full h-full">
             <div className="md:pl-20 pl-8 h-full flex flex-col gap-y-8 justify-center text-white">
-              <div className="flex flex-col gap-y-2">
+              <div className="flex flex-col md:gap-y-2 gap-y-6">
                 <motion.div
                   className="inline-flex w-[fit-content] items-center space-x-2 bg-blue-50 text-primary px-4 py-2 rounded-full border border-blue-200"
                   initial={{ opacity: 0, y: 20 }}
@@ -95,10 +95,14 @@ const Hero = () => {
             </div>
           </div>
           {/* Lazy loaded 3D object */}
-          <Suspense fallback={<div className="text-white">Loading 3D...</div>}>
-            <Object3D />
-          </Suspense>
-          <div className="relative h-full w-full md:flex justify-center hidden"></div>
+
+          <div className="relative h-full w-full md:flex justify-center hidden">
+            <Suspense
+              fallback={<div className="text-white">Loading 3D...</div>}
+            >
+              <Object3D />
+            </Suspense>
+          </div>
         </div>
       </DotBackgroundAnimateLayout>
     </section>

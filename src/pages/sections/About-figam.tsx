@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import { GlassCard } from "@/components/ui/GlassCard";
 import {
@@ -9,7 +8,6 @@ import {
   Clock,
   Globe,
   CheckCircle,
-  Star,
   ArrowRight,
   Target,
   Shield,
