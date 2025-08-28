@@ -1,30 +1,31 @@
 import React from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
+import { InfiniteSlider } from "@/components/core/infinite-slider";
 
 // register scrolltrigger
 gsap.registerPlugin(ScrollTrigger);
 
 const Partners = () => {
-  React.useEffect(() => {
-    gsap.to(".partner-title", {
-      scrollTrigger: {
-        trigger: ".partners",
-      },
-      bottom: 0,
-      opacity: 1,
-      duration: 1.4,
-    });
+  // React.useEffect(() => {
+  //   gsap.to(".partner-title", {
+  //     scrollTrigger: {
+  //       trigger: ".partners",
+  //     },
+  //     bottom: 0,
+  //     opacity: 1,
+  //     duration: 1.4,
+  //   });
 
-    gsap.to(".gsap-partner-companies", {
-      scrollTrigger: {
-        trigger: ".partners",
-      },
-      opacity: 1,
-      bottom: 0,
-      stagger: 0.2,
-    });
-  }, []);
+  //   gsap.to(".gsap-partner-companies", {
+  //     scrollTrigger: {
+  //       trigger: ".partners",
+  //     },
+  //     opacity: 1,
+  //     bottom: 0,
+  //     stagger: 0.2,
+  //   });
+  // }, []);
 
   return (
     <section
@@ -33,20 +34,19 @@ const Partners = () => {
     >
       <div className="partners-wrapper w-full flex flex-col gap-y-6 items-center">
         <div className="w-full h-full flex flex-wrap md:p-0 p-6 justify-evenly items-center">
-          {partners?.map((item: any) => (
-            <div
-              key={item.id}
-              className="gsap-partner-companies gsap-from-bottom"
-            >
-              <img
-                className="grayscale duration-100 ease-in hover:grayscale-0 opacity-60 hover:opacity-100 md:scale-100 scale-75"
-                src={item.src}
-                alt={item.alt}
-                width={item.width / 1.5}
-                height={item.height / 1.5}
-              />
-            </div>
-          ))}
+          <InfiniteSlider speedOnHover={20} gap={100}>
+            {partners?.map((item: any) => (
+              <div key={item.id} className="flex items-center">
+                <img
+                  className="grayscale brightness-100 duration-100 ease-in hover:grayscale-0 hover:brightness-100 opacity-60 hover:opacity-100 md:scale-100 scale-75"
+                  src={item.src}
+                  alt={item.alt}
+                  width={item.width / 1.5}
+                  height={item.height / 1.5}
+                />
+              </div>
+            ))}
+          </InfiniteSlider>
         </div>
       </div>
     </section>

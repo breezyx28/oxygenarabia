@@ -1,16 +1,36 @@
 import React from "react";
-import AvatarsStackCard from "../../components/cards/AvatarsStackCard";
+// import AvatarsStackCard from "../../components/cards/AvatarsStackCard";
 import ServiceCard from "../../components/cards/ServiceCard";
-import TextCard from "../../components/cards/TextCard";
+// import TextCard from "../../components/cards/TextCard";
 import { Svg } from "../../components/icons";
 import servicesAnimation from "../../helper/animations/servicesAnimation";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
+import { Badge } from "@/components/ui/badge";
+import {
+  Cloud,
+  Brain,
+  MessageSquare,
+  Database,
+  Star,
+  Users,
+  Zap,
+} from "lucide-react";
+import { NumberTicker } from "@/components/magicui/number-ticker";
+import { GlassCard } from "@/components/ui/GlassCard";
+// import { AnimatedNumber } from "@/components/core/animated-number";
 
 const Services = () => {
   React.useEffect(() => {
     // requestAnimationFrame(servicesAnimation);
     servicesAnimation();
   }, []);
+
+  const stats = [
+    { value: 5000, suffix: "+", label: "Happy Clients" },
+    { value: 4.9, suffix: "", label: "Customer Rating" },
+    { value: 99.9, suffix: "%", label: "Uptime" },
+  ];
 
   return (
     <section
@@ -19,21 +39,56 @@ const Services = () => {
     >
       <div className="services-wrapper flex flex-col gap-y-10 justify-between w-full h-full">
         <div className="grid grid-flow-cols grid-cols-2">
-          <div className="gsap-services-from service-title section-text">
-            Our <span className="text-primary">Services</span>
-          </div>
-          <div className="gsap-services-from services-description flex flex-col gap-y-4">
-            <span className="text-sm text-slate-400 max-w-[400px]">
-              Trusted by leading businesses in healthcare, finance, and retail
-              across KSA
-            </span>
-            <Link
-              to={"/about"}
-              type="button"
-              className="primary-btn w-[110px] h-[40px]"
+          <div className="flex flex-col gap-4">
+            <motion.div
+              className="inline-flex w-[fit-content] items-center space-x-2 bg-blue-50 text-primary px-4 py-2 rounded-full border border-blue-200"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
             >
-              Try Free Now
-            </Link>
+              <Zap className="w-4 h-4" />
+              <span className="text-sm font-medium">Services</span>
+            </motion.div>
+            <div className="gsap-services-from service-title section-text">
+              Our <span className="text-primary">Services</span>
+            </div>
+          </div>
+          {/* Statistics */}
+          <div className="grid grid-cols-3 gap-4 mb-8">
+            {stats.map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                className="text-center p-4 bg-background rounded-xl border border-border/50"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <GlassCard>
+                  <motion.div
+                    className="text-2xl font-bold text-primary"
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 300,
+                      delay: index * 0.1 + 0.3,
+                    }}
+                    viewport={{ once: true }}
+                  >
+                    <NumberTicker
+                      value={stat.value}
+                      className="text-primary"
+                      decimalPlaces={stat.value === 5000 ? 0 : 1}
+                    />
+                    {stat.suffix}
+                  </motion.div>
+                  <div className="text-xs text-muted-foreground">
+                    {stat.label}
+                  </div>
+                </GlassCard>
+              </motion.div>
+            ))}
           </div>
         </div>
         <div className="grid md:grid-flow-cols grid-flow-rows md:grid-cols-2 grid-rows-2 gap-10">
@@ -49,7 +104,8 @@ const Services = () => {
                 "Interactive Voice Response (IVR) design & deployment",
               ]}
             >
-              {Svg.education}
+              {/* {Svg.education} */}
+              <Cloud className="w-8 h-8 text-blue-500" />
             </ServiceCard>
             <ServiceCard
               title="AI-Powered Automation"
@@ -62,7 +118,8 @@ const Services = () => {
                 "Call summarization and transcription",
               ]}
             >
-              {Svg.adv}
+              {/* {Svg.adv} */}
+              <Brain className="w-8 h-8 text-blue-500" />
             </ServiceCard>
             <ServiceCard
               title="WhatsApp & Social Messaging Integration"
@@ -75,7 +132,8 @@ const Services = () => {
                 "Conversational commerce setup (orders, support, payments)",
               ]}
             >
-              {Svg.tower}
+              {/* {Svg.tower} */}
+              <MessageSquare className="w-8 h-8 text-blue-500" />
             </ServiceCard>
             <ServiceCard
               title="CRM & Helpdesk Integration"
@@ -88,7 +146,8 @@ const Services = () => {
                 "Customer journey tracking",
               ]}
             >
-              {Svg.tech}
+              {/* {Svg.tech} */}
+              <Database className="w-8 h-8 text-blue-500" />
             </ServiceCard>
 
             <Link
@@ -99,17 +158,58 @@ const Services = () => {
             </Link>
           </div>
           <div className="relative opacity-0 -right-[100px] service-poster order-1 md:order-2">
-            <div className="absolute lg:flex hidden top-[40px] md:-right-[35px] right-[35px]">
+            {/* <div className="absolute lg:flex hidden top-[40px] md:-right-[35px] right-[35px]">
               <TextCard />
             </div>
             <div className="absolute lg:flex hidden md:-bottom-[30px] md:-left-[100px] bottom-[30px] left-[100px]">
               <AvatarsStackCard />
-            </div>
+            </div> */}
             <img
               className="w-full h-full rounded-[15px] object-cover"
-              src={"/images/services.jpg"}
+              src="https://images.unsplash.com/photo-1598870784088-35e7058da12c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMGxhcHRvcCUyMG1lZXRpbmd8ZW58MXx8fHwxNzU2MzgxNjkzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               alt={"Our Services"}
             />
+
+            {/* Floating Review Badge */}
+            <motion.div
+              className="absolute bottom-6 left-6 bg-background/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-border/50"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <div className="flex items-center space-x-2 mb-2">
+                <div className="flex items-center space-x-1">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star
+                      key={i}
+                      className="w-4 h-4 text-yellow-400 fill-current"
+                    />
+                  ))}
+                </div>
+                <span className="text-sm font-semibold">4.9</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Users className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground">
+                  5000+ reviews
+                </span>
+              </div>
+            </motion.div>
+
+            {/* Built On Badge */}
+            <motion.div
+              className="absolute top-6 right-6"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <Badge className="bg-blue-500 text-white px-3 py-1">
+                Built On 5000+
+              </Badge>
+            </motion.div>
           </div>
         </div>
       </div>

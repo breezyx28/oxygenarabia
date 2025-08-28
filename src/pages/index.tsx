@@ -1,6 +1,7 @@
 import React from "react";
 import LoadingComponent from "../components/loading/Loading";
 import ContactUs from "./sections/ContactUs";
+import { AboutSection } from "./sections/About-figam";
 
 const Hero = React.lazy(() => import("./sections/Hero"));
 const Services = React.lazy(() => import("./sections/Services"));
@@ -26,7 +27,7 @@ export default function Home() {
         <Hero />
         <Partners />
         <Services />
-        <About />
+        <AboutSection />
         <ContactUs />
         {/* <History /> */}
         {/* <Subscribe /> */}

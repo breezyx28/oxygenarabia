@@ -1,8 +1,10 @@
 {
   "files": [],
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/components/motion-primitives/*": ["./components/motion-primitives/*"]
     }
   },
   "references": [

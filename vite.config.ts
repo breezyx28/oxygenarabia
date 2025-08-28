@@ -6,6 +6,15 @@ import { execSync } from "child_process";
 import AdmZip from "adm-zip"; // Install: npm i adm-zip
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "src"),
+      "@/components/motion-primitives": resolve(
+        __dirname,
+        "components/motion-primitives"
+      ),
+    },
+  },
   plugins: [
     react(),
     {

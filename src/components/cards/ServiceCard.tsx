@@ -35,7 +35,7 @@ const ServiceCard = (props: ServiceCard) => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6 text-primary w-[16px] h-[16px]"
+                className="min-w-[18px] text-primary w-[16px] h-[16px]"
               >
                 <path
                   strokeLinecap="round"
