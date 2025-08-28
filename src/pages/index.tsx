@@ -5,7 +5,7 @@ import { AboutSection } from "./sections/About-figam";
 
 const Hero = React.lazy(() => import("./sections/Hero"));
 const Services = React.lazy(() => import("./sections/Services"));
-const About = React.lazy(() => import("./sections/About"));
+// const About = React.lazy(() => import("./sections/About"));
 // const History = React.lazy(() => import("./sections/History"));
 const Partners = React.lazy(() => import("./sections/Partners"));
 

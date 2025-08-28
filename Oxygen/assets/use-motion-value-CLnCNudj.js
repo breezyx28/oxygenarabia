@@ -1,0 +1,1 @@
+import{r as t}from"./index-CfP7ulmb.js";import{o as a,p as u,R as r}from"./index-CmSgi2Be.js";function i(o){const e=a(()=>r(o)),{isStatic:s}=t.useContext(u);if(s){const[,n]=t.useState(o);t.useEffect(()=>e.on("change",n),[])}return e}export{i as u};

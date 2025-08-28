@@ -38,7 +38,7 @@ const Services = () => {
       className="w-full min-h-screen md:max-h-[135vh] max-h-auto md:p-20 p-6"
     >
       <div className="services-wrapper flex flex-col gap-y-10 justify-between w-full h-full">
-        <div className="grid grid-flow-cols grid-cols-2">
+        <div className="grid md:grid-flow-cols grid-flow-rows md:grid-cols-2 grid-cols-1 md:gap-0 gap-10">
           <div className="flex flex-col gap-4">
             <motion.div
               className="inline-flex w-[fit-content] items-center space-x-2 bg-blue-50 text-primary px-4 py-2 rounded-full border border-blue-200"
