@@ -1,0 +1,121 @@
+import React from "react";
+import { motion } from "motion/react";
+import { MapPin, Phone, Mail, Twitter, Linkedin, Facebook } from "lucide-react";
+import { Card } from "../../ui/card";
+
+const contactItems = [
+  {
+    icon: MapPin,
+    title: "Location",
+    content: "Saudi Arabia, Riyadh, Olia",
+    delay: 0.1,
+  },
+  {
+    icon: Phone,
+    title: "Phone",
+    content: "+966-9200-34424 | +966-539953755",
+    delay: 0.2,
+  },
+  {
+    icon: Mail,
+    title: "Email",
+    content: "info@oxygenict.com",
+    delay: 0.3,
+  },
+];
+
+const socialLinks = [
+  {
+    icon: Twitter,
+    href: "https://twitter.com/oxygen_ict",
+    label: "Twitter",
+    delay: 0.5,
+  },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/company/oxygen-technologies-ltd/",
+    label: "LinkedIn",
+    delay: 0.6,
+  },
+  {
+    icon: Facebook,
+    href: "https://www.facebook.com/Oxygenict/",
+    label: "Facebook",
+    delay: 0.7,
+  },
+];
+
+export const ContactInfo: React.FC = () => {
+  return (
+    <div className="space-y-8">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <h3 className="mb-6 text-slate-900">Contact Information</h3>
+        <p className="text-slate-600 mb-8">
+          We're here to help and answer any question you might have. We look
+          forward to hearing from you.
+        </p>
+      </motion.div>
+
+      <div className="space-y-6">
+        {contactItems.map((item, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: item.delay }}
+            whileHover={{ x: 5 }}
+            className="group"
+          >
+            <Card className="border-none bg-transparent">
+              <div className="flex items-start space-x-4">
+                <motion.div
+                  className="flex-shrink-0 w-12 h-12 bg-blue-200/20 rounded-[16px] flex items-center justify-center text-blue-600"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <item.icon className="w-6 h-6" />
+                </motion.div>
+                <div className="flex-1 min-w-0">
+                  <h4 className="text-slate-900 mb-1 group-hover:text-[#1f70c1] transition-colors">
+                    {item.title}
+                  </h4>
+                  <p className="text-slate-600 break-words">{item.content}</p>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+        ))}
+      </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        className="pt-4"
+      >
+        <h4 className="text-slate-900 mb-4">Follow Us</h4>
+        <div className="flex space-x-4">
+          {socialLinks.map((social, index) => (
+            <motion.a
+              key={index}
+              href={social.href}
+              className="w-12 h-12 bg-blue-200/20 rounded-xl flex items-center justify-center text-blue-600 transition-all duration-300"
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: social.delay }}
+              aria-label={social.label}
+            >
+              <social.icon className="w-5 h-5" />
+            </motion.a>
+          ))}
+        </div>
+      </motion.div>
+    </div>
+  );
+};
