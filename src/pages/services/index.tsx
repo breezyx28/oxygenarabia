@@ -1,11 +1,50 @@
+import {
+  Brain,
+  Briefcase,
+  ChartPie,
+  CircleStar,
+  Cloud,
+  Database,
+  Handshake,
+  MessageSquare,
+  Package,
+} from "lucide-react";
+// import { motion } from "motion/react";
 import ServiceCard1 from "../../components/cards/ServiceCard1";
-import { Svg } from "../../components/icons";
-import Jumbotrun from "../../components/pages/Jumbotrun";
+// import Jumbotrun from "../../components/pages/Jumbotrun";
+// import { DotBackgroundJumbotron } from "@/layouts/styled-layouts/dot-bg-jumbotron";
+// import { WavyBackground } from "@/components/ui/wavy-background";
+import { BackgroundBoxesLayout } from "@/layouts/styled-layouts/boxes-bg-layout";
 
 const Services = () => {
   return (
     <>
-      <Jumbotrun pageName={"Our Services"} />
+      {/* <DotBackgroundJumbotron title={"Our Services"} /> */}
+      <div className="relative h-[60vh] overflow-hidden">
+        {/* <WavyBackground
+          className="w-full"
+          containerClassName="h-[60vh]"
+          backgroundFill="#6aadefff"
+          // colors={["white", ""]}
+        >
+          <motion.div
+            className="text-center text-5xl text-white font-bold"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Our Services
+          </motion.div>
+        </WavyBackground> */}
+
+        <BackgroundBoxesLayout
+          title="Our Services"
+          subtitle="Explore our wide range of services designed to empower your business with innovative solutions and exceptional support."
+          className="bg-primary"
+          containerClassName="bg-primary/10"
+        />
+      </div>
+
       <section className="section-container z-10 bg-white">
         <div className="container px-6 py-10 mx-auto">
           <div className="section-text">
@@ -13,8 +52,8 @@ const Services = () => {
           </div>
 
           <p className="mt-4 text-gray-500 xl:mt-6">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
-            quam voluptatibus
+            Explore our wide range of services designed to empower your business
+            with innovative solutions and exceptional support.
           </p>
 
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-2">
@@ -25,7 +64,7 @@ const Services = () => {
                   "Who it's for: Businesses that want scalable, flexible, cloud-based customer communication."
                 }
               >
-                {Svg.education}
+                <Cloud className="w-8 h-8 text-blue-500" />
               </ServiceCard1>
 
               <ul className="flex flex-col gap-2 mx-5">
@@ -68,7 +107,7 @@ const Services = () => {
                   "Who it's for: Businesses looking to reduce human workload and improve response speed."
                 }
               >
-                {Svg.adv}
+                <Brain className="w-8 h-8 text-blue-500" />
               </ServiceCard1>
 
               <ul className="flex flex-col gap-2 mx-5">
@@ -110,7 +149,7 @@ const Services = () => {
                   "Who it's for: Businesses active on social platforms or targeting younger customers."
                 }
               >
-                {Svg.tower}
+                <MessageSquare className="w-8 h-8 text-blue-500" />
               </ServiceCard1>
 
               <ul className="flex flex-col gap-2 mx-5">
@@ -150,7 +189,7 @@ const Services = () => {
                   "Who it's for: Enterprises or SMEs needing end-to-end CX."
                 }
               >
-                {Svg.tech}
+                <Database className="w-8 h-8 text-blue-500" />
               </ServiceCard1>
 
               <ul className="flex flex-col gap-2 mx-5">
@@ -190,7 +229,7 @@ const Services = () => {
                   "Who it's for: Managers who want to track ROI and team performance."
                 }
               >
-                {Svg.tech}
+                <ChartPie className="w-8 h-8 text-blue-500" />
               </ServiceCard1>
 
               <ul className="flex flex-col gap-2 mx-5">
@@ -231,7 +270,7 @@ const Services = () => {
                   "Who it's for: New clients or companies transitioning to cloud."
                 }
               >
-                {Svg.tech}
+                <CircleStar className="w-8 h-8 text-blue-500" />
               </ServiceCard1>
 
               <ul className="flex flex-col gap-2 mx-5">
@@ -272,7 +311,7 @@ const Services = () => {
                   "Who it's for: Clients who value long-term partnerships."
                 }
               >
-                {Svg.tech}
+                <Handshake className="w-8 h-8 text-blue-500" />
               </ServiceCard1>
 
               <ul className="flex flex-col gap-2 mx-5">
@@ -313,7 +352,7 @@ const Services = () => {
                   "Why: Builds trust by showing domain understanding."
                 }
               >
-                {Svg.tech}
+                <Package className="w-8 h-8 text-blue-500" />
               </ServiceCard1>
 
               <ul className="flex flex-col gap-2 mx-5">
@@ -354,7 +393,7 @@ const Services = () => {
                   "Who it's for: Businesses looking to reduce costs, scale fast, and focus on their core business while we handle operations."
                 }
               >
-                {Svg.tech}
+                <Briefcase className="w-8 h-8 text-blue-500" />
               </ServiceCard1>
 
               <ul className="flex flex-col gap-2 mx-5">

@@ -25,7 +25,7 @@ const Hero = () => {
                   className="inline-flex w-[fit-content] items-center space-x-2 bg-blue-50 text-primary px-4 py-2 rounded-full border border-blue-200"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
                 >
                   <Zap className="w-4 h-4" />
                   <span className="text-sm font-medium">
@@ -47,7 +47,7 @@ const Hero = () => {
                 className="text-lg text-muted-foreground leading-relaxed max-w-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
               >
                 The fastest, AI-powered cloud contact center in Saudi Arabia.
                 Built for simplicity, speed, and unmatched human connection
@@ -57,7 +57,7 @@ const Hero = () => {
                 className="flex flex-wrap gap-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 }}
+                transition={{ delay: 0.8, duration: 0.5 }}
               >
                 {[
                   { icon: Cloud, text: "Cloud-Native" },

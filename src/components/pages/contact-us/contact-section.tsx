@@ -4,7 +4,6 @@ import { ContactForm } from "./contact-form";
 import { ContactInfo } from "./contact-info";
 import { FloatingShapes } from "./floating-shapes";
 import { Toaster } from "sonner";
-import { Badge } from "@/components/ui/badge";
 import { PhoneCall } from "lucide-react";
 
 export const ContactSection: React.FC = () => {

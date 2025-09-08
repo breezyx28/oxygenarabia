@@ -90,7 +90,7 @@ export const ContactForm: React.FC = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Card className="p-8 border-0 bg-white/80 backdrop-blur-sm shadow-2xl">
+        <Card className="p-8 border-0 bg-white/80 backdrop-blur-sm shadow-lg">
           <div className="text-center">
             <motion.div
               initial={{ scale: 0 }}
@@ -128,7 +128,7 @@ export const ContactForm: React.FC = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <Card className="p-8 border-0 bg-white/80 backdrop-blur-sm shadow-2xl">
+      <Card className="p-8 border-0 bg-white/80 backdrop-blur-sm shadow-lg">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
