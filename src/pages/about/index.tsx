@@ -1,9 +1,19 @@
-import Jumbotrun from "../../components/pages/Jumbotrun";
+import { BackgroundBoxesLayout } from "@/layouts/styled-layouts/boxes-bg-layout";
+// import Jumbotrun from "../../components/pages/Jumbotrun";
 
 const about = () => {
   return (
     <>
-      <Jumbotrun pageName={"About Us"} />
+      {/* <Jumbotrun pageName={"About Us"} /> */}
+
+      <div className="relative h-[60vh] overflow-hidden">
+        <BackgroundBoxesLayout
+          title="About Us"
+          subtitle="Founded with a vision to revolutionize digital experiences."
+          className="bg-primary"
+          containerClassName="bg-primary/10"
+        />
+      </div>
       <section className="section-container py-0 z-50 bg-white">
         <div className="container px-6 py-10 mx-auto">
           <div className="wrapper flex md:flex-row flex-col justify-center md:gap-x-[1rem] gap-x-0 gap-y-[1rem] items-center w-full">

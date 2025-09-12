@@ -1,1 +1,0 @@
-import{r as t}from"./index-DFtxyNLe.js";import{o as a,p as u,R as r}from"./index-Bpk-6nsp.js";function i(o){const e=a(()=>r(o)),{isStatic:s}=t.useContext(u);if(s){const[,n]=t.useState(o);t.useEffect(()=>e.on("change",n),[])}return e}export{i as u};

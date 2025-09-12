@@ -49,7 +49,7 @@ const Services = () => {
               <Zap className="w-4 h-4" />
               <span className="text-sm font-medium">Services</span>
             </motion.div>
-            <div className="gsap-services-from service-title section-text">
+            <div className="gsap-services-from section-text">
               Our <span className="text-primary">Services</span>
             </div>
           </div>

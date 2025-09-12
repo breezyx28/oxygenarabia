@@ -7,26 +7,6 @@ import { InfiniteSlider } from "@/components/core/infinite-slider";
 gsap.registerPlugin(ScrollTrigger);
 
 const Partners = () => {
-  // React.useEffect(() => {
-  //   gsap.to(".partner-title", {
-  //     scrollTrigger: {
-  //       trigger: ".partners",
-  //     },
-  //     bottom: 0,
-  //     opacity: 1,
-  //     duration: 1.4,
-  //   });
-
-  //   gsap.to(".gsap-partner-companies", {
-  //     scrollTrigger: {
-  //       trigger: ".partners",
-  //     },
-  //     opacity: 1,
-  //     bottom: 0,
-  //     stagger: 0.2,
-  //   });
-  // }, []);
-
   return (
     <section
       id="partners"
