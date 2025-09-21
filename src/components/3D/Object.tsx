@@ -11,7 +11,7 @@ export default function Object() {
       <iframe
         src="https://my.spline.design/untitled-4a22ffe0366c39778364aec0fabb51b3/"
         frameBorder="0"
-        className="absolute top-0 left-0 w-[110%] h-[110%] translate-x-10 translate-y-10 scale-105"
+        className="absolute top-0 left-0 w-[110%] h-[110%] translate-x-10 translate-y-10 scale-105 mt-[50px]"
         width="100%"
         height="100%"
       ></iframe>

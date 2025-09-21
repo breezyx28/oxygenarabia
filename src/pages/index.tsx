@@ -10,19 +10,9 @@ const Services = React.lazy(() => import("./sections/Services"));
 const Partners = React.lazy(() => import("./sections/Partners"));
 
 export default function Home() {
-  const [loading, setLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="overflow-x-hidden">
-      {loading && <LoadingComponent />}
+      {/* {loading && <LoadingComponent />} */}
       <main className="mx-auto w-auto h-auto">
         <Hero />
         <Partners />

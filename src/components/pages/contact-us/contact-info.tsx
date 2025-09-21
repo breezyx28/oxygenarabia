@@ -53,8 +53,10 @@ export const ContactInfo: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h3 className="mb-6 text-slate-900">Contact Information</h3>
-        <p className="text-slate-600 mb-8">
+        <h3 className="text-4xl font-bold mb-6 text-slate-900">
+          Contact Information
+        </h3>
+        <p className="text-slate-600 mb-8 max-w-xl">
           We're here to help and answer any question you might have. We look
           forward to hearing from you.
         </p>
@@ -80,10 +82,12 @@ export const ContactInfo: React.FC = () => {
                   <item.icon className="w-6 h-6" />
                 </motion.div>
                 <div className="flex-1 min-w-0">
-                  <h4 className="text-slate-900 mb-1 group-hover:text-[#1f70c1] transition-colors">
+                  <h4 className="text-slate-900 font-semibold mb-1 group-hover:text-[#1f70c1] transition-colors">
                     {item.title}
                   </h4>
-                  <p className="text-slate-600 break-words">{item.content}</p>
+                  <p className="text-slate-600 text-sm break-words">
+                    {item.content}
+                  </p>
                 </div>
               </div>
             </Card>
@@ -94,21 +98,21 @@ export const ContactInfo: React.FC = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        transition={{ duration: 0.6 }}
         className="pt-4"
       >
-        <h4 className="text-slate-900 mb-4">Follow Us</h4>
+        <h4 className="text-slate-900 text-md font-semibold mb-4">Follow Us</h4>
         <div className="flex space-x-4">
           {socialLinks.map((social, index) => (
             <motion.a
               key={index}
               href={social.href}
-              className="w-12 h-12 bg-blue-200/20 rounded-xl flex items-center justify-center text-blue-600 transition-all duration-300"
+              className="w-12 h-12 bg-blue-200/20 rounded-xl flex items-center justify-center text-blue-600"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: social.delay }}
+              transition={{ duration: 0.2 }}
               aria-label={social.label}
             >
               <social.icon className="w-5 h-5" />

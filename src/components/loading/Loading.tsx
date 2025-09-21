@@ -6,8 +6,8 @@ const LoadingComponent = () => {
     >
       <img
         className="loading-fade"
-        width={"140"}
-        height={"140"}
+        width={"80"}
+        height={"80"}
         src={"/icons/apple-touch-icon-180x180.png"}
         alt="Oxygen loading icon"
       />

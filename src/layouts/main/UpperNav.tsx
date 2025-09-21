@@ -4,144 +4,145 @@ import { Svg } from "../../components/icons";
 import LogoBase from "../../components/logo/LogoBase";
 import "../../styles/nav/uppernav.css";
 import GlassEffect from "@/components/ui/GlassEffect";
+import NavDropdown from "@/components/ui/NavDropdown";
 import { motion } from "framer-motion";
+import {
+  Users,
+  Clock,
+  Trophy,
+  Calendar,
+  FileText,
+  Briefcase,
+  BookOpen,
+  Heart,
+} from "lucide-react";
 
 const UpperNav = () => {
   const [menuOpened, setMenuOpend] = React.useState<boolean>(false);
   const [resourcesOpen, setResourcesOpen] = React.useState<boolean>(false);
+  const [isAtTop, setIsAtTop] = React.useState<boolean>(true);
 
   React.useEffect(() => {
     const currentPath = window.location.pathname;
     setActiveLink(currentPath);
     handleRouteChange();
+
+    const handleScroll = () => {
+      setIsAtTop(window.scrollY < 700);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="max-w-[2000px] w-full">
+    <div className="w-full">
       {/* Desktop Nav */}
-      <div className="desktop-responsive hidden md:flex justify-center mt-[1.5rem]">
-        <div className="fixed left-0 right-0 z-[50] mx-[5rem] flex justify-center">
+      <div className="desktop-responsive hidden md:flex justify-center">
+        <div className="fixed max-w-[1080px] w-full translate-x-[-50%] top-[20px] left-1/2 right-1/2 z-[50] flex justify-center">
           {/* Outer animation container */}
           <motion.div
             className="z-[50] flex justify-center w-full"
             initial={{ scaleX: 0, borderRadius: "100px" }}
             animate={{ scaleX: 1, borderRadius: "9999px" }}
             transition={{
-              delay: 3,
-              duration: 1.5,
+              delay: 1.5,
+              duration: 0.6,
               ease: [0.175, 0.885, 0.1, 1],
             }}
             style={{ transformOrigin: "center" }}
           >
-            <GlassEffect className="w-full">
+            <GlassEffect className="w-full overflow-visible">
               {/* Inner content fades in after expansion */}
               <motion.div
-                className="upper-nav w-full duration-100 ease-in rounded-full z-50"
+                className="upper-nav w-full duration-100 ease-in rounded-full z-50 overflow-visible"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 3.9, duration: 0.5 }}
+                transition={{ delay: 2, duration: 0.5 }}
               >
-                <div className="w-full px-[1.2rem] md:py-[0.5rem] py-0 hidden md:flex justify-between items-center">
-                  <Link to={"/"} className="logo w-[30px] h-[30px]">
-                    <LogoBase />
-                  </Link>
-                  <div className="upper-menu">
-                    <ul className="flex gap-x-10">
-                      <li className="text-slate-500 hover:text-slate-800 duration-100 ease-in font-semibold text-sm">
-                        <Link className="upper-nav-link" to={"/"} replace>
-                          Home
+                <div className="w-full px-[1.2rem] md:py-[0.5rem] py-0 hidden md:flex justify-between items-center overflow-visible">
+                  <a href={"/"} className="logo w-[30px] h-[30px]">
+                    <LogoBase
+                      className={isAtTop ? "filter brightness-0 invert" : ""}
+                    />
+                  </a>
+                  <div className="upper-menu flex justify-between items-center divide-x divide-white gap-x-10 overflow-visible">
+                    <ul className="flex gap-x-10 overflow-visible">
+                      <li
+                        className={` duration-300 ease-in font-semibold text-base transition-colors ${
+                          isAtTop ? "text-white" : "text-foreground"
+                        }`}
+                      >
+                        <Link
+                          className="upper-nav-link font-[500] text-sm"
+                          to={"/"}
+                          replace
+                        >
+                          HOME
                         </Link>
                       </li>
-                      <li className="text-slate-500 hover:text-slate-800 duration-100 ease-in font-semibold text-sm">
-                        <Link className="upper-nav-link" to={"/services"}>
-                          Services
+                      <li
+                        className={`duration-300 ease-in font-semibold text-base transition-colors ${
+                          isAtTop ? "text-white" : "text-foreground"
+                        }`}
+                      >
+                        <Link
+                          className="upper-nav-link font-[500] text-sm"
+                          to={"/services"}
+                        >
+                          SERVICES
                         </Link>
                       </li>
 
                       {/* Resources Dropdown */}
-                      <li
-                        className="relative text-slate-500 hover:text-slate-800 duration-100 ease-in font-semibold text-sm cursor-pointer"
-                        onMouseEnter={() => setResourcesOpen(true)}
-                        onMouseLeave={() => setResourcesOpen(false)}
-                      >
-                        <span className="upper-nav-link">Resources</span>
-                        {resourcesOpen && (
-                          <ul className="absolute w-[220px] top-full left-0 mt-2 bg-white shadow-lg rounded-md p-4 space-y-2 z-50">
-                            <li>
-                              <Link
-                                className="block hover:text-slate-800"
-                                to={"/about"}
-                              >
-                                About Us
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                className="block hover:text-slate-800"
-                                to={"/history"}
-                              >
-                                Our History
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                className="block hover:text-slate-800"
-                                to={"/achievements"}
-                              >
-                                Achievements
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                className="block hover:text-slate-800"
-                                to={"/events"}
-                              >
-                                Events
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                className="block hover:text-slate-800"
-                                to={"/blog"}
-                              >
-                                Blog
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                className="block hover:text-slate-800"
-                                to={"/careers"}
-                              >
-                                Careers
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                className="block hover:text-slate-800"
-                                to={"/knowledge-base"}
-                              >
-                                Knowledge Base
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                className="block hover:text-slate-800"
-                                to={"/our-culture"}
-                              >
-                                Our Culture
-                              </Link>
-                            </li>
-                          </ul>
-                        )}
-                      </li>
+                      <NavDropdown
+                        label="RESOURCES"
+                        isOpen={resourcesOpen}
+                        onToggle={() => setResourcesOpen(!resourcesOpen)}
+                        isAtTop={isAtTop}
+                        gridCols={4}
+                        menuItems={[
+                          { text: "About Us", href: "/about", icon: Users },
+                          {
+                            text: "Our History",
+                            href: "/history",
+                            icon: Clock,
+                          },
+                          {
+                            text: "Achievements",
+                            href: "/achievements",
+                            icon: Trophy,
+                          },
+                          { text: "Events", href: "/events", icon: Calendar },
+                          { text: "Blog", href: "/blog", icon: FileText },
+                          {
+                            text: "Careers",
+                            href: "/careers",
+                            icon: Briefcase,
+                          },
+                          {
+                            text: "Knowledge Base",
+                            href: "/knowledge-base",
+                            icon: BookOpen,
+                          },
+                          {
+                            text: "Our Culture",
+                            href: "/our-culture",
+                            icon: Heart,
+                          },
+                        ]}
+                      />
                     </ul>
+
+                    <div className="ltr:pl-[1rem] rtl:pr-[1rem]">
+                      <Link
+                        to={"/#contact-us-section"}
+                        className="primary-btn shadow-none text-[12px] px-[20px] !py-[5px] font-[500] rounded-full"
+                      >
+                        Try Free Now
+                      </Link>
+                    </div>
                   </div>
-                  <Link
-                    to={"/#contact-us-section"}
-                    className="primary-btn shadow-none text-[12px] px-[20px] !py-[5px] font-[500] rounded-full"
-                  >
-                    Try Free Now
-                  </Link>
                 </div>
               </motion.div>
             </GlassEffect>

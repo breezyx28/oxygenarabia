@@ -1,7 +1,8 @@
-import { lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { Outlet, useRoutes } from "react-router-dom";
 
 import DashboardLayout from "../layouts/main";
+import LoadingComponent from "@/components/loading/Loading";
 
 export const IndexPage = lazy(() => import("../pages"));
 export const About = lazy(() => import("../pages/about"));
@@ -16,13 +17,21 @@ export const Team = lazy(() => import("../pages/team"));
 // ----------------------------------------------------------------------
 
 export default function Router() {
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
   const routes = useRoutes([
     {
       element: (
         <DashboardLayout>
-          <Suspense>
-            <Outlet />
-          </Suspense>
+          {loading && <LoadingComponent />}
+          <Outlet />
         </DashboardLayout>
       ),
       children: [

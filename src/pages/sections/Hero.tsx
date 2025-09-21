@@ -2,12 +2,14 @@ import React, { Suspense } from "react";
 import { Svg } from "../../components/icons";
 import VideoModal from "../../components/modals/VideoModal";
 import heroAnimation from "../../helper/animations/heroAnimation";
-import { DotBackgroundAnimateLayout } from "../../layouts/styled-layouts/dot-bg-animate-layout";
+// import { DotBackgroundAnimateLayout } from "../../layouts/styled-layouts/dot-bg-animate-layout";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { Zap, Cloud, Shield } from "lucide-react";
-import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
+// import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import ShimmerText from "@/components/ui/ShimmerText";
+// import MeshGrdientLayout from "@/layouts/styled-layouts/mesh-grdient-layout";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 
 const Object3D = React.lazy(() => import("../../components/3D/Object"));
 
@@ -18,18 +20,18 @@ const Hero = () => {
 
   return (
     <section id="home" className="hero-section">
-      <DotBackgroundAnimateLayout>
+      <AuroraBackground className="h-full w-full absolute top-0 left-0">
         <div className="grid grid-flow-cols place-items-center md:grid-cols-2 grid-cols-1 md:gap-x-10 gap-x-4 h-full">
           <div className="w-full h-full">
             <div className="md:pl-20 pl-8 h-full flex flex-col gap-y-8 justify-center text-white">
               <div className="flex flex-col md:gap-y-2 gap-y-6">
                 <motion.div
-                  className="bg-blue-50 px-4 py-2 rounded-full border border-blue-200 w-[fit-content] inline-flex space-x-2 items-center text-primary"
+                  className="bg-blue-50 px-4 py-2 rounded-full border border-blue-200 w-[fit-content] inline-flex space-x-2 items-center text-primary z-10"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.5 }}
                 >
-                  <Zap className="w-4 h-4" />
+                  <Zap className="w-4 h-4 fill-current text-primary" />
                   <ShimmerText className="text-sm font-medium" duration={6}>
                     Revolutionize Your Digital Experience
                   </ShimmerText>
@@ -52,14 +54,14 @@ const Hero = () => {
                     fontSize: "clamp(2rem, 5vw, 4.5rem)", // 2rem (32px) min, 5vw preferred, 4.5rem (72px) max
                     lineHeight: "clamp(2.25rem, 5.5vw, 5rem)",
                   }}
-                  className="relative hero-gsap top-[100px] text-foreground text-5xl lg:text-6xl font-bold leading-tight capitalize"
+                  className="relative text-white hero-gsap top-[100px] text-foreground text-5xl lg:text-6xl font-bold leading-tight capitalize"
                 >
                   Delight Your <span className="text-primary">Customers</span>,
                   Every Time
                 </div>
               </div>
               <motion.p
-                className="text-lg text-muted-foreground leading-relaxed max-w-lg"
+                className="text-lg text-white leading-relaxed max-w-lg z-10"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
@@ -69,7 +71,7 @@ const Hero = () => {
               </motion.p>
               {/* Feature highlights */}
               <motion.div
-                className="flex flex-wrap gap-4"
+                className="flex flex-wrap gap-4 z-10"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
@@ -81,13 +83,13 @@ const Hero = () => {
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className="flex items-center space-x-2 text-sm text-muted-foreground"
+                    className="flex items-center space-x-2 text-sm text-foreground"
                   >
                     <feature.icon
                       className="w-4 h-4 text-primary fill-current"
                       stroke="none"
                     />
-                    <span>{feature.text}</span>
+                    <span className="text-white">{feature.text}</span>
                   </div>
                 ))}
               </motion.div>
@@ -122,7 +124,7 @@ const Hero = () => {
             </Suspense>
           </div>
         </div>
-      </DotBackgroundAnimateLayout>
+      </AuroraBackground>
     </section>
   );
 };

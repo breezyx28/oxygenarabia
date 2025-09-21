@@ -44,7 +44,7 @@ const Services = () => {
               className="inline-flex w-[fit-content] items-center space-x-2 bg-blue-50 text-primary px-4 py-2 rounded-full border border-blue-200"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
+              transition={{ duration: 0.5 }}
             >
               <Zap className="w-4 h-4" />
               <span className="text-sm font-medium">Services</span>
@@ -61,7 +61,7 @@ const Services = () => {
                 className="text-center p-4 bg-background rounded-xl border border-border/50"
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
                 <GlassCard>
@@ -175,7 +175,7 @@ const Services = () => {
               className="absolute bottom-6 left-6 bg-background/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-border/50"
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.4 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.05 }}
             >
@@ -203,7 +203,7 @@ const Services = () => {
               className="absolute top-6 right-6"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
+              transition={{ duration: 0.4 }}
               viewport={{ once: true }}
             >
               <Badge className="bg-blue-500 text-white px-3 py-1">

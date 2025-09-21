@@ -8,7 +8,7 @@ import { PhoneCall } from "lucide-react";
 
 export const ContactSection: React.FC = () => {
   return (
-    <section className="relative section-container relative min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20 overflow-hidden">
+    <section className="relative section-container relative min-h-screen overflow-hidden">
       {/* Background decorative elements */}
       <FloatingShapes />
 

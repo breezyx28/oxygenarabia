@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/glass-effect.css";
 
 interface GlassEffectProps {
@@ -7,11 +7,40 @@ interface GlassEffectProps {
 }
 
 const GlassEffect: React.FC<GlassEffectProps> = ({ children, className }) => {
+  const [isVisible, setIsVisible] = useState(true); // State to track visibility
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setIsVisible(false); // Hide when at the top
+      } else {
+        setIsVisible(true); // Show when scrolling down
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className={`liquidGlass-wrapper ${className || ""}`}>
-      <div className="liquidGlass-effect"></div>
-      <div className="liquidGlass-tint"></div>
-      <div className="liquidGlass-shine"></div>
+      <div
+        className={`liquidGlass-effect transition-opacity duration-500 ${
+          isVisible ? "opacity-100" : "opacity-0"
+        }`}
+      ></div>
+      <div
+        className={`liquidGlass-tint transition-opacity duration-500 ${
+          isVisible ? "opacity-100" : "opacity-0"
+        }`}
+      ></div>
+      <div
+        className={`liquidGlass-shine transition-opacity duration-500 ${
+          isVisible ? "opacity-100" : "opacity-0"
+        }`}
+      ></div>
       <div className="liquidGlass-text">{children}</div>
 
       {/* SVG filter (only needs to exist once, but can be kept inline for portability) */}

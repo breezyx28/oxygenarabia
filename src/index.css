@@ -47,6 +47,16 @@
   }
 }
 
+html[dir="ltr"],
+body[dir="ltr"] {
+  font-family: "Poppins", sans-serif;
+}
+
+html[dir="rtl"],
+body[dir="rtl"] {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
 body {
   max-width: 2000px !important;
 }

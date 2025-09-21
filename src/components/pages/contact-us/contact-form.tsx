@@ -90,7 +90,7 @@ export const ContactForm: React.FC = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Card className="p-8 border-0 bg-white/80 backdrop-blur-sm shadow-lg">
+        <Card className="p-8 border bg-white/80 backdrop-blur-sm">
           <div className="text-center">
             <motion.div
               initial={{ scale: 0 }}
@@ -128,7 +128,7 @@ export const ContactForm: React.FC = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <Card className="p-8 border-0 bg-white/80 backdrop-blur-sm shadow-lg">
+      <Card className="p-8 border bg-white/80 backdrop-blur-sm">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -157,7 +157,7 @@ export const ContactForm: React.FC = () => {
                 placeholder="Full Name"
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className="pl-12 bg-slate-50/50 border-slate-200 focus:border-[#1f70c1] focus:ring-[#1f70c1]/20 transition-all duration-300"
+                className="pl-12 py-6 bg-slate-50/50 border-slate-200 focus:border-[#1f70c1] transition-all duration-300"
                 required
               />
             </div>
@@ -177,7 +177,7 @@ export const ContactForm: React.FC = () => {
                 placeholder="Email Address"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="pl-12 bg-slate-50/50 border-slate-200 focus:border-[#1f70c1] focus:ring-[#1f70c1]/20 transition-all duration-300"
+                className="pl-12 py-6 bg-slate-50/50 border-slate-200 focus:border-[#1f70c1] transition-all duration-300"
                 required
               />
             </div>
@@ -197,7 +197,7 @@ export const ContactForm: React.FC = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 rows={4}
-                className="pl-12 bg-slate-50/50 border-slate-200 focus:border-[#1f70c1] focus:ring-[#1f70c1]/20 transition-all duration-300 resize-none"
+                className="pl-12 py-4 bg-slate-50/50 border-slate-200 focus:border-[#1f70c1] transition-all duration-300 resize-none"
                 required
               />
             </div>
