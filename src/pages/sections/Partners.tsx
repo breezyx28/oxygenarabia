@@ -10,21 +10,21 @@ const Partners = () => {
   return (
     <section
       id="partners"
-      className="partners relative w-full h-full min-h-[90px] py-[3rem]"
+      className="partners relative w-full h-full min-h-[90px] md:py-[3rem] py-[0px]"
     >
       <div className="partners-wrapper w-full flex flex-col gap-y-6 items-center">
         <div className="w-full h-full flex flex-wrap md:p-0 p-6 justify-evenly items-center relative">
           <div className="relative w-full overflow-hidden">
             {/* Left fade overlay */}
-            <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
+            <div className="absolute left-0 top-0 md:w-32 w-10 h-full bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
             {/* Right fade overlay */}
-            <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 md:w-32 w-10 h-full bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
 
             <InfiniteSlider speedOnHover={20} gap={100}>
               {partners?.map((item: any) => (
                 <div key={item.id} className="flex items-center">
                   <img
-                    className="grayscale brightness-100 duration-100 ease-in hover:grayscale-0 hover:brightness-100 opacity-60 hover:opacity-100 md:scale-100 scale-75 cursor-pointer"
+                    className="grayscale brightness-100 duration-100 ease-in hover:grayscale-0 hover:brightness-100 opacity-60 hover:opacity-100 md:scale-100 scale-80 cursor-pointer"
                     src={item.src}
                     alt={item.alt}
                     width={item.width / 2}

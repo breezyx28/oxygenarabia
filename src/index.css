@@ -171,6 +171,11 @@ iframe > a.spline-watermark {
   transform: translateX(0);
   margin-left: -2.5rem;
 }
+body[dir="rtl"] .uppernav-mobile-slide-0 {
+  transform: translateX(0);
+  margin-right: -2.5rem;
+}
+
 .uppernav-mobile-slide-full {
   transform: translateX(-1000px);
 }

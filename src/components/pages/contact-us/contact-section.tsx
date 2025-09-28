@@ -5,8 +5,11 @@ import { ContactInfo } from "./contact-info";
 import { FloatingShapes } from "./floating-shapes";
 import { Toaster } from "sonner";
 import { PhoneCall } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const ContactSection: React.FC = () => {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
   return (
     <section className="relative section-container relative min-h-screen overflow-hidden">
       {/* Background decorative elements */}
@@ -33,7 +36,7 @@ export const ContactSection: React.FC = () => {
               transition={{ delay: 0.2 }}
             >
               <PhoneCall className="w-4 h-4" />
-              <span className="text-sm font-medium">Get In Touch</span>
+              <span className="text-sm font-medium">{t('contactSection.badge')}</span>
             </motion.div>
           </motion.h2>
           <motion.p
@@ -42,15 +45,13 @@ export const ContactSection: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Ready to transform your ideas into reality? Let's discuss your next
-            project and explore how our technology solutions can drive your
-            business forward.
+            {t('contactSection.description')}
           </motion.p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
@@ -58,7 +59,7 @@ export const ContactSection: React.FC = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: isRTL ? -50 : 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >

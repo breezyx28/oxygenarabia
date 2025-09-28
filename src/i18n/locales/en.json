@@ -1,0 +1,295 @@
+{
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Our impressive projects timeline",
+    "smartCallCenter": {
+      "name": "Smart Call Center for Healthcare Sector",
+      "year": "2025",
+      "description": "Digital Health - Creating call center service and linking landline number to unified number 9200, customer service management, and IVR/recording setup with full cloud service integration.",
+      "features": "Landline ↔ Unified number 9200 linking • IVR setup • Call distribution • Recording and analytics • Network • Landline communications • Cloud integration"
+    },
+    "viaBot": {
+      "name": "ViaBot (Hospitality Robot Agency)",
+      "year": "2024",
+      "description": "Hospitality • Service Robots - Obtaining global hospitality robot agency; deploying reception and service robots in hotels and restaurants for food and order delivery, improving service efficiency and guest experience.",
+      "features": "Multi-language voice messages • Internal navigation/guidance • Guest escort to table • Food and order distribution • Auto-charging via docking station • Fleet monitoring and tracking dashboards • PMS/POS integration"
+    },
+    "publicWifi": {
+      "name": "Free Public Wi-Fi Service",
+      "year": "2023",
+      "description": "Communications • Public Wireless Networks - Providing free wireless internet in restaurants and hospitals with unified login portal and usage analytics.",
+      "features": "Captive Portal • Branded welcome pages • User authentication • Bandwidth management • Reports • Visits analytics"
+    },
+    "central": {
+      "name": "Central",
+      "year": "2022",
+      "description": "Electronic Phonebook"
+    },
+    "kpsolla": {
+      "name": "Kpsolla",
+      "year": "2021",
+      "description": "Kpsolla educational platform and professional training"
+    },
+    "solar": {
+      "name": "Electricity/Solar",
+      "year": "2021",
+      "description": "Utilizing IoT in solar energy production includes sensors attached to the transmission, generation, and distribution equipment to observe and manage businesses from a distance without physical contact."
+    },
+    "education": {
+      "name": "Education",
+      "year": "2020",
+      "description": "Access to education is a right, not a privilege. Current eLearning solution plays a pivotal role in access to education resources. More than 50% of populations in Africa do not have broadband internet. In Oxygen, we developed a very successful offline learning solution (without internet) that enables learners to attend course sessions, without need to have internet and high end terminal (smart phone/PC). Currently we have more than 1 Million subscribers in different learning topics (Italian language, English, French, etc.)"
+    },
+    "advertisement": {
+      "name": "Advertisement",
+      "year": "2019",
+      "description": "In Oxygen, we developed a cloud based ERP systems customized for the medical sector. The service of the system (ODENTS) offer as a service for small and medium clinics and hospital with monthly or yearly subscription"
+    },
+    "medicinePrm": {
+      "name": "Medicine PRM Solution",
+      "year": "2015",
+      "description": "Patient Relationship Management solution for healthcare providers"
+    },
+    "advertisementErp": {
+      "name": "Advertisement ERP",
+      "year": "2013",
+      "description": "In Oxygen, we developed a cloud based ERP systems customized for the medical sector."
+    },
+    "telecommunication": {
+      "name": "Telecommunication",
+      "year": "2012",
+      "description": "We have over 10 years strategizing and developing innovative digital experiences for corporates and consumers. Oxygen present several SMS and IVR services in different categories including news sports entertainment human development"
+    },
+    "establishment": {
+      "name": "Establishment",
+      "year": "2012",
+      "description": "Since establishment in 2012, it has achieved many successes and continued rapid growth ever since that date."
+    },
+    "androidApp": "Android App",
+    "iosApp": "iOS App"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions for your business needs",
+    "dialerAuto": {
+      "title": "Auto Dialer System",
+      "description": "A solution designed to increase reach rates quickly and with minimal operational effort. Automatically launches calls on customer lists, matches each caller with the most suitable agent based on skills and current load. Supports voice messages for campaigns and offers, precise scheduling inside/outside working hours, with instant reports on success, missed calls, duration, and conversion rates. Seamlessly integrates with CRM to ensure opportunity follow-up and result documentation without manual work."
+    },
+    "ivr": {
+      "title": "Interactive Voice Response (IVR)",
+      "description": "Smart voice menus that shorten the customer journey and connect them to the answer or specialized department within seconds. Supports voicemail and messages during waiting, flexible work schedules for holidays and peak times. Integrates with CRM to enable self-service inquiries about balance, subscriptions, and appointments, reducing waiting time and increasing first-call resolution. Performance reports help you continuously improve pathways."
+    },
+    "callEvaluation": {
+      "title": "Call Evaluation & Quality Measurement",
+      "description": "Captures customer voice after each interaction through voice surveys or automatic follow-up calls. Converts feedback into actionable performance indicators, with reports at team and individual levels, and recordings for review and training. Reveals service gaps and suggests practical improvements with clear follow-up schedules, monitors compliance with standards and first response time. Result: Superior experience and higher satisfaction."
+    },
+    "softphone": {
+      "title": "Softphone Application",
+      "description": "Make calls and manage conversations from any device and anywhere without traditional hardware. Supports transfer, hold, recording, and group calls with a lightweight and easy interface. Automatically displays customer card from CRM for accurate and quick responses, with security and privacy policies that protect your data. Ideal for remote teams and multiple offices, reduces operational costs."
+    },
+    "voipPhones": {
+      "title": "VoIP / IP Phones & Gateways",
+      "description": "Reliable infrastructure for clearer voice and more stable connection. IP phones, gateways, and adapters compatible with cloud PBX systems. Quick installation and configuration with training and guarantee of high voice quality and low latency even on congested networks, and 24/7 maintenance and response plans. Compatible with your existing networks for gradual expansion without disruption."
+    },
+    "aiAgent": {
+      "title": "Voice/Chat AI Agent",
+      "description": "Natural conversation assistant that understands Arabic in its dialects and English within the same session. Recognizes intent and context, handles interruptions smoothly, and escalates to staff when needed, conveying full context. Intent and recurring word reports continuously improve scripts and knowledge. Works within our ecosystem or integrates with your systems through flexible interfaces."
+    },
+    "ccaas": {
+      "title": "My Contact Omni-Channel Platform (CCaaS)",
+      "description": "Cloud contact center that integrates phone, messages, and digital channels in one interface for teams inside the office and remotely. Quick activation, recording and customer journey analytics, and ready integrations with common systems. High scalability with unified number options and pooled minutes that reduce costs and increase professionalism. Real-time dashboards support immediate decision-making."
+    },
+    "crm": {
+      "title": "Customer Relationship Management (CRM)",
+      "description": "Unified view of every interaction across sales, support, and marketing. Service tickets, automated workflows, deal stages, and follow-up alerts accelerate closure and reduce leakage. Integrates with communication channels to automatically document calls and messages and unify customer data. Customizable dashboards and reports improve conversion and retention."
+    },
+    "erp": {
+      "title": "Enterprise Resource Planning (ERP)",
+      "description": "Connects finance, inventory, and operations with sales channels for consistent data flow and more accurate decisions. Manages invoices, purchases, order tracking, and suppliers, reduces waste and improves cash flow. Real-time executive reports with API integration for stores and channels. Customizable by sector and size with low-risk phased implementation."
+    },
+    "aiServices": {
+      "title": "Artificial Intelligence (AI) Services",
+      "description": "Voice and text analytics and conversation summarization reveal patterns and emotions and suggest data-driven responses. Demand and peak hour prediction models to optimize schedules and resource distribution. Intent and content classification reduces processing time and unnecessary escalation. Continuous improvement reports quickly close knowledge gaps."
+    },
+    "eTraining": {
+      "title": "E-Training",
+      "description": "Interactive learning platforms for sales and support team certification paths linked to performance indicators. Content, tests, certificates, and progress dashboards identify skill gaps and close them. Supports self-paced and micro-learning to fit busy schedules and reduce traditional training costs. Quick updates when products and policies change."
+    },
+    "itOutsourcing": {
+      "title": "IT Outsourcing",
+      "description": "Operation and management of cloud PBX systems and enterprise networks with specialized teams on-site and remotely. Clear service agreements with defined response levels, proactive monitoring, security, and maintenance reduce risks. Documentation, backup, and continuity plans maintain readiness. Focus on your core business while we handle the technology completely."
+    }
+  },
+  "nav": {
+    "home": "HOME",
+    "services": "SERVICES",
+    "resources": "RESOURCES",
+    "aboutUs": "About Us",
+    "ourProjects": "Our Projects",
+    "blog": "Blog",
+    "careers": "Careers",
+    "tryFreeNow": "Try Free Now"
+  },
+  "hero": {
+    "badge": "Revolutionize Your Digital Experience",
+    "title": "Delight Your",
+    "titleHighlight": "Customers",
+    "titleEnd": ", Every Time",
+    "description": "The fastest, AI-powered cloud contact center in Saudi Arabia. Built for simplicity, speed, and unmatched human connection",
+    "explore": "Explore",
+    "features": {
+      "cloudNative": "Cloud-Native",
+      "enterpriseSecurity": "Enterprise Security",
+      "lightningFast": "Lightning Fast"
+    }
+  },
+  "servicesSection": {
+    "badge": "Services",
+    "title": "Our",
+    "titleHighlight": "Services",
+    "stats": {
+      "happyClients": "Happy Clients",
+      "customerRating": "Customer Rating",
+      "uptime": "Uptime",
+      "reviews": "reviews"
+    },
+    "cloudContactCenter": {
+      "title": "Cloud Contact Center Solutions",
+      "description": "Who it's for: Businesses that want scalable, flexible, cloud-based customer communication.",
+      "features": [
+        "Omnichannel support (Voice, SMS, WhatsApp, Email, Chat, Social Media)",
+        "Inbound & Outbound call handling",
+        "Interactive Voice Response (IVR) design & deployment"
+      ]
+    },
+    "aiPowered": {
+      "title": "AI-Powered Automation",
+      "description": "Who it's for: Businesses looking to reduce human workload and improve response speed.",
+      "features": [
+        "AI voice bots & chatbots",
+        "Smart call routing based on sentiment or intent",
+        "Call summarization and transcription"
+      ]
+    },
+    "whatsappIntegration": {
+      "title": "WhatsApp & Social Messaging Integration",
+      "description": "Who it's for: Businesses active on social platforms or targeting younger customers.",
+      "features": [
+        "Unified dashboard for WhatsApp Business, Twitter, Instagram, Telegram",
+        "Bulk WhatsApp campaigns",
+        "Conversational commerce setup (orders, support, payments)"
+      ]
+    },
+    "crmIntegration": {
+      "title": "CRM & Helpdesk Integration",
+      "description": "Who it's for: Enterprises or SMEs needing end-to-end CX.",
+      "features": [
+        "Integration with Zoho, Salesforce, HubSpot, Freshdesk, etc.",
+        "Ticketing system integration",
+        "Customer journey tracking"
+      ]
+    },
+    "moreServices": "More Services",
+    "builtOn": "Built On 5000+"
+  },
+  "aboutSection": {
+    "badge": "About Oxygen",
+    "title": "Empowering Businesses with",
+    "titleHighlight": "Smart Technology",
+    "description": "Founded with a vision to revolutionize digital experiences, Oxygen has been at the forefront of technological innovation, helping businesses transform and thrive in the digital age.",
+    "industryLeader": "Industry Leader",
+    "techSolutions": "Tech Solutions",
+    "successRate": "99.9% Success Rate",
+    "journeyTitle": "Our Journey of Innovation",
+    "journeyParagraph1": "What started as a small team of passionate developers has grown into a comprehensive technology partner for businesses worldwide. We've consistently pushed the boundaries of what's possible with AI, cloud computing, and digital transformation.",
+    "journeyParagraph2": "Today, we're proud to serve over 500 clients across 25 countries, maintaining our commitment to excellence and innovation in every project we undertake.",
+    "stats": {
+      "projectsCompleted": "Projects Completed",
+      "teamMembers": "Team Members",
+      "yearsExperience": "Years Experience",
+      "countriesServed": "Countries Served"
+    },
+    "coreValuesTitle": "Core Values",
+    "coreValues": [
+      {
+        "title": "Innovation First",
+        "description": "We embrace cutting-edge technology to deliver solutions that stay ahead of the curve."
+      },
+      {
+        "title": "Reliability",
+        "description": "Our commitment to quality ensures your business operations run smoothly 24/7."
+      },
+      {
+        "title": "Speed & Efficiency",
+        "description": "Fast implementation and optimization that gets you results quickly."
+      }
+    ],
+    "achievementsTitle": "Our Achievements",
+    "achievements": [
+      "ISO 9001:2015 Certified",
+      "99.9% Customer Satisfaction",
+      "Award-Winning Support Team",
+      "Enterprise Security Standards"
+    ],
+    "ctaTitle": "Ready to Transform Your Business?",
+    "ctaDescription": "Join hundreds of companies that trust Oxygen to deliver exceptional technology solutions. Let's build something amazing together.",
+    "ctaButton": "START YOUR PROJECT",
+    "ctaSecondaryButton": "MEET OUR TEAM"
+  },
+  "footer": {
+    "companyName": "Oxygen Technology Co.",
+    "tagline": "We Inovate For People",
+    "services": {
+      "title": "Services",
+      "education": "Education",
+      "advertisement": "Advertisement",
+      "telecommunications": "Telecommunications",
+      "digitalServices": "Digital Services"
+    },
+    "company": {
+      "title": "Company",
+      "aboutUs": "About us",
+      "contact": "Contact",
+      "ourTeam": "Our Team",
+      "events": "Events"
+    },
+    "legal": {
+      "title": "Legal",
+      "termsOfUse": "Terms of use",
+      "privacyPolicy": "Privacy policy",
+      "cookiePolicy": "Cookie policy"
+    },
+    "poweredBy": "Powered by Oxygen Ict LLc",
+    "allRightsReserved": "All rights reserved"
+  },
+  "contactSection": {
+    "badge": "Get In Touch",
+    "description": "Ready to transform your ideas into reality? Let's discuss your next project and explore how our technology solutions can drive your business forward.",
+    "form": {
+      "title": "Let's Start a Conversation",
+      "subtitle": "Tell us about your project and let's create something amazing together.",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "message": "What do you want to ask?",
+      "sendButton": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message Sent Successfully!",
+      "successMessage": "Thank you for reaching out. We'll get back to you within 24 hours.",
+      "validation": {
+        "fillFields": "Please fill in all fields.",
+        "validEmail": "Please enter a valid email.",
+        "success": "Message sent successfully! We'll get back to you soon.",
+        "failed": "Failed to send message.",
+        "networkError": "Network error. Please try again."
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "We're here to help and answer any question you might have. We look forward to hearing from you.",
+      "location": "Location",
+      "phone": "Phone",
+      "email": "Email",
+      "followUs": "Follow Us"
+    }
+  }
+}

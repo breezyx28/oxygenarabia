@@ -6,6 +6,7 @@ import { Input } from "../../ui/input";
 import { Textarea } from "../../ui/textarea";
 import { Card } from "../../ui/card";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
 interface FormData {
   fullName: string;
@@ -14,6 +15,9 @@ interface FormData {
 }
 
 export const ContactForm: React.FC = () => {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
+  
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -43,12 +47,12 @@ export const ContactForm: React.FC = () => {
       !formData?.email.trim() ||
       !formData?.message.trim()
     ) {
-      toast.error("Please fill in all fields.");
+      toast.error(t('contactSection.form.validation.fillFields'));
       return;
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      toast.error("Please enter a valid email.");
+      toast.error(t('contactSection.form.validation.validEmail'));
       return;
     }
 
@@ -65,7 +69,7 @@ export const ContactForm: React.FC = () => {
       });
 
       if (res.ok) {
-        toast.success("Message sent successfully! We'll get back to you soon.");
+        toast.success(t('contactSection.form.validation.success'));
         setIsSubmitting(false);
         setIsSubmitted(true);
       } else {
@@ -73,10 +77,10 @@ export const ContactForm: React.FC = () => {
 
         console.log("contact-form-data: ", data);
 
-        toast.error("Failed to send message.");
+        toast.error(t('contactSection.form.validation.failed'));
       }
     } catch (err) {
-      toast.error("Network error. Please try again.");
+      toast.error(t('contactSection.form.validation.networkError'));
     } finally {
       setIsSubmitted(false);
       setFormData({ fullName: "", email: "", message: "" });
@@ -106,7 +110,7 @@ export const ContactForm: React.FC = () => {
               transition={{ delay: 0.3 }}
               className="text-slate-900 mb-2"
             >
-              Message Sent Successfully!
+              {t('contactSection.form.successTitle')}
             </motion.h3>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -114,7 +118,7 @@ export const ContactForm: React.FC = () => {
               transition={{ delay: 0.4 }}
               className="text-slate-600"
             >
-              Thank you for reaching out. We'll get back to you within 24 hours.
+              {t('contactSection.form.successMessage')}
             </motion.p>
           </div>
         </Card>
@@ -135,10 +139,9 @@ export const ContactForm: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mb-6"
         >
-          <h3 className="text-slate-900 mb-2">Let's Start a Conversation</h3>
+          <h3 className="text-slate-900 mb-2">{t('contactSection.form.title')}</h3>
           <p className="text-slate-600">
-            Tell us about your project and let's create something amazing
-            together.
+            {t('contactSection.form.subtitle')}
           </p>
         </motion.div>
 
@@ -154,7 +157,7 @@ export const ContactForm: React.FC = () => {
               <Input
                 type="text"
                 name="fullName"
-                placeholder="Full Name"
+                placeholder={t('contactSection.form.fullName')}
                 value={formData.fullName}
                 onChange={handleInputChange}
                 className="pl-12 py-6 bg-slate-50/50 border-slate-200 focus:border-[#1f70c1] transition-all duration-300"
@@ -174,7 +177,7 @@ export const ContactForm: React.FC = () => {
               <Input
                 type="email"
                 name="email"
-                placeholder="Email Address"
+                placeholder={t('contactSection.form.email')}
                 value={formData.email}
                 onChange={handleInputChange}
                 className="pl-12 py-6 bg-slate-50/50 border-slate-200 focus:border-[#1f70c1] transition-all duration-300"
@@ -193,7 +196,7 @@ export const ContactForm: React.FC = () => {
               <MessageSquare className="absolute left-3 top-4 text-slate-400 w-5 h-5 group-focus-within:text-[#1f70c1] transition-colors" />
               <Textarea
                 name="message"
-                placeholder="What do you want to ask?"
+                placeholder={t('contactSection.form.message')}
                 value={formData.message}
                 onChange={handleInputChange}
                 rows={4}
@@ -228,11 +231,11 @@ export const ContactForm: React.FC = () => {
                       }}
                       className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full"
                     />
-                    <span>Sending...</span>
+                    <span>{t('contactSection.form.sending')}</span>
                   </>
                 ) : (
                   <>
-                    <span>Send Message</span>
+                    <span>{t('contactSection.form.sendButton')}</span>
                     <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}

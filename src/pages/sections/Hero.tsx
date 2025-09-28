@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import { useTranslation } from "react-i18next";
 import { Svg } from "../../components/icons";
 import VideoModal from "../../components/modals/VideoModal";
 import heroAnimation from "../../helper/animations/heroAnimation";
@@ -14,6 +15,8 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 const Object3D = React.lazy(() => import("../../components/3D/Object"));
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   React.useEffect(() => {
     heroAnimation();
   }, []);
@@ -23,7 +26,7 @@ const Hero = () => {
       <AuroraBackground className="h-full w-full absolute top-0 left-0">
         <div className="grid grid-flow-cols place-items-center md:grid-cols-2 grid-cols-1 md:gap-x-10 gap-x-4 h-full">
           <div className="w-full h-full">
-            <div className="md:pl-20 pl-8 h-full flex flex-col gap-y-8 justify-center text-white">
+            <div className="md:ltr:pl-20 ltr:pl-8 md:rtl:pr-20 rtl:pr-8 h-full flex flex-col gap-y-8 justify-center text-white">
               <div className="flex flex-col md:gap-y-2 gap-y-6">
                 <motion.div
                   className="bg-blue-50 px-4 py-2 rounded-full border border-blue-200 w-[fit-content] inline-flex space-x-2 items-center text-primary z-10"
@@ -33,7 +36,7 @@ const Hero = () => {
                 >
                   <Zap className="w-4 h-4 fill-current text-primary" />
                   <ShimmerText className="text-sm font-medium" duration={6}>
-                    Revolutionize Your Digital Experience
+                    {t('hero.badge')}
                   </ShimmerText>
                 </motion.div>
                 {/* <motion.div
@@ -56,8 +59,7 @@ const Hero = () => {
                   }}
                   className="relative text-white hero-gsap top-[100px] text-foreground text-5xl lg:text-6xl font-bold leading-tight capitalize"
                 >
-                  Delight Your <span className="text-primary">Customers</span>,
-                  Every Time
+                  {t('hero.title')} <span className="text-primary">{t('hero.titleHighlight')}</span>{t('hero.titleEnd')}
                 </div>
               </div>
               <motion.p
@@ -66,8 +68,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
-                The fastest, AI-powered cloud contact center in Saudi Arabia.
-                Built for simplicity, speed, and unmatched human connection
+                {t('hero.description')}
               </motion.p>
               {/* Feature highlights */}
               <motion.div
@@ -77,9 +78,9 @@ const Hero = () => {
                 transition={{ delay: 0.8, duration: 0.5 }}
               >
                 {[
-                  { icon: Cloud, text: "Cloud-Native" },
-                  { icon: Shield, text: "Enterprise Security" },
-                  { icon: Zap, text: "Lightning Fast" },
+                  { icon: Cloud, text: t('hero.features.cloudNative') },
+                  { icon: Shield, text: t('hero.features.enterpriseSecurity') },
+                  { icon: Zap, text: t('hero.features.lightningFast') },
                 ].map((feature, index) => (
                   <div
                     key={index}
@@ -98,7 +99,7 @@ const Hero = () => {
                   to={"/services"}
                   className="primary-btn shadow-none z-10 text-[14px] font-[500]"
                 >
-                  Explore
+                  {t('hero.explore')}
                 </Link>
                 <VideoModal modalID={"heroSectionVideo"}>
                   <div className="relative flex">

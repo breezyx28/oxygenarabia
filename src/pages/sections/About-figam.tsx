@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { useTranslation } from "react-i18next";
 import {
   Users,
   Award,
@@ -15,40 +16,22 @@ import {
 } from "lucide-react";
 
 export function AboutSection() {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
+  
   const companyStats = [
-    { value: "500+", label: "Projects Completed", icon: Award },
-    { value: "50+", label: "Team Members", icon: Users },
-    { value: "5+", label: "Years Experience", icon: Clock },
-    { value: "25+", label: "Countries Served", icon: Globe },
+    { value: "500+", label: t('aboutSection.stats.projectsCompleted'), icon: Award },
+    { value: "50+", label: t('aboutSection.stats.teamMembers'), icon: Users },
+    { value: "5+", label: t('aboutSection.stats.yearsExperience'), icon: Clock },
+    { value: "25+", label: t('aboutSection.stats.countriesServed'), icon: Globe },
   ];
 
-  const coreValues = [
-    {
-      icon: Target,
-      title: "Innovation First",
-      description:
-        "We embrace cutting-edge technology to deliver solutions that stay ahead of the curve.",
-    },
-    {
-      icon: Shield,
-      title: "Reliability",
-      description:
-        "Our commitment to quality ensures your business operations run smoothly 24/7.",
-    },
-    {
-      icon: Zap,
-      title: "Speed & Efficiency",
-      description:
-        "Fast implementation and optimization that gets you results quickly.",
-    },
-  ];
+  const coreValues = t('aboutSection.coreValues', { returnObjects: true }) as Array<{
+    title: string;
+    description: string;
+  }>;
 
-  const achievements = [
-    "ISO 9001:2015 Certified",
-    "99.9% Customer Satisfaction",
-    "Award-Winning Support Team",
-    "Enterprise Security Standards",
-  ];
+  const achievements = t('aboutSection.achievements', { returnObjects: true }) as string[];
 
   return (
     <section className="md:p-20 p-6 relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
@@ -88,7 +71,7 @@ export function AboutSection() {
         ))}
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <motion.div
           className="text-center mb-16"
@@ -105,18 +88,16 @@ export function AboutSection() {
             viewport={{ once: true }}
           >
             <Users className="w-4 h-4" />
-            <span className="text-sm font-medium">About Oxygen</span>
+            <span className="text-sm font-medium">{t('aboutSection.badge')}</span>
           </motion.div>
 
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Empowering Businesses with <br />
-            <span className="text-blue-300">Smart Technology</span>
+            {t('aboutSection.title')} <br />
+            <span className="text-blue-300">{t('aboutSection.titleHighlight')}</span>
           </h2>
 
           <p className="text-lg text-blue-100/80 max-w-3xl mx-auto leading-relaxed">
-            Founded with a vision to revolutionize digital experiences, Oxygen
-            has been at the forefront of technological innovation, helping
-            businesses transform and thrive in the digital age.
+            {t('aboutSection.description')}
           </p>
         </motion.div>
 
@@ -155,9 +136,9 @@ export function AboutSection() {
                   </div>
                   <div>
                     <div className="font-semibold text-white">
-                      Industry Leader
+                      {t('aboutSection.industryLeader')}
                     </div>
-                    <div className="text-sm text-blue-200">Tech Solutions</div>
+                    <div className="text-sm text-blue-200">{t('aboutSection.techSolutions')}</div>
                   </div>
                 </div>
               </motion.div>
@@ -178,7 +159,7 @@ export function AboutSection() {
                 }}
               >
                 <CheckCircle className="w-4 h-4" />
-                <span className="font-medium">99.9% Success Rate</span>
+                <span className="font-medium">{t('aboutSection.successRate')}</span>
               </motion.div>
             </GlassCard>
 
@@ -191,18 +172,13 @@ export function AboutSection() {
               viewport={{ once: true }}
             >
               <h3 className="text-2xl font-semibold text-white">
-                Our Journey of Innovation
+                {t('aboutSection.journeyTitle')}
               </h3>
               <p className="text-blue-100/80 leading-relaxed">
-                What started as a small team of passionate developers has grown
-                into a comprehensive technology partner for businesses
-                worldwide. We've consistently pushed the boundaries of what's
-                possible with AI, cloud computing, and digital transformation.
+                {t('aboutSection.journeyParagraph1')}
               </p>
               <p className="text-blue-100/80 leading-relaxed">
-                Today, we're proud to serve over 500 clients across 25
-                countries, maintaining our commitment to excellence and
-                innovation in every project we undertake.
+                {t('aboutSection.journeyParagraph2')}
               </p>
             </GlassCard>
           </motion.div>
@@ -257,30 +233,34 @@ export function AboutSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-semibold text-white">Core Values</h3>
+              <h3 className="text-2xl font-semibold text-white">{t('aboutSection.coreValuesTitle')}</h3>
               <div className="space-y-4">
-                {coreValues.map((value, index) => (
-                  <motion.div
-                    key={value.title}
-                    className="flex items-start space-x-4 p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-blue-300/30 transition-colors"
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="w-10 h-10 bg-blue-300/20 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0">
-                      <value.icon className="w-5 h-5 text-blue-200" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-white mb-1">
-                        {value.title}
-                      </h4>
-                      <p className="text-sm text-blue-100/70">
-                        {value.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
+                {coreValues.map((value, index) => {
+                  const icons = [Target, Shield, Zap];
+                  const IconComponent = icons[index];
+                  return (
+                    <motion.div
+                      key={value.title}
+                      className={`flex items-start ${isRTL ? 'space-x-reverse' : ''} space-x-4 p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-blue-300/30 transition-colors`}
+                      initial={{ opacity: 0, x: isRTL ? -20 : 20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                    >
+                      <div className="w-10 h-10 bg-blue-300/20 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0">
+                        <IconComponent className="w-5 h-5 text-blue-200" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-white mb-1">
+                          {value.title}
+                        </h4>
+                        <p className="text-sm text-blue-100/70">
+                          {value.description}
+                        </p>
+                      </div>
+                    </motion.div>
+                  );
+                })}
               </div>
             </GlassCard>
 
@@ -293,14 +273,14 @@ export function AboutSection() {
               viewport={{ once: true }}
             >
               <h3 className="text-2xl font-semibold text-white">
-                Our Achievements
+                {t('aboutSection.achievementsTitle')}
               </h3>
               <div className="grid grid-cols-1 gap-3">
                 {achievements.map((achievement, index) => (
                   <motion.div
                     key={achievement}
-                    className="flex items-center space-x-3 p-3 rounded-lg bg-green-400/10 backdrop-blur-sm border border-green-300/20"
-                    initial={{ opacity: 0, x: -20 }}
+                    className={`flex items-center ${isRTL ? 'space-x-reverse' : ''} space-x-3 p-3 rounded-lg bg-green-400/10 backdrop-blur-sm border border-green-300/20`}
+                    initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
@@ -325,26 +305,25 @@ export function AboutSection() {
           viewport={{ once: true }}
         >
           <h3 className="text-3xl font-bold mb-4 text-white">
-            Ready to Transform Your Business?
+            {t('aboutSection.ctaTitle')}
           </h3>
           <p className="text-blue-100/80 mb-8 max-w-2xl mx-auto">
-            Join hundreds of companies that trust Oxygen to deliver exceptional
-            technology solutions. Let's build something amazing together.
+            {t('aboutSection.ctaDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 px-8 py-3 rounded-full font-semibold group border border-white/30"
               size="lg"
             >
-              START YOUR PROJECT
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              {t('aboutSection.ctaButton')}
+              <ArrowRight className={`w-5 h-5 ${isRTL ? 'mr-2 group-hover:-translate-x-1' : 'ml-2 group-hover:translate-x-1'} transition-transform`} />
             </Button>
             <Button
               variant="outline"
               className="border-white/30 text-primary backdrop-blur-sm px-8 py-3 rounded-full font-semibold"
               size="lg"
             >
-              MEET OUR TEAM
+              {t('aboutSection.ctaSecondaryButton')}
             </Button>
           </div>
         </GlassCard>

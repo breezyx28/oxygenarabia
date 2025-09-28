@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // import AvatarsStackCard from "../../components/cards/AvatarsStackCard";
 import ServiceCard from "../../components/cards/ServiceCard";
 // import TextCard from "../../components/cards/TextCard";
@@ -21,15 +22,17 @@ import { GlassCard } from "@/components/ui/GlassCard";
 // import { AnimatedNumber } from "@/components/core/animated-number";
 
 const Services = () => {
+  const { t } = useTranslation();
+  
   React.useEffect(() => {
     // requestAnimationFrame(servicesAnimation);
     servicesAnimation();
   }, []);
 
   const stats = [
-    { value: 5000, suffix: "+", label: "Happy Clients" },
-    { value: 4.9, suffix: "", label: "Customer Rating" },
-    { value: 99.9, suffix: "%", label: "Uptime" },
+    { value: 5000, suffix: "+", label: t('servicesSection.stats.happyClients') },
+    { value: 4.9, suffix: "", label: t('servicesSection.stats.customerRating') },
+    { value: 99.9, suffix: "%", label: t('servicesSection.stats.uptime') },
   ];
 
   return (
@@ -47,10 +50,10 @@ const Services = () => {
               transition={{ duration: 0.5 }}
             >
               <Zap className="w-4 h-4" />
-              <span className="text-sm font-medium">Services</span>
+              <span className="text-sm font-medium">{t('servicesSection.badge')}</span>
             </motion.div>
             <div className="gsap-services-from section-text">
-              Our <span className="text-primary">Services</span>
+              {t('servicesSection.title')} <span className="text-primary">{t('servicesSection.titleHighlight')}</span>
             </div>
           </div>
           {/* Statistics */}
@@ -91,60 +94,36 @@ const Services = () => {
             ))}
           </div>
         </div>
-        <div className="grid md:grid-flow-cols grid-flow-rows md:grid-cols-2 grid-rows-2 gap-10">
+        <div className="grid md:grid-flow-cols grid-flow-rows md:grid-cols-2 grid-rows-0 gap-10">
           <div className="services order-2 md:order-1 grid grid-flow-cols grid-cols-1 lg:grid-cols-2 gap-6">
             <ServiceCard
-              title="Cloud Contact Center Solutions"
-              description={
-                "Who it's for: Businesses that want scalable, flexible, cloud-based customer communication."
-              }
-              list={[
-                "Omnichannel support (Voice, SMS, WhatsApp, Email, Chat, Social Media)",
-                "Inbound & Outbound call handling",
-                "Interactive Voice Response (IVR) design & deployment",
-              ]}
+              title={t('servicesSection.cloudContactCenter.title')}
+              description={t('servicesSection.cloudContactCenter.description')}
+              list={t('servicesSection.cloudContactCenter.features', { returnObjects: true }) as string[]}
             >
               {/* {Svg.education} */}
               <Cloud className="w-8 h-8 text-blue-500" />
             </ServiceCard>
             <ServiceCard
-              title="AI-Powered Automation"
-              description={
-                "Who it's for: Businesses looking to reduce human workload and improve response speed."
-              }
-              list={[
-                "AI voice bots & chatbots",
-                "Smart call routing based on sentiment or intent",
-                "Call summarization and transcription",
-              ]}
+              title={t('servicesSection.aiPowered.title')}
+              description={t('servicesSection.aiPowered.description')}
+              list={t('servicesSection.aiPowered.features', { returnObjects: true }) as string[]}
             >
               {/* {Svg.adv} */}
               <Brain className="w-8 h-8 text-blue-500" />
             </ServiceCard>
             <ServiceCard
-              title="WhatsApp & Social Messaging Integration"
-              description={
-                "Who it's for: Businesses active on social platforms or targeting younger customers."
-              }
-              list={[
-                "Unified dashboard for WhatsApp Business, Twitter, Instagram, Telegram",
-                "Bulk WhatsApp campaigns",
-                "Conversational commerce setup (orders, support, payments)",
-              ]}
+              title={t('servicesSection.whatsappIntegration.title')}
+              description={t('servicesSection.whatsappIntegration.description')}
+              list={t('servicesSection.whatsappIntegration.features', { returnObjects: true }) as string[]}
             >
               {/* {Svg.tower} */}
               <MessageSquare className="w-8 h-8 text-blue-500" />
             </ServiceCard>
             <ServiceCard
-              title="CRM & Helpdesk Integration"
-              description={
-                "Who it's for: Enterprises or SMEs needing end-to-end CX."
-              }
-              list={[
-                "Integration with Zoho, Salesforce, HubSpot, Freshdesk, etc.",
-                "Ticketing system integration",
-                "Customer journey tracking",
-              ]}
+              title={t('servicesSection.crmIntegration.title')}
+              description={t('servicesSection.crmIntegration.description')}
+              list={t('servicesSection.crmIntegration.features', { returnObjects: true }) as string[]}
             >
               {/* {Svg.tech} */}
               <Database className="w-8 h-8 text-blue-500" />
@@ -154,18 +133,12 @@ const Services = () => {
               className="link justify-start text-slate-800 font-semibold flex items-center gap-x-1 hover:gap-x-3 duration-200 ease-in"
               to={"/services"}
             >
-              More Services <span>{Svg.rightArrow}</span>
+              {t('servicesSection.moreServices')} <span>{Svg.rightArrow}</span>
             </Link>
           </div>
           <div className="relative opacity-0 -right-[100px] service-poster order-1 md:order-2">
-            {/* <div className="absolute lg:flex hidden top-[40px] md:-right-[35px] right-[35px]">
-              <TextCard />
-            </div>
-            <div className="absolute lg:flex hidden md:-bottom-[30px] md:-left-[100px] bottom-[30px] left-[100px]">
-              <AvatarsStackCard />
-            </div> */}
             <img
-              className="w-full h-full rounded-[15px] object-cover"
+              className="w-full md:h-full h-[300px] rounded-[15px] object-cover"
               src="https://images.unsplash.com/photo-1598870784088-35e7058da12c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMGxhcHRvcCUyMG1lZXRpbmd8ZW58MXx8fHwxNzU2MzgxNjkzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               alt={"Our Services"}
             />
@@ -193,7 +166,7 @@ const Services = () => {
               <div className="flex items-center space-x-2">
                 <Users className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
-                  5000+ reviews
+                  5000+ {t('servicesSection.stats.reviews')}
                 </span>
               </div>
             </motion.div>
@@ -207,7 +180,7 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <Badge className="bg-blue-500 text-white px-3 py-1">
-                Built On 5000+
+                {t('servicesSection.builtOn')}
               </Badge>
             </motion.div>
           </div>

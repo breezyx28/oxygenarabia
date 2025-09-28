@@ -1,5 +1,4 @@
 import React from "react";
-import LoadingComponent from "../components/loading/Loading";
 import ContactUs from "./sections/ContactUs";
 import { AboutSection } from "./sections/About-figam";
 

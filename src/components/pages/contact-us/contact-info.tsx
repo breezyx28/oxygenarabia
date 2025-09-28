@@ -2,27 +2,9 @@ import React from "react";
 import { motion } from "motion/react";
 import { MapPin, Phone, Mail, Twitter, Linkedin, Facebook } from "lucide-react";
 import { Card } from "../../ui/card";
+import { useTranslation } from "react-i18next";
 
-const contactItems = [
-  {
-    icon: MapPin,
-    title: "Location",
-    content: "Saudi Arabia, Riyadh, Olia",
-    delay: 0.1,
-  },
-  {
-    icon: Phone,
-    title: "Phone",
-    content: "+966-9200-34424 | +966-539953755",
-    delay: 0.2,
-  },
-  {
-    icon: Mail,
-    title: "Email",
-    content: "info@oxygenict.com",
-    delay: 0.3,
-  },
-];
+
 
 const socialLinks = [
   {
@@ -46,6 +28,29 @@ const socialLinks = [
 ];
 
 export const ContactInfo: React.FC = () => {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
+  
+  const contactItems = [
+    {
+      icon: MapPin,
+      title: t('contactSection.info.location'),
+      content: "Saudi Arabia, Riyadh, Olia",
+      delay: 0.1,
+    },
+    {
+      icon: Phone,
+      title: t('contactSection.info.phone'),
+      content: "+966-9200-34424 | +966-539953755",
+      delay: 0.2,
+    },
+    {
+      icon: Mail,
+      title: t('contactSection.info.email'),
+      content: "info@oxygenict.com",
+      delay: 0.3,
+    },
+  ];
   return (
     <div className="space-y-8">
       <motion.div
@@ -54,11 +59,10 @@ export const ContactInfo: React.FC = () => {
         transition={{ duration: 0.6 }}
       >
         <h3 className="text-4xl font-bold mb-6 text-slate-900">
-          Contact Information
+          {t('contactSection.info.title')}
         </h3>
         <p className="text-slate-600 mb-8 max-w-xl">
-          We're here to help and answer any question you might have. We look
-          forward to hearing from you.
+          {t('contactSection.info.subtitle')}
         </p>
       </motion.div>
 
@@ -66,14 +70,14 @@ export const ContactInfo: React.FC = () => {
         {contactItems.map((item, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: item.delay }}
-            whileHover={{ x: 5 }}
+            whileHover={{ x: isRTL ? -5 : 5 }}
             className="group"
           >
             <Card className="border-none bg-transparent">
-              <div className="flex items-start space-x-4">
+              <div className={`flex items-start ${isRTL ? 'space-x-reverse' : ''} space-x-4`}>
                 <motion.div
                   className="flex-shrink-0 w-12 h-12 bg-blue-200/20 rounded-[16px] flex items-center justify-center text-blue-600"
                   whileHover={{ scale: 1.1, rotate: 5 }}
@@ -101,7 +105,7 @@ export const ContactInfo: React.FC = () => {
         transition={{ duration: 0.6 }}
         className="pt-4"
       >
-        <h4 className="text-slate-900 text-md font-semibold mb-4">Follow Us</h4>
+        <h4 className="text-slate-900 text-md font-semibold mb-4">{t('contactSection.info.followUs')}</h4>
         <div className="flex space-x-4">
           {socialLinks.map((social, index) => (
             <motion.a
