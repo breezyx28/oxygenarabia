@@ -75,20 +75,7 @@ const LanguageSwitcher = () => {
 
   // Memoized flag components to prevent unnecessary re-renders
   const SaudiFlag = useMemo(
-    () => () =>
-      (
-        <svg className="w-6 h-4" viewBox="0 0 24 16">
-          <rect width="24" height="16" fill="#006C35" />
-          <text
-            x="12"
-            y="10"
-            textAnchor="middle"
-            fill="white"
-            fontSize="8"
-            fontWeight="bold"
-          ></text>
-        </svg>
-      ),
+    () => () => <img className="w-6 h-4" src="/icons/png/saudi-flag.png" />,
     []
   );
 
@@ -121,11 +108,11 @@ const LanguageSwitcher = () => {
   return (
     <button
       onClick={toggleLanguage}
-      className="flex items-center gap-2 px-2 py-1 rounded-md hover:bg-white/10 transition-colors"
+      className="flex items-center gap-2 px-2 py-1 rounded-md"
       aria-label={`Switch to ${languageText} language`}
     >
       <CurrentFlag />
-      <span className="text-xs font-medium text-white">{languageText}</span>
+      {/* <span className="text-xs font-medium text-white">{languageText}</span> */}
     </button>
   );
 };

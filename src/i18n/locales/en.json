@@ -236,6 +236,160 @@
     "ctaButton": "START YOUR PROJECT",
     "ctaSecondaryButton": "MEET OUR TEAM"
   },
+  "events": {
+    "oxygenEvent": {
+      "title": "Oxygen Event 2023",
+      "description": "Latest technology showcase and networking event"
+    },
+    "innovationSummit": {
+      "title": "Innovation Summit",
+      "description": "Exploring breakthrough technologies and solutions"
+    },
+    "techConference": {
+      "title": "Tech Conference",
+      "description": "Industry leaders sharing insights and trends"
+    },
+    "digitalTransformation": {
+      "title": "Digital Transformation",
+      "description": "Empowering businesses with cutting-edge solutions"
+    }
+  },
+  "projectsPage": {
+    "eventsSection": {
+      "title": "Our Events",
+      "subtitle": "Explore our latest technology showcases and networking opportunities",
+      "latestEvents": "latest events",
+      "videos": {
+        "oxygenServices": {
+          "title": "Oxygen Services",
+          "description": "Comprehensive technology solutions showcase"
+        },
+        "kpsollaPlatform": {
+          "title": "Kpsolla Platform",
+          "description": "Educational platform demonstration"
+        },
+        "smartCenter": {
+          "title": "Smart Center",
+          "description": "Smart call center technology preview"
+        }
+      }
+    },
+    "achievementSection": {
+      "title": "Our Biggest",
+      "titleHighlight": "Achievement",
+      "subtitle": "Recognized as one of the top fifty education innovators across Africa for our groundbreaking offline learning solutions.",
+      "description": "Oxygen has been honored with the Certificate of Recognition as one of the Top Fifty Education Innovations in Africa. This prestigious award acknowledges our revolutionary offline learning platform that has transformed education accessibility across the continent. Our innovative solution addresses the critical challenge of limited internet connectivity in Africa, where over 50% of the population lacks broadband access. Through our offline learning technology, we've successfully served over 1 million subscribers across multiple educational topics including Italian, English, French, and other languages. This achievement represents our commitment to making quality education accessible to everyone, regardless of their geographical location or internet connectivity. The recognition validates our mission to bridge the digital divide and democratize education through innovative technology solutions.",
+      "imageAlt": "Award of Top Fifty Education Innovators in Africa"
+    }
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Your trusted technology partner transforming complexity into simple, fast, and secure experiences",
+    "intro": "Oxygen Arabia is your technology partner that transforms complexity into a simple, fast, and secure experience. With over 13 years of experience within the Oxygen Group in the Middle East, we build integrated digital solutions: Cloud PBX & Contact Centers, unified communication channels (Omnichannel), AI automation, websites and CRM/ERP integrations, plus robotics and IoT solutions. We believe customer satisfaction is not a slogan; it's a measured result seen in speed, quality, repeat purchases, and business growth.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower companies of all sizes to achieve practical digital transformation: faster in launch, clearer in data, and stronger in customer service; through blending cloud technologies with artificial intelligence and smart integrations, with a flexible and scalable implementation approach."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the most reliable and impactful partner in the Kingdom and the region; creating smart, secure, and fast solutions that redefine customer experience and ensure sustainable growth."
+    },
+    "goals": {
+      "title": "Our Goals",
+      "items": [
+        "Better customer experience: Reduce waiting time, increase response rates within 30 seconds, and boost satisfaction.",
+        "More efficient operations: Automate tasks, reduce costs, and unify channels in one dashboard.",
+        "Unified data vision: Seamless integration with CRM/ERP and real-time indicator dashboards.",
+        "Security and compliance: Enterprise-grade standards for data protection and business continuity.",
+        "Knowledge transfer: Train your teams and automate standard operating procedures (SOP) for sustainable adoption."
+      ]
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Useful Innovation",
+          "description": "We innovate what adds tangible value, not 'shiny features' without impact."
+        },
+        {
+          "title": "Reliability",
+          "description": "We say and do with clear contracts and measurable results."
+        },
+        {
+          "title": "Team Spirit",
+          "description": "We work as one team with our client, our goal is your project's success."
+        },
+        {
+          "title": "Diversity is Strength",
+          "description": "Different experiences produce smarter solutions and faster execution."
+        },
+        {
+          "title": "Always One Step Ahead",
+          "description": "Scalable solutions that deliver strong long-term performance."
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose Oxygen Arabia?",
+      "items": [
+        "13+ years of experience and deep understanding of local context, with regional footprint.",
+        "Native cloud architecture, enterprise security, and 99.9% operational readiness.",
+        "Arabic AI: Call summarization, speech recognition, sentiment/intent analysis, smart routing.",
+        "Ready integrations with Zoho / Salesforce / HubSpot / Freshdesk and others.",
+        "Fast implementation, bilingual Arabic/English support, and transparent pricing."
+      ]
+    },
+    "howWeWork": {
+      "title": "How We Work (Implementation Methodology)",
+      "steps": [
+        {
+          "title": "Understand the Goal",
+          "description": "Short workshop to define required results and performance indicators."
+        },
+        {
+          "title": "Design the Solution",
+          "description": "Technical blueprint + customer journey + data integrations."
+        },
+        {
+          "title": "Build and Test",
+          "description": "Pilot launch then safe gradual rollout."
+        },
+        {
+          "title": "Measure and Improve",
+          "description": "Real-time dashboards, performance reviews, and continuous development."
+        },
+        {
+          "title": "Train and Support",
+          "description": "Internal team enablement to ensure sustainability."
+        }
+      ]
+    },
+    "vision2030": {
+      "title": "Alignment with Saudi Vision 2030",
+      "description": "We contribute to a thriving digital economy through:",
+      "items": [
+        "Arabizing technologies and localizing knowledge.",
+        "Improving government and private service quality through digital channels.",
+        "Enabling artificial intelligence in customer service and value chains.",
+        "Improving productivity and reducing operational costs while maintaining data security."
+      ]
+    },
+    "quickFacts": {
+      "title": "Quick Facts",
+      "stats": [
+        "500+ completed projects",
+        "25+ countries served",
+        "50+ team members",
+        "4.9/5 customer satisfaction"
+      ],
+      "sectors": "Sectors: Healthcare, Hospitality, Retail, Education, Entertainment & Events, and Startups."
+    },
+    "cta": {
+      "title": "Ready to Elevate Your Customer Experience?",
+      "description": "Request a quote or book a quick consultation (30 minutes) for an implementation path that suits your goals and budget.",
+      "button": "Get Started"
+    }
+  },
   "footer": {
     "companyName": "Oxygen Technology Co.",
     "tagline": "We Inovate For People",
@@ -290,6 +444,54 @@
       "phone": "Phone",
       "email": "Email",
       "followUs": "Follow Us"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Founded with a vision to revolutionize digital experiences",
+    "header": {
+      "badge": "About Us",
+      "title": "Who We Are",
+      "description": "We are a team of passionate individuals committed to delivering innovative solutions that drive success for our clients. With a wealth of experience and expertise, we collaborate closely with our partners to understand their unique challenges and develop tailored strategies that deliver results.",
+      "cta": "Contact Us"
+    },
+    "stats": {
+      "projects": "Projects Completed",
+      "team": "Team Members",
+      "satisfaction": "Client Satisfaction"
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "items": [
+        "13+ Years of Experience",
+        "Integrated Cloud Solutions",
+        "24/7 Technical Support",
+        "System Integration",
+        "Advanced AI Solutions",
+        "Specialized Local Team"
+      ]
+    },
+    "cards": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "Enabling companies to achieve digital transformation practically and effectively"
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the most trusted partner in the region for smart digital solutions"
+      },
+      "values": {
+        "title": "Our Values",
+        "description": "Innovation, Reliability, Team Spirit, and Continuous Evolution"
+      }
+    },
+    "images": {
+      "building": "Our Office Building",
+      "team": "Our Team"
+    },
+    "buttons": {
+      "learnMore": "Learn More",
+      "contactUs": "Contact Us"
     }
   }
 }

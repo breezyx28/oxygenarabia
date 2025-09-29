@@ -1,10 +1,14 @@
 // import { Svg } from "../../components/icons";
 
 import { Link } from "react-router-dom";
-import HistoryItem from "./HistoryItem";
-import { BackgroundBoxesLayout } from "@/layouts/styled-layouts/boxes-bg-layout";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import { lazy, Suspense } from "react";
+
+const HistoryItem = lazy(() => import("./HistoryItem"));
+const BackgroundBoxesLayout = lazy(() => import("@/layouts/styled-layouts/boxes-bg-layout").then(m => ({ default: m.BackgroundBoxesLayout })));
+const VideoCard = lazy(() => import("../events/VideoCard"));
+const BentoGridComponent = lazy(() => import("../../components/bento-grid"));
 
 const projects = () => {
   const { t } = useTranslation();
@@ -15,12 +19,14 @@ const projects = () => {
       </Helmet>
       {/* <DotBackgroundJumbotron title={"Our Services"} /> */}
       <div className="relative h-[60vh] overflow-hidden">
-        <BackgroundBoxesLayout
-          title={t("projects.title")}
-          subtitle={t("projects.subtitle")}
-          className="bg-primary"
-          containerClassName="bg-primary/10"
-        />
+        <Suspense fallback={<div className="h-[60vh] bg-primary/10 flex items-center justify-center"><div className="text-white">Loading...</div></div>}>
+          <BackgroundBoxesLayout
+            title={t("projects.title")}
+            subtitle={t("projects.subtitle")}
+            className="bg-primary"
+            containerClassName="bg-primary/10"
+          />
+        </Suspense>
       </div>
       <section className="section-container flex flex-col justify-around">
         <div className="container md:px-0 px-6 flex flex-col gap-y-2">
@@ -35,7 +41,8 @@ const projects = () => {
           </span>
         </div>
         <div className="container w-full px-6 py-12 mx-auto flex justify-center">
-          <ol className="relative ltr:border-l rtl:border-r border-gray-200 ">
+          <Suspense fallback={<div className="w-full h-32 bg-gray-100 animate-pulse rounded"></div>}>
+            <ol className="relative ltr:border-l rtl:border-r border-gray-200 ">
             <HistoryItem
               link="#"
               icon={"/images/projects/Smart_Center.png"}
@@ -215,7 +222,102 @@ const projects = () => {
             >
               {""}
             </HistoryItem>
-          </ol>
+            </ol>
+          </Suspense>
+        </div>
+      </section>
+
+      <section className="section-container py-0">
+        <div className="container px-6 py-10 mx-auto flex flex-col gap-y-[5rem]">
+          <div className="section-title flex flex-col gap-y-4">
+            <div className="section-text">
+              {t("projectsPage.eventsSection.title").split(" ")[0]}{" "}
+              <span className="text-primary">
+                {t("projectsPage.eventsSection.title")
+                  .split(" ")
+                  .slice(1)
+                  .join(" ")}
+              </span>
+            </div>
+            <p className="mt-4 text-gray-500">
+              {t("projectsPage.eventsSection.subtitle")}
+            </p>
+          </div>
+          <Suspense fallback={<div className="grid grid-cols-3 gap-4"><div className="bg-gray-100 animate-pulse h-48 rounded"></div><div className="bg-gray-100 animate-pulse h-48 rounded"></div><div className="bg-gray-100 animate-pulse h-48 rounded"></div></div>}>
+            <div className="grid grid-flow-cols lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+              <VideoCard
+              index={0}
+              title={t(
+                "projectsPage.eventsSection.videos.oxygenServices.title"
+              )}
+              description={t(
+                "projectsPage.eventsSection.videos.oxygenServices.description"
+              )}
+              path={"/W.mp4"}
+            />
+            <VideoCard
+              index={1}
+              title={t(
+                "projectsPage.eventsSection.videos.kpsollaPlatform.title"
+              )}
+              description={t(
+                "projectsPage.eventsSection.videos.kpsollaPlatform.description"
+              )}
+              path={"/videos/events/kpsolla.mp4"}
+            />
+            <VideoCard
+              index={2}
+              title={t("projectsPage.eventsSection.videos.smartCenter.title")}
+              description={t(
+                "projectsPage.eventsSection.videos.smartCenter.description"
+              )}
+              path={"/videos/events/Smart Center.mp4"}
+              />
+            </div>
+          </Suspense>
+        </div>
+        <div className="container px-6 py-10">
+          <div className="event-gallary-wrapper w-full h-auto">
+            <div className="latest-event flex flex-col gap-y-6">
+              <div className="event-category-name text-slate-700 text-3xl font-bold capitalize">
+                <span className="text-primary">oxygen</span>{" "}
+                {t("projectsPage.eventsSection.latestEvents")}
+              </div>
+              <div className="event-wrapper p-8 bg-slate-200 rounded-[1rem]">
+                <Suspense fallback={<div className="h-64 bg-gray-100 animate-pulse rounded"></div>}>
+                  <BentoGridComponent />
+                </Suspense>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-container flex md:flex-row flex-col gap-y-8 justify-between">
+        <div className="container px-6">
+          <div className="section-text">
+            {t('projectsPage.achievementSection.title')} <span className="text-primary">{t('projectsPage.achievementSection.titleHighlight')}</span>
+          </div>
+          <p className="mt-4 text-gray-500 xl:mt-6">
+            {t('projectsPage.achievementSection.subtitle')}
+          </p>
+          <article className="md:mt-[5rem] mt-[2.5rem] md:text-normal text-sm text-slate-700 max-w-[500px]">
+            {t('projectsPage.achievementSection.description')}
+          </article>
+        </div>
+        <div className="container relative px-6 h-full w-full flex justify-center items-center">
+          <div className="absolute w-full h-full">
+            <div className="circle absolute z-20 md:top-0 md:left-[10%] -top-5 left-[-10%] squiggly-pattern rounded-full md:w-[250px] md:h-[250px] w-[125px] h-[125px] bg-slate-200"></div>
+            <div className="circle absolute z-20 md:bottom-[-10%] md:right-[10%] bottom-[-5%] right-[-5%] squiggly-pattern rounded-full md:w-[250px] md:h-[250px] w-[125px] h-[125px] bg-primary"></div>
+            <div className="circle absolute z-10 squiggly-2-pattern rounded-full w-full h-full"></div>
+          </div>
+          <img
+            src={"/images/achievements/award.jpg"}
+            height={500}
+            width={430}
+            alt={t('projectsPage.achievementSection.imageAlt')}
+            className="z-30"
+          />
         </div>
       </section>
     </>
