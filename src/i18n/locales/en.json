@@ -568,5 +568,33 @@
     "title": "Blog",
     "description": "Discover the latest articles and news in the world of technology and digital transformation.",
     "backToBlog": "Back to Blog"
+  },
+  "team": {
+    "title": "Our Team",
+    "description": "Meet the minds behind Oxygen's innovation and growth.",
+    "sectionText": "Our <span class=\"text-primary\">Executive Team</span>",
+    "intro": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "members": {
+      "aziz": {
+        "name": "Aziz",
+        "position": "Mobile Developer"
+      },
+      "ahmedTaj": {
+        "name": "Ahmed Taj",
+        "position": "Graphic Designer"
+      },
+      "minan": {
+        "name": "Minan",
+        "position": "Sales"
+      },
+      "waad": {
+        "name": "Waad",
+        "position": "HR"
+      },
+      "alaa": {
+        "name": "Alaa",
+        "position": "CTO"
+      }
+    }
   }
 }

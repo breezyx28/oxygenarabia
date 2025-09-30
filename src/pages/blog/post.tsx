@@ -1,10 +1,10 @@
 import { motion } from "motion/react";
 import { Toaster } from "sonner";
-import { Calendar, User, Clock, ArrowLeft, Share2 } from "lucide-react";
+import { Calendar, User, Clock, ArrowLeft } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Suspense } from "react";
-import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BackgroundBoxesLayout } from "@/layouts/styled-layouts/boxes-bg-layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -196,7 +196,7 @@ let ar = `# كيف تبني تجربة عميل ذكية في 2025: من مرك�
 
 const Post = () => {
   const { t, i18n } = useTranslation();
-  const { slug } = useParams<{ slug: string }>();
+  //   const { slug } = useParams<{ slug: string }>();
   const isRTL = i18n.language === "ar";
   const lang = i18n.language === "ar" ? "ar" : "en";
 
