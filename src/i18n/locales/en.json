@@ -446,52 +446,62 @@
       "followUs": "Follow Us"
     }
   },
+
   "about": {
     "title": "About Us",
-    "subtitle": "Founded with a vision to revolutionize digital experiences",
+    "subtitle": "Transforming complexity into simple, fast, and secure experiences",
     "header": {
-      "badge": "About Us",
+      "badge": "Introduction",
       "title": "Who We Are",
-      "description": "We are a team of passionate individuals committed to delivering innovative solutions that drive success for our clients. With a wealth of experience and expertise, we collaborate closely with our partners to understand their unique challenges and develop tailored strategies that deliver results.",
-      "cta": "Contact Us"
+      "description": "Oxygen Arabic is your technical partner that transforms complexity into a simple, fast, and secure experience. With over 13 years of experience within the Oxygen group in the Middle East, we build integrated digital solutions: Cloud PBX & Contact Center, Omnichannel communication channels, AI automation, websites and CRM/ERP integrations, in addition to robotics and IoT solutions. We believe that customer satisfaction is not a slogan; but a measured result seen in speed, quality, repeat purchases, and business growth."
     },
     "stats": {
-      "projects": "Projects Completed",
+      "projects": "Completed Projects",
       "team": "Team Members",
-      "satisfaction": "Client Satisfaction"
+      "satisfaction": "Customer Satisfaction"
+    },
+    "introduction": {
+      "badge": "About Us",
+      "title": "Our Approach",
+      "description": "We enable companies of all sizes to achieve practical digital transformation: faster launch, clearer data, and stronger customer service; by blending cloud technologies with artificial intelligence and smart integrations, with a flexible and scalable implementation approach."
     },
     "features": {
-      "title": "Why Choose Us",
-      "items": [
-        "13+ Years of Experience",
-        "Integrated Cloud Solutions",
-        "24/7 Technical Support",
-        "System Integration",
-        "Advanced AI Solutions",
-        "Specialized Local Team"
-      ]
+      "cloud": "Cloud PBX & Contact Center",
+      "ai": "AI Automation in Arabic",
+      "integrations": "CRM/ERP Integrations",
+      "support": "Bilingual Support",
+      "security": "Enterprise Security",
+      "experience": "13+ Years Experience"
     },
     "cards": {
       "mission": {
         "title": "Our Mission",
-        "description": "Enabling companies to achieve digital transformation practically and effectively"
+        "description": "Enable companies of all sizes to achieve practical digital transformation: faster launch, clearer data, and stronger customer service through blending cloud technologies with AI and smart integrations."
       },
       "vision": {
         "title": "Our Vision",
-        "description": "To be the most trusted partner in the region for smart digital solutions"
+        "description": "To be the most reliable and impactful partner in the Kingdom and region; creating smart, secure, and fast solutions that redefine customer experience and ensure sustainable growth."
       },
       "values": {
         "title": "Our Values",
-        "description": "Innovation, Reliability, Team Spirit, and Continuous Evolution"
+        "description": "Useful Innovation: We innovate what adds tangible value. Reliability: We say and do with clear contracts and measurable results. Team Spirit: We work as one team with our client. Diversity is Strength: Different expertise produces smarter solutions. Always Forward: Scalable solutions with strong long-term performance."
+      },
+      "why": {
+        "title": "Why Choose Us",
+        "description": "13+ years experience and deep understanding of local context. Native cloud infrastructure, enterprise security, and 99.9% operational readiness. Arabic AI: Call summarization, speech recognition, sentiment/intent analysis, smart routing. Ready integrations with Zoho/Salesforce/HubSpot/Freshdesk. Fast implementation, bilingual support, and clear pricing."
+      },
+      "goals": {
+        "title": "Our Goals",
+        "description": "Better Customer Experience: Reduce wait time, increase answer rates within 30 seconds. More Efficient Operation: Automate tasks, reduce costs, unify channels. Unified Data View: Seamless CRM/ERP integration with real-time dashboards. Security & Compliance: Enterprise grade standards. Knowledge Transfer: Train your teams and automate SOPs."
+      },
+      "vision2030": {
+        "title": "Saudi Vision 2030",
+        "description": "We contribute to a thriving digital economy through: Arabizing technologies and localizing knowledge. Enhancing quality of government and private services through digital channels. Enabling AI in customer service and value chains. Improving productivity and reducing operational costs while maintaining data security."
       }
-    },
-    "images": {
-      "building": "Our Office Building",
-      "team": "Our Team"
-    },
-    "buttons": {
-      "learnMore": "Learn More",
-      "contactUs": "Contact Us"
     }
-  }
+  },
+  "header": {
+    "cta": "Start Now"
+  },
+  "loading": "Loading..."
 }
