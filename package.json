@@ -37,6 +37,7 @@
     "i18next-browser-languagedetector": "^8.2.0",
     "iconsax-reactjs": "^0.0.8",
     "lucide-react": "^0.539.0",
+    "marked": "^16.3.0",
     "mini-svg-data-uri": "^1.4.4",
     "motion": "^12.23.12",
     "nodemailer": "^6.9.13",

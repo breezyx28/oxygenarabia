@@ -405,7 +405,8 @@
       "aboutUs": "About us",
       "contact": "Contact",
       "ourTeam": "Our Team",
-      "events": "Events"
+      "events": "Events",
+      "careers": "Careers"
     },
     "legal": {
       "title": "Legal",
@@ -503,5 +504,69 @@
   "header": {
     "cta": "Start Now"
   },
-  "loading": "Loading..."
+  "loading": "Loading...",
+
+  "careerSection": {
+    "title": "Careers",
+    "heroTitle": "Join Our Team",
+    "heroSubtitle": "Build your career with industry leaders in digital transformation",
+    "badge": "Career Opportunities",
+    "mainTitle": "Shape the Future with Oxygen Arabia",
+    "description": "Join a dynamic team of innovators and problem-solvers who are transforming the digital landscape across the Middle East. At Oxygen Arabia, we believe in empowering our talent to grow, innovate, and make a real impact.",
+    "benefits": {
+      "team": {
+        "title": "Collaborative Team",
+        "description": "Work with passionate professionals in a supportive, inclusive environment"
+      },
+      "growth": {
+        "title": "Career Growth",
+        "description": "Continuous learning opportunities and clear career progression paths"
+      },
+      "innovation": {
+        "title": "Cutting-edge Projects",
+        "description": "Work on innovative solutions using the latest technologies and methodologies"
+      }
+    },
+    "applyTitle": "Ready to Join Us?",
+    "applyDescription": "Submit your application and take the first step towards an exciting career journey with Oxygen Arabia",
+    "footer": {
+      "note": "We review every application carefully and will contact suitable candidates for the next steps",
+      "contact": "For any questions about career opportunities, please contact us at careers@oxygenarabia.com"
+    },
+    "form": {
+      "title": "Join Our Team",
+      "subtitle": "Submit your application and take the first step towards an exciting career with Oxygen Arabia",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "city": "City",
+      "coverLetter": "Cover Letter - Tell us why you'd be a great fit for our team...",
+      "fileHint": "PDF, DOC, DOCX files only (Max 5MB)",
+      "sendButton": "Submit Application",
+      "sending": "Submitting...",
+      "successTitle": "Application Submitted!",
+      "successMessage": "Thank you for your interest in joining Oxygen Arabia. We'll review your application and get back to you soon.",
+      "validation": {
+        "nameRequired": "Please enter your full name",
+        "emailRequired": "Please enter your email address",
+        "phoneRequired": "Please enter your phone number",
+        "cityRequired": "Please enter your city",
+        "coverLetterRequired": "Please write a cover letter",
+        "cvRequired": "Please upload your CV",
+        "validEmail": "Please enter a valid email address",
+        "validPhone": "Please enter a valid phone number",
+        "invalidFileType": "Please upload a PDF or Word document",
+        "fileTooLarge": "File size must be less than 5MB",
+        "fillFields": "Please fill all required fields",
+        "success": "Application submitted successfully!",
+        "failed": "Failed to submit application. Please try again.",
+        "networkError": "Network error. Please check your connection."
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Discover the latest articles and news in the world of technology and digital transformation.",
+    "backToBlog": "Back to Blog"
+  }
 }

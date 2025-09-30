@@ -8,6 +8,9 @@ export const IndexPage = lazy(() => import("../pages"));
 export const About = lazy(() => import("../pages/about"));
 export const Achievements = lazy(() => import("../pages/achievements"));
 export const Contact = lazy(() => import("../pages/contact"));
+export const Career = lazy(() => import("../pages/career"));
+export const Blog = lazy(() => import("../pages/blog"));
+export const Post = lazy(() => import("../pages/blog/post"));
 export const Events = lazy(() => import("../pages/events"));
 export const Projects = lazy(() => import("../pages/projects"));
 export const Products = lazy(() => import("../pages/products"));
@@ -44,6 +47,9 @@ export default function Router() {
         { path: "products/:product", element: <Products /> },
         { path: "services", element: <Services /> },
         { path: "team", element: <Team /> },
+        { path: "careers", element: <Career /> },
+        { path: "blog", element: <Blog /> },
+        { path: "blog/:slug", element: <Post /> },
       ],
     },
   ]);

@@ -59,6 +59,9 @@ const Footer = () => {
           <a href="/contact" className="link link-hover">
             {t("footer.company.contact")}
           </a>
+          <a href="/careers" className="link link-hover">
+            {t("footer.company.careers")}
+          </a>
           <a href="/team" className="link link-hover">
             {t("footer.company.ourTeam")}
           </a>

@@ -1,23 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { BackgroundBoxesLayout } from "@/layouts/styled-layouts/boxes-bg-layout";
-import { Arrow } from "@radix-ui/react-dropdown-menu";
+
 import {
   CheckCircle,
   Target,
   Eye,
   Star,
-  ShieldCheck,
-  Users,
   Award,
-  Rocket,
   Lightbulb,
-  HeartHandshake,
   Globe2,
   ArrowRight,
 } from "lucide-react";
 import { Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import { twMerge } from "tailwind-merge";
 
 const About = () => {
   const { t } = useTranslation();
@@ -163,8 +160,93 @@ const About = () => {
               <AboutCard type="vision" icon={cardIcons.vision} />
               <AboutCard type="values" icon={cardIcons.values} />
               <AboutCard type="why" icon={cardIcons.why} />
-              <AboutCard type="goals" icon={cardIcons.goals} />
-              <AboutCard type="vision2030" icon={cardIcons.vision2030} />
+              <AboutCard
+                type="goals"
+                icon={cardIcons.goals}
+                className="md:col-span-2"
+              />
+              {/* <AboutCard type="vision2030" icon={cardIcons.vision2030} /> */}
+            </div>
+          </div>
+        </div>
+
+        <div className="container px-4 sm:px-6 py-8 sm:py-10 mx-auto">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:gap-16 bg-gray-50 p-4 sm:p-6 lg:p-10 rounded-lg h-full">
+            {/* Text Content Section */}
+            <div className="flex flex-col gap-y-6 sm:gap-y-8 lg:gap-y-10 divide-y divide-gray-100">
+              <div className="flex flex-col items-start gap-y-6 sm:gap-y-8 lg:gap-y-12 pb-4">
+                <div className="rounded-full border border-primary px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm">
+                  {t("2030 Vision")}
+                </div>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+                  {t("about.cards.vision2030.title")}
+                </h1>
+                <article className="mt-2 sm:mt-4 text-gray-500 text-sm sm:text-base lg:text-lg leading-relaxed">
+                  {t("about.cards.vision2030.description")}
+                </article>
+              </div>
+            </div>
+
+            {/* Main Image Section */}
+            <div className="w-full h-auto mt-4 sm:mt-6 lg:mt-0">
+              <img
+                src="/images/about-us/The-Official-Vision-2030-Logo-Set-Against-the-Riyadh-Night-View-Credits-American-Telephysicians.webp"
+                alt={t("about.images.building")}
+                className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px] object-cover rounded-lg"
+              />
+            </div>
+
+            {/* Logo Grid Section */}
+            <div className="lg:col-span-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-4 md:gap-6 mt-4 sm:mt-6">
+              <div className="flex justify-center items-center p-2">
+                <img
+                  src="/images/about-us/Vision 2030-01.png"
+                  alt={t("about.images.vision2030")}
+                  className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] h-auto object-contain"
+                />
+              </div>
+              <div className="flex justify-center items-center p-2">
+                <img
+                  src="/images/about-us/neom (2).png"
+                  alt={t("about.images.vision2030")}
+                  className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] h-auto object-contain"
+                />
+              </div>
+              <div className="flex justify-center items-center p-2">
+                <img
+                  src="/images/about-us/Red Sea Global-01.png"
+                  alt={t("about.images.vision2030")}
+                  className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] h-auto object-contain"
+                />
+              </div>
+              <div className="flex justify-center items-center p-2">
+                <img
+                  src="/images/about-us/Roshn Group01.png"
+                  alt={t("about.images.vision2030")}
+                  className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] h-auto object-contain"
+                />
+              </div>
+              <div className="flex justify-center items-center p-2">
+                <img
+                  src="/images/about-us/Saudi-Aramco-01.png"
+                  alt={t("about.images.vision2030")}
+                  className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] h-auto object-contain"
+                />
+              </div>
+              <div className="flex justify-center items-center p-2">
+                <img
+                  src="/images/about-us/Seven Saudi Entertainment Ventures2-01.png"
+                  alt={t("about.images.vision2030")}
+                  className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] h-auto object-contain"
+                />
+              </div>
+              <div className="flex justify-center items-center p-2 col-span-2 sm:col-span-1">
+                <img
+                  src="/images/about-us/STC-01.png"
+                  alt={t("about.images.vision2030")}
+                  className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] h-auto object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -186,13 +268,20 @@ const About = () => {
 const AboutCard = ({
   type,
   icon,
+  className,
 }: {
   type: "mission" | "vision" | "values" | "why" | "goals" | "vision2030";
+  className?: string;
   icon: React.ReactNode;
 }) => {
   const { t } = useTranslation();
   return (
-    <div className="group p-4 lg:p-6 rounded-[24px] flex flex-col gap-y-4 lg:gap-y-6 bg-gray-50 hover:bg-blue-600 transition cursor-pointer">
+    <div
+      className={twMerge(
+        "group p-4 lg:p-6 rounded-[24px] flex flex-col gap-y-4 lg:gap-y-6 bg-gray-50 hover:bg-blue-600 transition cursor-pointer",
+        className
+      )}
+    >
       <div className="card-icon rounded-full h-[40px] w-[40px] lg:h-[48px] lg:w-[48px] bg-blue-100 flex items-center justify-center transition">
         {/* <CheckCircle className="w-5 h-5 lg:w-6 lg:h-6 text-blue-500" /> */}
         {icon}
