@@ -6,7 +6,7 @@ import Logo from "@/components/logo/Logo";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer className="md:p-10 p-6 text-white divide-y bg-primary">
+    <footer className="md:p-10 p-6 text-white divide-y bg-gradient-to-br from-[#1f70c1] via-[#338eda] to-[#0f4d85]">
       <div className="footer pb-4">
         <div>
           <Logo />
@@ -17,7 +17,7 @@ const Footer = () => {
           </p>
           <div className="flex gap-x-2 mt-4 text-white">
             <Link
-              to={"https://www.facebook.com/Oxygenict/"}
+              to={"https://www.facebook.com/share/16RYH57sBn/?mibextid=wwXIfr"}
               className="rounded-full p-2 bg-white text-primary"
             >
               <Facebook className="w-5 h-5" />
@@ -29,7 +29,7 @@ const Footer = () => {
               <Twitter className="w-5 h-5" />
             </Link>
             <Link
-              to={"https://www.linkedin.com/company/oxygen-technologies-ltd/"}
+              to={"https://www.linkedin.com/company/oxygen-arabia-co-ltd/"}
               className="rounded-full p-2 bg-white text-primary"
             >
               <Linkedin className="w-5 h-5" />

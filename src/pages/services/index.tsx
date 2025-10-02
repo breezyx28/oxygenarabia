@@ -21,6 +21,7 @@ import ServiceCard1 from "../../components/cards/ServiceCard1";
 // import { DotBackgroundJumbotron } from "@/layouts/styled-layouts/dot-bg-jumbotron";
 // import { WavyBackground } from "@/components/ui/wavy-background";
 import { BackgroundBoxesLayout } from "@/layouts/styled-layouts/boxes-bg-layout";
+import { ServiceCard } from "./service-card";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -31,22 +32,6 @@ const Services = () => {
       </Helmet>
       {/* <DotBackgroundJumbotron title={"Our Services"} /> */}
       <div className="relative h-[60vh] overflow-hidden">
-        {/* <WavyBackground
-          className="w-full"
-          containerClassName="h-[60vh]"
-          backgroundFill="#6aadefff"
-          // colors={["white", ""]}
-        >
-          <motion.div
-            className="text-center text-5xl text-white font-bold"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            Our Services
-          </motion.div>
-        </WavyBackground> */}
-
         <BackgroundBoxesLayout
           title={t("services.title")}
           subtitle={t("services.subtitle")}
@@ -57,9 +42,6 @@ const Services = () => {
 
       <section className="section-container z-10 bg-white">
         <div className="container px-6 py-10 mx-auto">
-          {/* <div className="flex justify-center mb-6">
-            <LanguageSwitcher />
-          </div> */}
           <div className="section-text">
             {t("services.title").split(" ")[0]}{" "}
             <span className="text-primary">
@@ -70,113 +52,56 @@ const Services = () => {
           <p className="mt-4 text-gray-500 xl:mt-6">{t("services.subtitle")}</p>
 
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.dialerAuto.title")}
-                description={t("services.dialerAuto.description")}
-              >
-                <PhoneCall className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.ivr.title")}
-                description={t("services.ivr.description")}
-              >
-                <Headphones className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.callEvaluation.title")}
-                description={t("services.callEvaluation.description")}
-              >
-                <Star className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.softphone.title")}
-                description={t("services.softphone.description")}
-              >
-                <Smartphone className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.voipPhones.title")}
-                description={t("services.voipPhones.description")}
-              >
-                <Router className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.aiAgent.title")}
-                description={t("services.aiAgent.description")}
-              >
-                <Bot className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.ccaas.title")}
-                description={t("services.ccaas.description")}
-              >
-                <Cloud className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.crm.title")}
-                description={t("services.crm.description")}
-              >
-                <Database className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.erp.title")}
-                description={t("services.erp.description")}
-              >
-                <Settings className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.aiServices.title")}
-                description={t("services.aiServices.description")}
-              >
-                <Brain className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.eTraining.title")}
-                description={t("services.eTraining.description")}
-              >
-                <GraduationCap className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
-
-            <div className="space-y-3">
-              <ServiceCard1
-                title={t("services.itOutsourcing.title")}
-                description={t("services.itOutsourcing.description")}
-              >
-                <Server className="w-8 h-8 text-blue-500" />
-              </ServiceCard1>
-            </div>
+            <ServiceCard
+              title={t("services.callEvaluation.title")}
+              subtitle={t("services.callEvaluation.description")}
+              icon={<Star className="w-8 h-8 text-blue-500" />}
+            />
+            <ServiceCard
+              title={t("services.softphone.title")}
+              subtitle={t("services.softphone.description")}
+              icon={<Smartphone className="w-8 h-8 text-blue-500" />}
+            />
+            <ServiceCard
+              title={t("services.voipPhones.title")}
+              subtitle={t("services.voipPhones.description")}
+              icon={<Router className="w-8 h-8 text-blue-500" />}
+            />
+            <ServiceCard
+              title={t("services.aiAgent.title")}
+              subtitle={t("services.aiAgent.description")}
+              icon={<Bot className="w-8 h-8 text-blue-500" />}
+            />
+            <ServiceCard
+              title={t("services.ccaas.title")}
+              subtitle={t("services.ccaas.description")}
+              icon={<Cloud className="w-8 h-8 text-blue-500" />}
+            />
+            <ServiceCard
+              title={t("services.crm.title")}
+              subtitle={t("services.crm.description")}
+              icon={<Database className="w-8 h-8 text-blue-500" />}
+            />
+            <ServiceCard
+              title={t("services.erp.title")}
+              subtitle={t("services.erp.description")}
+              icon={<Settings className="w-8 h-8 text-blue-500" />}
+            />
+            <ServiceCard
+              title={t("services.aiServices.title")}
+              subtitle={t("services.aiServices.description")}
+              icon={<Brain className="w-8 h-8 text-blue-500" />}
+            />
+            <ServiceCard
+              title={t("services.eTraining.title")}
+              subtitle={t("services.eTraining.description")}
+              icon={<GraduationCap className="w-8 h-8 text-blue-500" />}
+            />
+            <ServiceCard
+              title={t("services.itOutsourcing.title")}
+              subtitle={t("services.itOutsourcing.description")}
+              icon={<Server className="w-8 h-8 text-blue-500" />}
+            />
           </div>
         </div>
       </section>

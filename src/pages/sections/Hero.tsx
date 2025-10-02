@@ -4,7 +4,6 @@ import { Svg } from "../../components/icons";
 import VideoModal from "../../components/modals/VideoModal";
 import heroAnimation from "../../helper/animations/heroAnimation";
 // import { DotBackgroundAnimateLayout } from "../../layouts/styled-layouts/dot-bg-animate-layout";
-import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { Zap, Cloud, Shield } from "lucide-react";
 // import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
@@ -16,7 +15,7 @@ const Object3D = React.lazy(() => import("../../components/3D/Object"));
 
 const Hero = () => {
   const { t } = useTranslation();
-  
+
   React.useEffect(() => {
     heroAnimation();
   }, []);
@@ -29,14 +28,14 @@ const Hero = () => {
             <div className="md:ltr:pl-20 ltr:pl-8 md:rtl:pr-20 rtl:pr-8 h-full flex flex-col gap-y-8 justify-center text-white">
               <div className="flex flex-col md:gap-y-2 gap-y-6">
                 <motion.div
-                  className="bg-blue-50 px-4 py-2 rounded-full border border-blue-200 w-[fit-content] inline-flex space-x-2 items-center text-primary z-10"
+                  className="bg-blue-50 px-4 py-2 rounded-full border border-blue-200 w-[fit-content] inline-flex gap-1 items-center text-primary z-10"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.5 }}
                 >
                   <Zap className="w-4 h-4 fill-current text-primary" />
                   <ShimmerText className="text-sm font-medium" duration={6}>
-                    {t('hero.badge')}
+                    {t("hero.badge")}
                   </ShimmerText>
                 </motion.div>
                 {/* <motion.div
@@ -59,7 +58,11 @@ const Hero = () => {
                   }}
                   className="relative text-white hero-gsap top-[100px] text-foreground text-5xl lg:text-6xl font-bold leading-tight capitalize"
                 >
-                  {t('hero.title')} <span className="text-primary">{t('hero.titleHighlight')}</span>{t('hero.titleEnd')}
+                  {t("hero.title")}{" "}
+                  <span className="text-primary">
+                    {t("hero.titleHighlight")}
+                  </span>
+                  {t("hero.titleEnd")}
                 </div>
               </div>
               <motion.p
@@ -68,7 +71,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
-                {t('hero.description')}
+                {t("hero.description")}
               </motion.p>
               {/* Feature highlights */}
               <motion.div
@@ -78,13 +81,13 @@ const Hero = () => {
                 transition={{ delay: 0.8, duration: 0.5 }}
               >
                 {[
-                  { icon: Cloud, text: t('hero.features.cloudNative') },
-                  { icon: Shield, text: t('hero.features.enterpriseSecurity') },
-                  { icon: Zap, text: t('hero.features.lightningFast') },
+                  { icon: Cloud, text: t("hero.features.cloudNative") },
+                  { icon: Shield, text: t("hero.features.enterpriseSecurity") },
+                  { icon: Zap, text: t("hero.features.lightningFast") },
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className="flex items-center space-x-2 text-sm text-foreground"
+                    className="flex items-center space-x-2 gap-1 text-sm text-foreground"
                   >
                     <feature.icon
                       className="w-4 h-4 text-primary fill-current"
@@ -95,12 +98,12 @@ const Hero = () => {
                 ))}
               </motion.div>
               <div className="hero-buttons relative left-[-100px] opacity-0 flex items-center gap-x-8">
-                <Link
-                  to={"/services"}
+                <a
+                  href={"/services"}
                   className="primary-btn shadow-none z-10 text-[14px] font-[500]"
                 >
-                  {t('hero.explore')}
-                </Link>
+                  {t("hero.explore")}
+                </a>
                 <VideoModal modalID={"heroSectionVideo"}>
                   <div className="relative flex">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>

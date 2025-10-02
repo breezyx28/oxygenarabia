@@ -161,7 +161,7 @@ const UpperNav = () => {
             transition={{ delay: 2.2, duration: 0.4 }}
           >
             <GlassEffect className="overflow-visible">
-              <div className="px-3 py-2">
+              <div className="px-[1rem] py-[1rem]">
                 <LanguageSwitcher />
               </div>
             </GlassEffect>

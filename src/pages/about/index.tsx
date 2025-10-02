@@ -88,7 +88,7 @@ const About = () => {
             </div>
             <div className="w-full h-auto mt-6 lg:mt-0">
               <img
-                src="/images/about-us/oxygen-ceo.png"
+                src="/images/about-us/about-1.jpeg"
                 alt={t("about.images.building")}
                 className="w-full h-[300px] lg:h-[720px] object-cover rounded-lg"
               />

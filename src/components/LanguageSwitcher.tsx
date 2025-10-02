@@ -75,14 +75,14 @@ const LanguageSwitcher = () => {
 
   // Memoized flag components to prevent unnecessary re-renders
   const SaudiFlag = useMemo(
-    () => () => <img className="w-6 h-4" src="/icons/png/saudi-flag.png" />,
+    () => () => <img className="w-8 h-6" src="/icons/png/saudi-flag.png" />,
     []
   );
 
   const USFlag = useMemo(
     () => () =>
       (
-        <svg className="w-6 h-4" viewBox="0 0 24 16">
+        <svg className="w-8 h-6" viewBox="0 0 24 16">
           <rect width="24" height="16" fill="#B22234" />
           <rect width="24" height="1.23" y="1.23" fill="white" />
           <rect width="24" height="1.23" y="3.69" fill="white" />

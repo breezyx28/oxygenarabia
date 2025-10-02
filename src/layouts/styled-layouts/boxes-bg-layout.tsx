@@ -29,7 +29,14 @@ export function BackgroundBoxesLayout({
         )}
       />
 
-      <Boxes />
+      {/* <Boxes /> */}
+      <motion.img
+        src="/images/backgrounds/bg-1.jpeg"
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        initial={{ scale: 1.3 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.4, delay: 1, ease: "easeOut" }}
+      />
       <motion.h1
         className={cn("md:text-5xl text-xl font-bold text-white relative z-20")}
       >

@@ -9,7 +9,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-[calc(100vw-17px)] mx-auto flex flex-col items-center overflow-x-hidden">
+    <div className="md:w-[calc(100vw-17px)] w-[100vw] mx-auto flex flex-col items-center overflow-x-hidden">
       <div className="max-w-[1800px] w-full overflow-x-hidden">
         <UpperNav />
         {children}
