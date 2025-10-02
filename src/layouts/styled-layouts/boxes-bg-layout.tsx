@@ -1,5 +1,5 @@
 "use client";
-import { Boxes } from "../../components/ui/background-boxes";
+// import { Boxes } from "../../components/ui/background-boxes";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { twMerge } from "tailwind-merge";

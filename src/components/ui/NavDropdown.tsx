@@ -2,7 +2,7 @@ import React from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, LucideIcon } from "lucide-react";
-
+import { MagicCard } from "./magic-card";
 
 interface MenuItem {
   text: string;
@@ -61,26 +61,28 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
                 transform: "translateX(-50%)",
               }}
             >
-              <div className="bg-white/95 backdrop-blur-lg border border-white/20 shadow-xl rounded-md p-6">
-                <div className={`grid grid-cols-2 gap-6`}>
-                  {menuItems.map((item, index) => {
-                    return (
-                      <a
-                        key={index}
-                        className={`flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors ${
-                          item.customClass || ""
-                        }`}
-                        href={item.href}
-                      >
-                        {React.createElement(item.icon, {
-                          className: "h-4 w-4 text-primary",
-                        })}
-                        {item.text}
-                      </a>
-                    );
-                  })}
+              <MagicCard gradientColor="#4aa5fb55">
+                <div className="bg-white/50 backdrop-blur-lg border border-white/20 shadow-xl rounded-md p-6">
+                  <div className={`grid grid-cols-2 gap-6`}>
+                    {menuItems.map((item, index) => {
+                      return (
+                        <a
+                          key={index}
+                          className={`flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-white rounded-md transition-colors ${
+                            item.customClass || ""
+                          }`}
+                          href={item.href}
+                        >
+                          {React.createElement(item.icon, {
+                            className: "h-4 w-4 text-primary",
+                          })}
+                          {item.text}
+                        </a>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
+              </MagicCard>
             </motion.div>
           )}
         </AnimatePresence>,

@@ -91,6 +91,7 @@ const UpperNav = () => {
                       </li>
 
                       {/* Resources Dropdown */}
+
                       <NavDropdown
                         label={t("nav.resources")}
                         isOpen={resourcesOpen}

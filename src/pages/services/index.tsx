@@ -2,8 +2,8 @@ import {
   Brain,
   Cloud,
   Database,
-  PhoneCall,
-  Headphones,
+  // PhoneCall,
+  // Headphones,
   Star,
   Smartphone,
   Router,
@@ -15,7 +15,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 // import { motion } from "motion/react";
-import ServiceCard1 from "../../components/cards/ServiceCard1";
+// import ServiceCard1 from "../../components/cards/ServiceCard1";
 // import LanguageSwitcher from "../../components/LanguageSwitcher";
 // import Jumbotrun from "../../components/pages/Jumbotrun";
 // import { DotBackgroundJumbotron } from "@/layouts/styled-layouts/dot-bg-jumbotron";
