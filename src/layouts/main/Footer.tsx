@@ -18,18 +18,22 @@ const Footer = () => {
           <div className="flex gap-x-2 mt-4 text-white">
             <Link
               to={"https://www.facebook.com/share/16RYH57sBn/?mibextid=wwXIfr"}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full p-2 bg-white text-primary"
             >
               <Facebook className="w-5 h-5" />
             </Link>
-            <Link
+            {/* <Link
               to={"https://twitter.com/oxygen_ict"}
               className="rounded-full p-2 bg-white text-primary"
             >
               <Twitter className="w-5 h-5" />
-            </Link>
+            </Link> */}
             <Link
               to={"https://www.linkedin.com/company/oxygen-arabia-co-ltd/"}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full p-2 bg-white text-primary"
             >
               <Linkedin className="w-5 h-5" />

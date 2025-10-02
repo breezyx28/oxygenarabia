@@ -5,21 +5,21 @@ import { Card } from "../../ui/card";
 import { useTranslation } from "react-i18next";
 
 const socialLinks = [
-  {
-    icon: Twitter,
-    href: "https://twitter.com/oxygen_ict",
-    label: "Twitter",
-    delay: 0.5,
-  },
+  // {
+  //   icon: Twitter,
+  //   href: "https://twitter.com/oxygen_ict",
+  //   label: "Twitter",
+  //   delay: 0.5,
+  // },
   {
     icon: Linkedin,
-    href: "https://www.linkedin.com/company/oxygen-technologies-ltd/",
+    href: "https://www.linkedin.com/company/oxygen-arabia-co-ltd/",
     label: "LinkedIn",
     delay: 0.6,
   },
   {
     icon: Facebook,
-    href: "https://www.facebook.com/Oxygenict/",
+    href: "https://www.facebook.com/share/16RYH57sBn/?mibextid=wwXIfr",
     label: "Facebook",
     delay: 0.7,
   },
@@ -119,6 +119,8 @@ export const ContactInfo: React.FC = () => {
         <div className="flex gap-2">
           {socialLinks.map((social, index) => (
             <motion.a
+              target="_blank"
+              rel="noopener noreferrer"
               key={index}
               href={social.href}
               className="w-12 h-12 bg-blue-200/20 rounded-xl flex items-center justify-center text-blue-600"

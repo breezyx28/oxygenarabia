@@ -141,7 +141,7 @@ const UpperNav = () => {
 
                     <div className="ltr:pl-[1rem] rtl:pr-[1rem]">
                       <a
-                        href="/#contact-us-section"
+                        href="/contact"
                         className="primary-btn shadow-none text-[12px] px-[20px] !py-[5px] font-[500] rounded-full"
                       >
                         {t("nav.tryFreeNow")}
@@ -266,7 +266,7 @@ const UpperNav = () => {
           <div className="flex flex-col gap-4">
             <LanguageSwitcher />
             <a
-              href="/#contact-us-section"
+              href="/contact"
               onClick={() => setMenuOpend(false)}
               className="btn text-white bg-primary border-0 rounded-[20px]"
             >

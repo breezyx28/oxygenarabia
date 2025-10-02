@@ -43,13 +43,13 @@ const About = () => {
 
       <section className="section-container py-0 z-50 bg-white">
         <div className="container px-6 py-10 mx-auto">
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-16 bg-gray-50 p-6 lg:p-10 rounded-lg h-full">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-16 md:bg-gray-50 bg-transparent md:p-6 p-[0px] lg:p-10 rounded-lg h-full">
             <div className="flex flex-col gap-y-10 divide-y divide-gray-100">
               <div className="flex flex-col items-start gap-y-12 pb-4">
                 <div className="rounded-full border border-primary px-4 py-2">
                   {t("about.header.badge")}
                 </div>
-                <h1 className="text-7xl font-bold">
+                <h1 className="md:text-7xl text-4xl font-bold">
                   {t("about.header.title")}
                 </h1>
                 <article className="mt-4 text-gray-500">
@@ -98,7 +98,7 @@ const About = () => {
 
         {/* Who We Are Section */}
         <div className="container px-6 py-10 mx-auto">
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-16 p-6 lg:p-10 rounded-lg h-full">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-16 md:p-6 p-[0px] lg:p-10 rounded-lg h-full">
             <div className="w-full h-auto">
               <img
                 src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" // Diverse tech team
@@ -111,7 +111,7 @@ const About = () => {
                 <div className="rounded-full border border-primary px-4 py-2">
                   {t("about.introduction.badge")}
                 </div>
-                <h1 className="text-7xl font-bold">
+                <h1 className="md:text-7xl text-3xl font-bold">
                   {t("about.introduction.title")}
                 </h1>
                 <article className="text-gray-500">
