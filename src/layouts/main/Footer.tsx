@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Logo from "@/components/logo/Logo";
@@ -24,12 +24,15 @@ const Footer = () => {
             >
               <Facebook className="w-5 h-5" />
             </Link>
-            {/* <Link
-              to={"https://twitter.com/oxygen_ict"}
+            <Link
+              to={
+                "https://www.instagram.com/oxygen_arabia?igsh=MWp5N2trM2NpcW5xdA=="
+              }
+              target="_blank"
               className="rounded-full p-2 bg-white text-primary"
             >
-              <Twitter className="w-5 h-5" />
-            </Link> */}
+              <Instagram className="w-5 h-5" />
+            </Link>
             <Link
               to={"https://www.linkedin.com/company/oxygen-arabia-co-ltd/"}
               target="_blank"

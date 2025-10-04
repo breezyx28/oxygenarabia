@@ -9,6 +9,7 @@ import NavDropdown from "@/components/ui/NavDropdown";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
 import { motion } from "framer-motion";
 import { Users, Clock, FileText, Briefcase } from "lucide-react";
+import LogoMobile from "@/components/logo/LogoMobile";
 
 const UpperNav = () => {
   const { t } = useTranslation();
@@ -171,23 +172,23 @@ const UpperNav = () => {
       </div>
 
       {/* Mobile Nav */}
-      <div className="mobile-responsive w-screen fixed top-0 left-0 px-10 py-4 md:hidden flex justify-between items-center md:z-0 z-50 bg-white">
+      <div className="mobile-responsive w-screen fixed top-0 left-0 px-6 py-3 md:hidden flex justify-between items-center md:z-0 z-50 bg-white">
         <a href="/" className="logo">
-          <LogoBase />
+          <LogoMobile />
         </a>
         <div
           className={`fixed bg-white shadow-sm ${
             menuOpened
               ? "uppernav-mobile-slide-0"
               : "uppernav-mobile-slide-full"
-          } duration-200 ease-in top-0 w-full z-50 h-screen flex flex-col justify-between px-10 py-4`}
+          } duration-300 ease-in top-0 w-full z-50 h-screen flex flex-col justify-between px-10 py-4`}
         >
           <div className="wrapper flex flex-col gap-y-10">
             <div className="flex justify-between items-center">
-              <LogoBase />
+              <LogoMobile />
               <button
                 onClick={() => setMenuOpend(false)}
-                className="relative top-0 right-0 p-3 text-slate-800"
+                className="relative top-0 right-0 p-1 text-slate-800"
               >
                 {Svg.close}
               </button>

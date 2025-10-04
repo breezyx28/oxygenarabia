@@ -188,7 +188,7 @@ export const CareerForm: React.FC = () => {
         transition={{ duration: 0.5 }}
         className="w-full max-w-2xl mx-auto"
       >
-        <Card className="p-8 border-2 border-green-200 bg-green-50/80 backdrop-blur-sm shadow-xl">
+        <Card className="md:p-8 p-6 border-2 border-green-200 bg-green-50/80 backdrop-blur-sm shadow-xl">
           <div className="text-center">
             <motion.div
               initial={{ scale: 0 }}
@@ -225,19 +225,19 @@ export const CareerForm: React.FC = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="w-full max-w-4xl mx-auto"
+      className="w-full md:max-w-4xl max-w-full mx-auto"
     >
-      <Card className="p-6 md:p-8 border-2 border-slate-200 bg-white/90 backdrop-blur-sm shadow-2xl rounded-2xl">
+      <Card className="p-0 md:p-8 border-2 md:border-slate-200 border-none bg-white/90 backdrop-blur-sm md:shadow-2xl shadow-none md:rounded-2xl rounded-none">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mb-8 text-center"
         >
-          <h3 className="text-3xl font-bold text-slate-900 mb-4">
+          <h3 className="md:text-3xl text-2xl font-bold text-slate-900 mb-4">
             {t("careerSection.form.title")}
           </h3>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-600 md:text-lg text-sm max-w-2xl mx-auto">
             {t("careerSection.form.subtitle")}
           </p>
         </motion.div>
@@ -403,7 +403,7 @@ export const CareerForm: React.FC = () => {
               className="w-full md:w-auto min-w-[200px] mx-auto flex justify-center bg-gradient-to-r from-[#1f70c1] to-[#1557a3] hover:from-[#1557a3] hover:to-[#0f4d85] text-white shadow-xl hover:shadow-2xl hover:shadow-[#1f70c1]/30 transition-all duration-300 group text-lg font-semibold py-6 px-8 rounded-xl"
             >
               <motion.div
-                className="flex items-center justify-center space-x-3"
+                className="flex items-center justify-center gap-3"
                 whileTap={{ scale: 0.95 }}
               >
                 {isSubmitting ? (

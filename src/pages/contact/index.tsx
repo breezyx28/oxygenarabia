@@ -34,7 +34,7 @@ const contact = () => {
         </Suspense>
       </div>
       <div className="section-container">
-        <section className="relative section-container relative min-h-screen overflow-hidden">
+        <section className="relative relative min-h-screen overflow-hidden">
           {/* Background decorative elements */}
           <FloatingShapes />
 

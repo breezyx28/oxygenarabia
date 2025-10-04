@@ -201,8 +201,8 @@ export const Svg = {
   ),
   close: (
     <svg
-      width={38}
-      height={38}
+      width={32}
+      height={32}
       fill="none"
       stroke="currentColor"
       strokeLinecap="round"

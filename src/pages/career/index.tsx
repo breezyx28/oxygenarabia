@@ -71,7 +71,7 @@ const Career = () => {
               </motion.h2>
 
               <motion.h1
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6"
+                className="text-2xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
@@ -80,7 +80,7 @@ const Career = () => {
               </motion.h1>
 
               <motion.p
-                className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed"
+                className="md:text-xl text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -152,10 +152,10 @@ const Career = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-center mb-12"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
                 {t("careerSection.applyTitle")}
               </h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              <p className="md:text-lg text-base text-slate-600 max-w-2xl mx-auto">
                 {t("careerSection.applyDescription")}
               </p>
             </motion.div>

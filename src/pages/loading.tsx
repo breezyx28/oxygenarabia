@@ -6,7 +6,7 @@ export default function Loading() {
     >
       <img
         className="loading-fade"
-        width={"140"}
+        width={"10"}
         height={"140"}
         src={"/icons/apple-touch-icon-180x180.png"}
         alt="Oxygen loading icon"

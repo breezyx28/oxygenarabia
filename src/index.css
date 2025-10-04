@@ -169,11 +169,13 @@ iframe > a.spline-watermark {
 
 .uppernav-mobile-slide-0 {
   transform: translateX(0);
-  margin-left: -2.5rem;
+  /* margin-left: -2.5rem; */
+  left: 0;
 }
 body[dir="rtl"] .uppernav-mobile-slide-0 {
   transform: translateX(0);
-  margin-right: -2.5rem;
+  /* margin-right: -2.5rem; */
+  right: 0;
 }
 
 .uppernav-mobile-slide-full {

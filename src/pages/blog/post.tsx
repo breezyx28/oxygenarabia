@@ -218,7 +218,7 @@ const Post = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <div className="relative h-[40vh] overflow-hidden">
+      <div className="relative h-[50vh] overflow-hidden">
         <Suspense
           fallback={
             <div className="h-[40vh] bg-primary/10 flex items-center justify-center">
@@ -233,7 +233,7 @@ const Post = () => {
                 ? "مقال متخصص في تجربة العملاء والتقنية"
                 : "Expert insights on customer experience and technology"
             }
-            className="bg-gradient-to-br from-[#1f70c1] to-[#0f4d85]"
+            className="bg-gradient-to-br from-[#1f70c1] to-[#0f4d85] text-center"
             containerClassName="bg-primary/10"
           />
         </Suspense>
@@ -250,8 +250,8 @@ const Post = () => {
             className="mb-8"
           >
             <Button asChild variant="ghost" className="gap-2">
-              <Link to="/blog">
-                <ArrowLeft className="w-4 h-4" />
+              <Link to="/blog" className="text-xs">
+                <ArrowLeft className="w-4 h-4 rtl:rotate-[180deg] ltr:rotate-[0deg]" />
                 {t("blog.backToBlog")}
               </Link>
             </Button>

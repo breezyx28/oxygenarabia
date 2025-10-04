@@ -1,16 +1,23 @@
 import React from "react";
 import { motion } from "motion/react";
-import { MapPin, Phone, Mail, Twitter, Linkedin, Facebook } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Linkedin,
+  Facebook,
+  Instagram,
+} from "lucide-react";
 import { Card } from "../../ui/card";
 import { useTranslation } from "react-i18next";
 
 const socialLinks = [
-  // {
-  //   icon: Twitter,
-  //   href: "https://twitter.com/oxygen_ict",
-  //   label: "Twitter",
-  //   delay: 0.5,
-  // },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/oxygen_arabia?igsh=MWp5N2trM2NpcW5xdA==",
+    label: "Instagram",
+    delay: 0.5,
+  },
   {
     icon: Linkedin,
     href: "https://www.linkedin.com/company/oxygen-arabia-co-ltd/",

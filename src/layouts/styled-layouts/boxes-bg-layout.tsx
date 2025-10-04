@@ -18,7 +18,7 @@ export function BackgroundBoxesLayout({
   return (
     <div
       className={twMerge(
-        "h-full relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg",
+        "h-full relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center",
         className
       )}
     >
@@ -38,7 +38,9 @@ export function BackgroundBoxesLayout({
         transition={{ duration: 1.4, delay: 1, ease: "easeOut" }}
       />
       <motion.h1
-        className={cn("md:text-5xl text-xl font-bold text-white relative z-20")}
+        className={cn(
+          "md:text-5xl text-3xl font-bold text-white relative z-20"
+        )}
       >
         {title || "...Loading"}
       </motion.h1>

@@ -61,7 +61,7 @@ const BlogPage = () => {
             transition={{ duration: 0.8 }}
             className="mb-16"
           >
-            <div className="relative bg-primary rounded-2xl p-8 text-white">
+            <div className="relative bg-primary md:rounded-2xl rounded-xl md:p-8 p-4 text-white">
               <div className="relative">
                 <Badge className="absolute right-[0.5rem] top-[0.5rem] bg-white text-primary border-none">
                   {lang === "ar" ? "مقال مميز" : "Featured"}
@@ -71,24 +71,24 @@ const BlogPage = () => {
                   className="w-full h-[200px] object-cover rounded-[16px] mb-6"
                 />
               </div>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
+              <h2 className="text-lg md:text-xl lg:text-3xl font-bold mb-4">
                 {blogPost.title[lang]}
               </h2>
-              <p className="text-blue-100 text-lg mb-6 max-w-2xl">
+              <p className="text-blue-100 md:text-lg text-sm mb-6 max-w-2xl">
                 {blogPost.excerpt[lang]}
               </p>
               <div className="flex flex-wrap items-center gap-4 text-blue-100 mb-6">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 font-bold">
                   <User className="w-4 h-4" />
                   <span>{blogPost.author}</span>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 text-sm">
                   <Calendar className="w-4 h-4" />
                   <span>
                     {new Date(blogPost.date).toLocaleDateString(lang)}
                   </span>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 text-sm">
                   <Clock className="w-4 h-4" />
                   <span>{blogPost.readTime}</span>
                 </div>
@@ -99,7 +99,7 @@ const BlogPage = () => {
               >
                 <a href={`/blog/${blogPost.slug}`}>
                   {lang === "ar" ? "اقرأ المزيد" : "Read More"}{" "}
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  <ArrowRight className="w-4 h-4 ml-2 rtl:rotate-[180deg] ltr:rotate-[0deg]" />
                 </a>
               </Button>
             </div>

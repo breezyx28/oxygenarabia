@@ -4,34 +4,54 @@ import { useTranslation } from "react-i18next";
 
 export default function BentoGridComponent() {
   const { t } = useTranslation();
-  
+
   const items = [
     {
-      title: t('events.oxygenEvent.title'),
-      description: t('events.oxygenEvent.description'),
-      header: <EventSlideshow images={eventImages.slice(0, 3)} alt={t('events.oxygenEvent.title')} />,
-      className: "md:col-span-2",
+      title: t("events.oxygenEvent.title"),
+      description: t("events.oxygenEvent.description"),
+      header: (
+        <EventSlideshow
+          images={eventImages.slice(0, 3)}
+          alt={t("events.oxygenEvent.title")}
+        />
+      ),
+      className: "md:col-span-2 md:p-4 p-3",
       icon: <span className="text-2xl">🎯</span>,
     },
     {
-      title: t('events.innovationSummit.title'),
-      description: t('events.innovationSummit.description'),
-      header: <EventSlideshow images={eventImages.slice(3, 6)} alt={t('events.innovationSummit.title')} />,
-      className: "md:col-span-1",
+      title: t("events.innovationSummit.title"),
+      description: t("events.innovationSummit.description"),
+      header: (
+        <EventSlideshow
+          images={eventImages.slice(3, 6)}
+          alt={t("events.innovationSummit.title")}
+        />
+      ),
+      className: "md:col-span-1 md:p-4 p-3",
       icon: <span className="text-2xl">💡</span>,
     },
     {
-      title: t('events.techConference.title'),
-      description: t('events.techConference.description'),
-      header: <EventSlideshow images={eventImages.slice(6, 9)} alt={t('events.techConference.title')} />,
-      className: "md:col-span-1",
+      title: t("events.techConference.title"),
+      description: t("events.techConference.description"),
+      header: (
+        <EventSlideshow
+          images={eventImages.slice(6, 9)}
+          alt={t("events.techConference.title")}
+        />
+      ),
+      className: "md:col-span-1 md:p-4 p-3",
       icon: <span className="text-2xl">🚀</span>,
     },
     {
-      title: t('events.digitalTransformation.title'),
-      description: t('events.digitalTransformation.description'),
-      header: <EventSlideshow images={eventImages.slice(9, 12)} alt={t('events.digitalTransformation.title')} />,
-      className: "md:col-span-2",
+      title: t("events.digitalTransformation.title"),
+      description: t("events.digitalTransformation.description"),
+      header: (
+        <EventSlideshow
+          images={eventImages.slice(9, 12)}
+          alt={t("events.digitalTransformation.title")}
+        />
+      ),
+      className: "md:col-span-2 md:p-4 p-3",
       icon: <span className="text-2xl">⚡</span>,
     },
   ];
@@ -119,7 +139,7 @@ const EventSlideshow = ({ images, alt }: { images: string[]; alt: string }) => {
   return (
     <div
       id={`slideshow-${alt.replace(/\s+/g, "-")}`}
-      className="relative flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden border border-neutral-200"
+      className="relative flex flex-1 w-full h-full md:min-h-[6rem] min-h-[12rem] md:rounded-xl rounded-md overflow-hidden border border-neutral-200"
     >
       <div
         className={`absolute inset-0 bg-cover bg-top will-change-transform transition-transform duration-500 ease-in-out ${
@@ -158,5 +178,3 @@ const eventImages = [
   "/images/events/Frame_Oxy19.jpg",
   "/images/events/Frame_Oxy20.jpg",
 ];
-
-
