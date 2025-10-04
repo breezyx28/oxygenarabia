@@ -1,0 +1,31 @@
+import{c as i,j as e,t as l,u as n,H as o}from"./index-BwRrwcrX.js";import{BackgroundBoxesLayout as x}from"./boxes-bg-layout-pj2k_P9j.js";import{S as d}from"./star-BsQvjXe4.js";import{C as h}from"./cloud-DQR8rwS0.js";import{D as p,B as u}from"./database-CSC1zpEe.js";/**
+ * @license lucide-react v0.539.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const v=[["path",{d:"M12 8V4H8",key:"hb8ula"}],["rect",{width:"16",height:"12",x:"4",y:"8",rx:"2",key:"enze0r"}],["path",{d:"M2 14h2",key:"vft8re"}],["path",{d:"M20 14h2",key:"4cs60a"}],["path",{d:"M15 13v2",key:"1xurst"}],["path",{d:"M9 13v2",key:"rq6x2g"}]],m=i("bot",v);/**
+ * @license lucide-react v0.539.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const y=[["path",{d:"M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z",key:"j76jl0"}],["path",{d:"M22 10v6",key:"1lu8f3"}],["path",{d:"M6 12.5V16a6 3 0 0 0 12 0v-3.5",key:"1r8lef"}]],g=i("graduation-cap",y);/**
+ * @license lucide-react v0.539.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const j=[["rect",{width:"20",height:"8",x:"2",y:"14",rx:"2",key:"w68u3i"}],["path",{d:"M6.01 18H6",key:"19vcac"}],["path",{d:"M10.01 18H10",key:"uamcmx"}],["path",{d:"M15 10v4",key:"qjz1xs"}],["path",{d:"M17.84 7.17a4 4 0 0 0-5.66 0",key:"1rif40"}],["path",{d:"M20.66 4.34a8 8 0 0 0-11.31 0",key:"6a5xfq"}]],b=i("router",j);/**
+ * @license lucide-react v0.539.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const N=[["rect",{width:"20",height:"8",x:"2",y:"2",rx:"2",ry:"2",key:"ngkwjq"}],["rect",{width:"20",height:"8",x:"2",y:"14",rx:"2",ry:"2",key:"iecqi9"}],["line",{x1:"6",x2:"6.01",y1:"6",y2:"6",key:"16zg32"}],["line",{x1:"6",x2:"6.01",y1:"18",y2:"18",key:"nzw8ys"}]],k=i("server",N);/**
+ * @license lucide-react v0.539.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const w=[["path",{d:"M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915",key:"1i5ecw"}],["circle",{cx:"12",cy:"12",r:"3",key:"1v7zrd"}]],f=i("settings",w);/**
+ * @license lucide-react v0.539.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const M=[["rect",{width:"14",height:"20",x:"5",y:"2",rx:"2",ry:"2",key:"1yt0o3"}],["path",{d:"M12 18h.01",key:"mhygvu"}]],_=i("smartphone",M),s=({title:t,subtitle:c,icon:r,className:a})=>e.jsxs("div",{className:l("group p-4 lg:p-6 rounded-[24px] flex flex-col gap-y-4 lg:gap-y-6 bg-gray-50 hover:bg-blue-600 transition cursor-pointer",a),children:[e.jsx("div",{className:"card-icon rounded-full w-[fit-content] p-[1rem] bg-blue-100 flex items-center justify-center transition",children:r}),e.jsxs("div",{className:"card-details flex flex-col gap-y-2 lg:gap-y-4",children:[e.jsx("h3",{className:"text-xl lg:text-2xl font-semibold group-hover:text-white transition",children:t}),e.jsx("p",{className:"text-xs lg:text-sm text-gray-500 group-hover:text-white transition",children:c})]})]}),H=()=>{const{t}=n();return e.jsxs(e.Fragment,{children:[e.jsx(o,{children:e.jsxs("title",{children:[t("services.title")," - Oxygen"]})}),e.jsx("div",{className:"relative h-[60vh] overflow-hidden",children:e.jsx(x,{title:t("services.title"),subtitle:t("services.subtitle"),className:"bg-primary",containerClassName:"bg-primary/10"})}),e.jsx("section",{className:"section-container z-10 bg-white",children:e.jsxs("div",{className:"container px-6 py-10 mx-auto",children:[e.jsxs("div",{className:"section-text",children:[t("services.title").split(" ")[0]," ",e.jsx("span",{className:"text-primary",children:t("services.title").split(" ").slice(1).join(" ")})]}),e.jsx("p",{className:"mt-4 text-gray-500 xl:mt-6",children:t("services.subtitle")}),e.jsxs("div",{className:"grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3",children:[e.jsx(s,{title:t("services.callEvaluation.title"),subtitle:t("services.callEvaluation.description"),icon:e.jsx(d,{className:"w-8 h-8 text-blue-500"})}),e.jsx(s,{title:t("services.softphone.title"),subtitle:t("services.softphone.description"),icon:e.jsx(_,{className:"w-8 h-8 text-blue-500"})}),e.jsx(s,{title:t("services.voipPhones.title"),subtitle:t("services.voipPhones.description"),icon:e.jsx(b,{className:"w-8 h-8 text-blue-500"})}),e.jsx(s,{title:t("services.aiAgent.title"),subtitle:t("services.aiAgent.description"),icon:e.jsx(m,{className:"w-8 h-8 text-blue-500"})}),e.jsx(s,{title:t("services.ccaas.title"),subtitle:t("services.ccaas.description"),icon:e.jsx(h,{className:"w-8 h-8 text-blue-500"})}),e.jsx(s,{title:t("services.crm.title"),subtitle:t("services.crm.description"),icon:e.jsx(p,{className:"w-8 h-8 text-blue-500"})}),e.jsx(s,{title:t("services.erp.title"),subtitle:t("services.erp.description"),icon:e.jsx(f,{className:"w-8 h-8 text-blue-500"})}),e.jsx(s,{title:t("services.aiServices.title"),subtitle:t("services.aiServices.description"),icon:e.jsx(u,{className:"w-8 h-8 text-blue-500"})}),e.jsx(s,{title:t("services.eTraining.title"),subtitle:t("services.eTraining.description"),icon:e.jsx(g,{className:"w-8 h-8 text-blue-500"})}),e.jsx(s,{title:t("services.itOutsourcing.title"),subtitle:t("services.itOutsourcing.description"),icon:e.jsx(k,{className:"w-8 h-8 text-blue-500"})})]})]})})]})};export{H as default};

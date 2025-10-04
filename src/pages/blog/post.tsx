@@ -4,11 +4,11 @@ import { Calendar, User, Clock, ArrowLeft } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Suspense } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { BackgroundBoxesLayout } from "@/layouts/styled-layouts/boxes-bg-layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { marked } from "marked";
+import { useGetBlogPostsQuery } from "@/store/api/blogApi";
 
 let en = `# How to Build a Smart Customer Experience in 2025: From Cloud Contact Centers to Hospitality Robots
 
@@ -196,25 +196,33 @@ let ar = `# كيف تبني تجربة عميل ذكية في 2025: من مرك�
 
 const Post = () => {
   const { t, i18n } = useTranslation();
-  //   const { slug } = useParams<{ slug: string }>();
+  const { slug } = useParams<{ slug: string }>();
   const isRTL = i18n.language === "ar";
   const lang = i18n.language === "ar" ? "ar" : "en";
 
-  const postMeta = {
-    title:
-      lang === "ar"
-        ? "كيف تبني تجربة عميل ذكية في 2025"
-        : "How to Build a Smart Customer Experience in 2025",
-    author: "Mohamed Al'Amri",
-    date: "2025-09-30",
-    readTime: "7 min read",
-    category: lang === "ar" ? "تجربة العميل" : "Customer Experience",
-  };
+  const { data: posts = [], isLoading, error } = useGetBlogPostsQuery(lang);
+  const post = posts.find((p) => p.slug === slug && p.lang === lang);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-slate-600">{t("loading")}</div>
+      </div>
+    );
+  }
+
+  if (error || !post) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-red-600">Post not found</div>
+      </div>
+    );
+  }
 
   return (
     <>
       <Helmet>
-        <title>{postMeta.title} - Oxygen Blog</title>
+        <title>{post.title} - Oxygen Blog</title>
       </Helmet>
 
       {/* Hero Section */}
@@ -227,11 +235,15 @@ const Post = () => {
           }
         >
           <BackgroundBoxesLayout
-            title={postMeta.title}
+            title={
+              post.title.length > 50
+                ? post.title.substring(0, 50) + "..."
+                : post.title
+            }
             subtitle={
-              lang === "ar"
-                ? "مقال متخصص في تجربة العملاء والتقنية"
-                : "Expert insights on customer experience and technology"
+              post.excerpt.length > 150
+                ? post.excerpt.substring(0, 150) + "..."
+                : post.excerpt
             }
             className="bg-gradient-to-br from-[#1f70c1] to-[#0f4d85] text-center"
             containerClassName="bg-primary/10"
@@ -265,24 +277,26 @@ const Post = () => {
             className="mb-8"
           >
             <Badge className="mb-4 bg-blue-100 text-blue-700 border-blue-200">
-              {postMeta.category}
+              {post.category}
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-              {postMeta.title}
+              {post.title}
             </h1>
 
             <div className="flex flex-wrap items-center gap-6 text-slate-600 mb-6">
               <div className="flex items-center gap-2">
                 <User className="w-5 h-5" />
-                <span className="font-medium">{postMeta.author}</span>
+                <span className="font-medium">{post.author}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
-                <span>{new Date(postMeta.date).toLocaleDateString(lang)}</span>
+                <span>
+                  {new Date(post.created_at).toLocaleDateString(lang)}
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5" />
-                <span>{postMeta.readTime}</span>
+                <span>{post.read_time}</span>
               </div>
             </div>
 
@@ -304,7 +318,7 @@ const Post = () => {
             } prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900 prose-a:text-blue-600 hover:prose-a:text-blue-700 prose-blockquote:border-blue-200 prose-blockquote:bg-blue-50`}
             dir={isRTL ? "rtl" : "ltr"}
             dangerouslySetInnerHTML={{
-              __html: marked(isRTL ? ar : en),
+              __html: post.content,
             }}
           />
         </div>
