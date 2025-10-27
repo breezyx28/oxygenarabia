@@ -78,9 +78,15 @@ const Footer = () => {
         </div>
         <div>
           <span className="footer-title">{t("footer.legal.title")}</span>
-          <a className="link link-hover">{t("footer.legal.termsOfUse")}</a>
-          <a className="link link-hover">{t("footer.legal.privacyPolicy")}</a>
-          <a className="link link-hover">{t("footer.legal.cookiePolicy")}</a>
+          <a href="/terms-of-use" className="link link-hover">
+            {t("footer.legal.termsOfUse")}
+          </a>
+          <a href="/privacy-policy" className="link link-hover">
+            {t("footer.legal.privacyPolicy")}
+          </a>
+          <a href="/cookie-policy" className="link link-hover">
+            {t("footer.legal.cookiePolicy")}
+          </a>
         </div>
       </div>
       <div className="copyrights flex flex-col justify-center items-center pt-4">

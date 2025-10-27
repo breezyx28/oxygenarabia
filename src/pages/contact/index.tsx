@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { FloatingShapes } from "@/components/pages/contact-us/floating-shapes";
 import { ContactInfo } from "@/components/pages/contact-us/contact-info";
 import { ContactForm } from "@/components/pages/contact-us/contact-form";
-import { Helmet } from "react-helmet-async";
+import SEOLayout from "@/layouts/main/SEOLayout";
 import { Suspense } from "react";
 import { BackgroundBoxesLayout } from "@/layouts/styled-layouts/boxes-bg-layout";
 
@@ -13,10 +13,13 @@ const contact = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
   return (
-    <>
-      <Helmet>
-        <title>{t("contactSection.badge")} - Oxygen</title>
-      </Helmet>
+    <SEOLayout
+      title="Contact Us - Oxygen Arabia ICT"
+      description="Get in touch with Oxygen Arabia ICT for your technology needs. Contact our expert team for ICT consultation, support, and innovative solutions in Saudi Arabia."
+      keywords="contact oxygen arabia, ICT consultation, technology support, Saudi Arabia contact, get in touch"
+      image="/icons/oxygen/Oxygen.png"
+    >
+      <>
       <div className="relative h-[60vh] overflow-hidden">
         <Suspense
           fallback={
@@ -95,7 +98,8 @@ const contact = () => {
           <Toaster position="top-right" />
         </section>
       </div>
-    </>
+      </>
+    </SEOLayout>
   );
 };
 

@@ -35,7 +35,7 @@ const UpperNav = () => {
       {/* Desktop Nav */}
       <div className="desktop-responsive hidden md:flex justify-center">
         <div
-          className="fixed max-w-[1080px] w-full top-[20px] left-1/2 z-[50] flex justify-center"
+          className="fixed xl:max-w-[1080px] lg:max-w-[720px] max-w-[540px] w-full top-[20px] left-1/2 z-[50] flex justify-center"
           style={{ transform: "translateX(-50%)" }}
         >
           {/* Outer animation container */}

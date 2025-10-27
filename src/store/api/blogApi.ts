@@ -50,8 +50,12 @@ export const blogApi = createApi({
   reducerPath: "blogApi",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://cms-api.oxygenarabia.com/api/",
+    mode: 'cors',
     prepareHeaders: (headers, { endpoint }) => {
       headers.set("Accept", "application/json");
+      headers.set("Access-Control-Allow-Origin", "*");
+      headers.set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+      headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization, Accept");
       if (endpoint !== "createBlogPost" && endpoint !== "updateBlogPost") {
         headers.set("Content-Type", "application/json");
       }
@@ -67,7 +71,7 @@ export const blogApi = createApi({
     }),
     getBlogPost: builder.query<BlogPost, string>({
       query: (slug) => `blog-posts/${slug}`,
-      providesTags: (result, error, slug) => [{ type: "BlogPost", id: slug }],
+      providesTags: (_result, _error, slug) => [{ type: "BlogPost", id: slug }],
     }),
     createBlogPost: builder.mutation<BlogPost, FormData>({
       query: (formData) => ({

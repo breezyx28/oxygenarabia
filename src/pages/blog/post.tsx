@@ -10,189 +10,189 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useGetBlogPostsQuery } from "@/store/api/blogApi";
 
-let en = `# How to Build a Smart Customer Experience in 2025: From Cloud Contact Centers to Hospitality Robots
+// let en = `# How to Build a Smart Customer Experience in 2025: From Cloud Contact Centers to Hospitality Robots
 
-## Introduction
+// ## Introduction
 
-Customer experience is no longer just about answering fast or cutting wait times—it’s a complete operating system that balances **speed, personalization, and omnichannel consistency**. Whether you run a hotel, clinic, e-commerce store, or hospitality brand, turning service into a **unified system** that connects communications, customer data, and analytics is the real differentiator for satisfaction and revenue growth. This article gives you a practical, 90-day roadmap tailored to today’s Saudi market realities.
+// Customer experience is no longer just about answering fast or cutting wait times—it’s a complete operating system that balances **speed, personalization, and omnichannel consistency**. Whether you run a hotel, clinic, e-commerce store, or hospitality brand, turning service into a **unified system** that connects communications, customer data, and analytics is the real differentiator for satisfaction and revenue growth. This article gives you a practical, 90-day roadmap tailored to today’s Saudi market realities.
 
-## 1) Start with the Customer Journey—not the tools
+// ## 1) Start with the Customer Journey—not the tools
 
-Before you buy any platform, map the end-to-end journey: how customers discover you, how they contact you, where they get stuck, and when they decide to buy or cancel. Assign a clear **KPI** to each friction point: First Response Time (FRT), Average Handle Time (AHT), and conversion to booking/purchase (CVR). This map becomes the compass for every tech decision.
+// Before you buy any platform, map the end-to-end journey: how customers discover you, how they contact you, where they get stuck, and when they decide to buy or cancel. Assign a clear **KPI** to each friction point: First Response Time (FRT), Average Handle Time (AHT), and conversion to booking/purchase (CVR). This map becomes the compass for every tech decision.
 
-## 2) Cloud Contact Center: One console for every conversation
+// ## 2) Cloud Contact Center: One console for every conversation
 
-It’s not about taking calls—it’s about **unifying conversations across phone, WhatsApp, email, and web chat** in one screen, with automatic call distribution (ACD) and a smart **IVR** to route customers themselves.
-Expected outcomes:
+// It’s not about taking calls—it’s about **unifying conversations across phone, WhatsApp, email, and web chat** in one screen, with automatic call distribution (ACD) and a smart **IVR** to route customers themselves.
+// Expected outcomes:
 
-* Lower wait times and higher first-contact resolution.
-* Immediate visibility into customer history—no repetition.
-* Hybrid/remote support during peaks without operational chaos.
+// * Lower wait times and higher first-contact resolution.
+// * Immediate visibility into customer history—no repetition.
+// * Hybrid/remote support during peaks without operational chaos.
 
-Build a simple backbone: clear IVR menus, accurate business hours, call recording for QA, and real-time dashboards on a shared screen.
+// Build a simple backbone: clear IVR menus, accurate business hours, call recording for QA, and real-time dashboards on a shared screen.
 
-## 3) CRM + ERP: Data-driven personalization that actually works
+// ## 3) CRM + ERP: Data-driven personalization that actually works
 
-Integrating your contact center with **CRM** gives agents a rich customer card: past purchases, preferences, complaints, and loyalty points. **ERP** integration ensures you never promise what’s unavailable and ties inventory to order flows.
-Practical examples:
+// Integrating your contact center with **CRM** gives agents a rich customer card: past purchases, preferences, complaints, and loyalty points. **ERP** integration ensures you never promise what’s unavailable and ties inventory to order flows.
+// Practical examples:
 
-* A hotel recognizes returning guests and offers an upgrade or free breakfast based on points.
-* A clinic sends WhatsApp appointment reminders with a one-tap confirm that updates CRM schedules.
-* An online store suggests complementary bundles using previous purchase behavior.
+// * A hotel recognizes returning guests and offers an upgrade or free breakfast based on points.
+// * A clinic sends WhatsApp appointment reminders with a one-tap confirm that updates CRM schedules.
+// * An online store suggests complementary bundles using previous purchase behavior.
 
-## 4) Hospitality Robots: A front-of-house that never sleeps
+// ## 4) Hospitality Robots: A front-of-house that never sleeps
 
-In hotels, restaurants, and hospitals, reception/delivery robots can handle repeatable tasks—room deliveries, guest guidance, instant feedback collection—consistently and safely.
-Real value:
+// In hotels, restaurants, and hospitals, reception/delivery robots can handle repeatable tasks—room deliveries, guest guidance, instant feedback collection—consistently and safely.
+// Real value:
 
-* Free human teams for complex tasks and relevant upsell moments.
-* 24/7 consistency that reduces errors and lifts loyalty.
-  For best results, define scenarios, plan traffic routes, and integrate with PMS/CRM where available.
+// * Free human teams for complex tasks and relevant upsell moments.
+// * 24/7 consistency that reduces errors and lifts loyalty.
+//   For best results, define scenarios, plan traffic routes, and integrate with PMS/CRM where available.
 
-## 5) AI: Graduate from “FAQ bots” to a true **Service Copilot**
+// ## 5) AI: Graduate from “FAQ bots” to a true **Service Copilot**
 
-Skip generic bots disconnected from your data. Train a language model on your **internal knowledge base** (policies, menus, rooms, prices) to deliver:
+// Skip generic bots disconnected from your data. Train a language model on your **internal knowledge base** (policies, menus, rooms, prices) to deliver:
 
-* Contextual, accurate answers instead of generic replies.
-* **Auto-generated call/chat summaries** saved straight into CRM.
-* **Intent detection** for sensitive cases (escalations, VIPs) routed instantly to specialists.
+// * Contextual, accurate answers instead of generic replies.
+// * **Auto-generated call/chat summaries** saved straight into CRM.
+// * **Intent detection** for sensitive cases (escalations, VIPs) routed instantly to specialists.
 
-## 6) Continuous measurement: What isn’t measured won’t improve
+// ## 6) Continuous measurement: What isn’t measured won’t improve
 
-Adopt a weekly performance board featuring:
+// Adopt a weekly performance board featuring:
 
-* **FRT** (First Response Time)
-* **AHT** (Average Handle Time)
-* **CSAT/NPS** (Satisfaction/Recommendation)
-* **Conversion Rate** (conversation → booking/order)
-* **Cost per Resolution**
-  Run short (15-minute) reviews and implement one concrete change after each review (script tweak, micro-training, IVR update).
+// * **FRT** (First Response Time)
+// * **AHT** (Average Handle Time)
+// * **CSAT/NPS** (Satisfaction/Recommendation)
+// * **Conversion Rate** (conversation → booking/order)
+// * **Cost per Resolution**
+//   Run short (15-minute) reviews and implement one concrete change after each review (script tweak, micro-training, IVR update).
 
-## 7) Omnichannel done right
+// ## 7) Omnichannel done right
 
-Keep the experience consistent across channels. If a customer starts on WhatsApp and then calls, the agent should see the **entire conversation context**—no repeated questions. Reuse smart message templates (confirmations, follow-ups, surveys) and tune send times so “smart” doesn’t become spam.
+// Keep the experience consistent across channels. If a customer starts on WhatsApp and then calls, the agent should see the **entire conversation context**—no repeated questions. Reuse smart message templates (confirmations, follow-ups, surveys) and tune send times so “smart” doesn’t become spam.
 
-## 8) Security & compliance build trust
+// ## 8) Security & compliance build trust
 
-Encrypt data in transit and at rest, use granular access controls, define clear retention/deletion policies, and test backups regularly. Train your team on handling sensitive data: with the right tools and awareness, people become your strongest link.
+// Encrypt data in transit and at rest, use granular access controls, define clear retention/deletion policies, and test backups regularly. Train your team on handling sensitive data: with the right tools and awareness, people become your strongest link.
 
-## 9) Your service team: Scripts, training, and empowerment
+// ## 9) Your service team: Scripts, training, and empowerment
 
-Tech alone won’t win. Develop **outcome-oriented conversation scripts** (solve + relevant upsell), and provide ongoing training in empathy, active listening, and objection handling. Learn from recordings: run quick listening sessions to capture best practices and scale them.
+// Tech alone won’t win. Develop **outcome-oriented conversation scripts** (solve + relevant upsell), and provide ongoing training in empathy, active listening, and objection handling. Learn from recordings: run quick listening sessions to capture best practices and scale them.
 
-## 10) A 90-Day Rollout Plan
+// ## 10) A 90-Day Rollout Plan
 
-**Weeks 1–2:** Map the journey, set KPIs, align on targets.
-**Weeks 3–4:** Activate the cloud contact center (IVR, ACD, channels, recording).
-**Weeks 5–6:** Integrate CRM, design customer cards/templates, automate post-service messages.
-**Weeks 7–8:** Pilot a hospitality robot in a controlled zone with clear scenarios.
-**Weeks 9–10:** Deploy an AI copilot trained on your internal knowledge base.
-**Weeks 11–12:** Review metrics, apply quick wins, and expand scope.
+// **Weeks 1–2:** Map the journey, set KPIs, align on targets.
+// **Weeks 3–4:** Activate the cloud contact center (IVR, ACD, channels, recording).
+// **Weeks 5–6:** Integrate CRM, design customer cards/templates, automate post-service messages.
+// **Weeks 7–8:** Pilot a hospitality robot in a controlled zone with clear scenarios.
+// **Weeks 9–10:** Deploy an AI copilot trained on your internal knowledge base.
+// **Weeks 11–12:** Review metrics, apply quick wins, and expand scope.
 
-## 11) Quick lessons to avoid common pitfalls
+// ## 11) Quick lessons to avoid common pitfalls
 
-* Don’t start with tools before journey and metrics.
-* Don’t collect data you never use—every field must have a purpose.
-* Don’t over-automate—preserve a human handoff for nuanced cases.
-* Don’t ignore the **agent experience**—complicated tools slow service no matter how “powerful” they are.
+// * Don’t start with tools before journey and metrics.
+// * Don’t collect data you never use—every field must have a purpose.
+// * Don’t over-automate—preserve a human handoff for nuanced cases.
+// * Don’t ignore the **agent experience**—complicated tools slow service no matter how “powerful” they are.
 
-## Conclusion
+// ## Conclusion
 
-A smart customer experience is an **operating model**, not just software. When you unify channels in the cloud, power service with CRM/ERP data, deploy robots where they make operational sense, and layer in AI trained on your own knowledge—you’ll raise satisfaction, lower costs, and build sustainable growth. Start with a clear map, measure relentlessly, and improve weekly. Over time, service shifts from a cost center to a **value engine** for your business.
+// A smart customer experience is an **operating model**, not just software. When you unify channels in the cloud, power service with CRM/ERP data, deploy robots where they make operational sense, and layer in AI trained on your own knowledge—you’ll raise satisfaction, lower costs, and build sustainable growth. Start with a clear map, measure relentlessly, and improve weekly. Over time, service shifts from a cost center to a **value engine** for your business.
 
-`;
+// `;
 
-let ar = `# كيف تبني تجربة عميل ذكية في 2025: من مركز الاتصال السحابي إلى روبوتات الضيافة
+// let ar = `# كيف تبني تجربة عميل ذكية في 2025: من مركز الاتصال السحابي إلى روبوتات الضيافة
 
-## المقدمة
+// ## المقدمة
 
-لم تعد تجربة العميل اليوم مجرد سرعة في الرد أو خفض زمن الانتظار؛ بل أصبحت منظومة متكاملة تُوازن بين **السرعة، التخصيص، والاتساق عبر كل القنوات**. سواءً كنت تدير فندقًا، عيادة، متجرًا إلكترونيًا، أو علامة ضيافة، فإن تحويل خدمة العملاء إلى **نظام موحّد** يجمع الاتصالات وبيانات العملاء والتحليلات سيكون الفارق الحقيقي في رضا العملاء ونمو الإيرادات. يقدّم هذا المقال خارطة طريق عملية وقابلة للتطبيق في السوق السعودي، مع خطوات واضحة للانطلاق خلال 90 يومًا.
+// لم تعد تجربة العميل اليوم مجرد سرعة في الرد أو خفض زمن الانتظار؛ بل أصبحت منظومة متكاملة تُوازن بين **السرعة، التخصيص، والاتساق عبر كل القنوات**. سواءً كنت تدير فندقًا، عيادة، متجرًا إلكترونيًا، أو علامة ضيافة، فإن تحويل خدمة العملاء إلى **نظام موحّد** يجمع الاتصالات وبيانات العملاء والتحليلات سيكون الفارق الحقيقي في رضا العملاء ونمو الإيرادات. يقدّم هذا المقال خارطة طريق عملية وقابلة للتطبيق في السوق السعودي، مع خطوات واضحة للانطلاق خلال 90 يومًا.
 
-## 1) ابدأ من رحلة العميل لا من الأدوات
+// ## 1) ابدأ من رحلة العميل لا من الأدوات
 
-قبل التفكير في شراء أي منصة، ارسم رحلة العميل كاملة: كيف يكتشفك، كيف يتواصل، أين يتعثّر، ومتى يتخذ قرار الشراء أو الإلغاء. حدّد نقاط الاحتكاك وضع لكل نقطة **مؤشر أداء** واضح مثل زمن أول رد (FRT)، ومتوسط زمن المعالجة (AHT)، ونسبة التحويل إلى حجز أو شراء (CVR). هذه الخريطة ستكون البوصلة التي تقود كل قرار تقني لاحق.
+// قبل التفكير في شراء أي منصة، ارسم رحلة العميل كاملة: كيف يكتشفك، كيف يتواصل، أين يتعثّر، ومتى يتخذ قرار الشراء أو الإلغاء. حدّد نقاط الاحتكاك وضع لكل نقطة **مؤشر أداء** واضح مثل زمن أول رد (FRT)، ومتوسط زمن المعالجة (AHT)، ونسبة التحويل إلى حجز أو شراء (CVR). هذه الخريطة ستكون البوصلة التي تقود كل قرار تقني لاحق.
 
-## 2) مركز الاتصال السحابي: قناة موحّدة لكل محادثة
+// ## 2) مركز الاتصال السحابي: قناة موحّدة لكل محادثة
 
-الفكرة ليست استقبال المكالمات فقط، بل **توحيد المحادثات عبر الهاتف، الواتساب، البريد، ودردشة الموقع** في شاشة واحدة مع توزيع آلي للمكالمات (ACD) و**IVR** ذكي يوجّه العميل ذاتيًا.
-النتيجة المتوقعة:
+// الفكرة ليست استقبال المكالمات فقط، بل **توحيد المحادثات عبر الهاتف، الواتساب، البريد، ودردشة الموقع** في شاشة واحدة مع توزيع آلي للمكالمات (ACD) و**IVR** ذكي يوجّه العميل ذاتيًا.
+// النتيجة المتوقعة:
 
-* خفض وقت الانتظار، ورفع نسبة الحل من أول تواصل.
-* رؤية فورية لسجل العميل بدل تكرار الأسئلة.
-* دعم العمل الهجين أو عن بُعد وقت الذروة دون تعقيد تشغيلي.
+// * خفض وقت الانتظار، ورفع نسبة الحل من أول تواصل.
+// * رؤية فورية لسجل العميل بدل تكرار الأسئلة.
+// * دعم العمل الهجين أو عن بُعد وقت الذروة دون تعقيد تشغيلي.
 
-ابنِ هيكلًا بسيطًا: قوائم IVR واضحة، ساعات عمل محدّثة، تسجيل محادثات للتقييم، وتقارير لحظية تُعرض على لوحة قياس داخلية.
+// ابنِ هيكلًا بسيطًا: قوائم IVR واضحة، ساعات عمل محدّثة، تسجيل محادثات للتقييم، وتقارير لحظية تُعرض على لوحة قياس داخلية.
 
-## 3) CRM + ERP: التخصيص المدعوم بالبيانات
+// ## 3) CRM + ERP: التخصيص المدعوم بالبيانات
 
-تكامل مركز الاتصال مع **CRM** يمنح موظف الخدمة بطاقة عميل غنيّة: المشتريات السابقة، التفضيلات، الشكاوى، ونقاط الولاء. أمّا تكامل **ERP** فيضمن عدم الوعد بما هو غير متاح، وربط المخزون بسير الطلبات.
-أمثلة تطبيقية:
+// تكامل مركز الاتصال مع **CRM** يمنح موظف الخدمة بطاقة عميل غنيّة: المشتريات السابقة، التفضيلات، الشكاوى، ونقاط الولاء. أمّا تكامل **ERP** فيضمن عدم الوعد بما هو غير متاح، وربط المخزون بسير الطلبات.
+// أمثلة تطبيقية:
 
-* فندق يعرّف العميل العائد تلقائيًا ويعرض ترقية غرفة أو إفطار مجاني بناءً على نقاطه.
-* عيادة ترسل تذكير مواعيد عبر واتساب مع زرّ تأكيد فوري يحدّث الجدول في CRM.
-* متجر إلكتروني يقترح حزمًا مكمّلة اعتمادًا على سلوك الشراء السابق.
+// * فندق يعرّف العميل العائد تلقائيًا ويعرض ترقية غرفة أو إفطار مجاني بناءً على نقاطه.
+// * عيادة ترسل تذكير مواعيد عبر واتساب مع زرّ تأكيد فوري يحدّث الجدول في CRM.
+// * متجر إلكتروني يقترح حزمًا مكمّلة اعتمادًا على سلوك الشراء السابق.
 
-## 4) روبوتات الضيافة: واجهة خدمة لا تنام
+// ## 4) روبوتات الضيافة: واجهة خدمة لا تنام
 
-في الفنادق والمطاعم والمستشفيات، يمكن لروبوتات الاستقبال والتوصيل الداخلي أن تدير المهام المتكررة بكفاءة، مثل توصيل الطلبات للغرف، توجيه الضيوف، أو جمع تقييمات فورية بعد الخدمة.
-القيمة الحقيقية:
+// في الفنادق والمطاعم والمستشفيات، يمكن لروبوتات الاستقبال والتوصيل الداخلي أن تدير المهام المتكررة بكفاءة، مثل توصيل الطلبات للغرف، توجيه الضيوف، أو جمع تقييمات فورية بعد الخدمة.
+// القيمة الحقيقية:
 
-* تحرير وقت الفريق البشري للمهام المعقّدة والبيع الإضافي.
-* تجربة متسقة 24/7 تقلل الأخطاء وترفع ولاء الضيوف.
-  لتحقيق أفضل نتائج، ضع سيناريوهات تشغيل واضحة، وحدّد مسارات الحركة، وتأكد من تكامل الروبوت مع أنظمة PMS/CRM إن وُجدت.
+// * تحرير وقت الفريق البشري للمهام المعقّدة والبيع الإضافي.
+// * تجربة متسقة 24/7 تقلل الأخطاء وترفع ولاء الضيوف.
+//   لتحقيق أفضل نتائج، ضع سيناريوهات تشغيل واضحة، وحدّد مسارات الحركة، وتأكد من تكامل الروبوت مع أنظمة PMS/CRM إن وُجدت.
 
-## 5) الذكاء الاصطناعي: من “أسئلة شائعة” إلى “مساعد خدمة”
+// ## 5) الذكاء الاصطناعي: من “أسئلة شائعة” إلى “مساعد خدمة”
 
-ابتعد عن البوتات العامة غير المربوطة ببياناتك. درّب نموذجًا لغويًا على **قاعدة معرفية داخلية** تشمل سياساتك وأسعارك وقوائمك، ليوفّر:
+// ابتعد عن البوتات العامة غير المربوطة ببياناتك. درّب نموذجًا لغويًا على **قاعدة معرفية داخلية** تشمل سياساتك وأسعارك وقوائمك، ليوفّر:
 
-* إجابات سياقية دقيقة بدل ردود عامة.
-* **ملخصات محادثات** تُحفظ تلقائيًا داخل CRM، لتقليل الكتابة اليدوية.
-* **تصنيف نوايا** يكتشف الحالات الحساسة (شكوى عالية، ضيف VIP) ويوجهها فورًا لموظف مختص.
+// * إجابات سياقية دقيقة بدل ردود عامة.
+// * **ملخصات محادثات** تُحفظ تلقائيًا داخل CRM، لتقليل الكتابة اليدوية.
+// * **تصنيف نوايا** يكتشف الحالات الحساسة (شكوى عالية، ضيف VIP) ويوجهها فورًا لموظف مختص.
 
-## 6) القياس المستمر: ما لا يُقاس لا يتحسّن
+// ## 6) القياس المستمر: ما لا يُقاس لا يتحسّن
 
-اعتمد لوحة مؤشرات أسبوعية تضم:
+// اعتمد لوحة مؤشرات أسبوعية تضم:
 
-* FRT: زمن أول رد.
-* AHT: متوسط زمن المعالجة.
-* CSAT/NPS: رضا العملاء وقابلية التوصية.
-* Conversion Rate: من محادثة إلى حجز/طلب.
-* Cost per Resolution: تكلفة حل الحالة.
-  أنشئ اجتماعات قصيرة (15 دقيقة) لمراجعة المؤشرات، واتّخذ إجراءً واحدًا ملموسًا بعد كل مراجعة (تعديل سكربت/تدريب/تحديث IVR).
+// * FRT: زمن أول رد.
+// * AHT: متوسط زمن المعالجة.
+// * CSAT/NPS: رضا العملاء وقابلية التوصية.
+// * Conversion Rate: من محادثة إلى حجز/طلب.
+// * Cost per Resolution: تكلفة حل الحالة.
+//   أنشئ اجتماعات قصيرة (15 دقيقة) لمراجعة المؤشرات، واتّخذ إجراءً واحدًا ملموسًا بعد كل مراجعة (تعديل سكربت/تدريب/تحديث IVR).
 
-## 7) تجربة القنوات المتكاملة (Omnichannel)
+// ## 7) تجربة القنوات المتكاملة (Omnichannel)
 
-اجعل تجربة العميل متسقة مهما تغيّرت القناة: إذا بدأ على واتساب ثم اتصل هاتفيًا، ينبغي أن يرى الموظف **سياق المحادثة كاملًا** دون تكرار الأسئلة. أعد استخدام قوالب رسائل ذكية (تأكيد، متابعة، استبيان) وتأكد من ضبط توقيت الإرسال كي لا يتحول “الذكي” إلى إزعاج.
+// اجعل تجربة العميل متسقة مهما تغيّرت القناة: إذا بدأ على واتساب ثم اتصل هاتفيًا، ينبغي أن يرى الموظف **سياق المحادثة كاملًا** دون تكرار الأسئلة. أعد استخدام قوالب رسائل ذكية (تأكيد، متابعة، استبيان) وتأكد من ضبط توقيت الإرسال كي لا يتحول “الذكي” إلى إزعاج.
 
-## 8) الأمان والامتثال أساس الثقة
+// ## 8) الأمان والامتثال أساس الثقة
 
-طبّق تشفيرًا أثناء النقل والتخزين، وصلاحيات وصول دقيقة، وسياسات احتفاظ بيانات واضحة، مع نسخ احتياطي دوري واختبارات استعادة. درّب فريقك على التصرّف السليم مع البيانات الحساسة، فالعنصر البشري هو الحلقة الأقوى إذا مُكّن بالتوعية والأدوات.
+// طبّق تشفيرًا أثناء النقل والتخزين، وصلاحيات وصول دقيقة، وسياسات احتفاظ بيانات واضحة، مع نسخ احتياطي دوري واختبارات استعادة. درّب فريقك على التصرّف السليم مع البيانات الحساسة، فالعنصر البشري هو الحلقة الأقوى إذا مُكّن بالتوعية والأدوات.
 
-## 9) فريق الخدمة: سكربتات، تدريب، وتمكين
+// ## 9) فريق الخدمة: سكربتات، تدريب، وتمكين
 
-التقنية وحدها لا تكفي. طوّر **سكربتات محادثة** موجهة للنتيجة (حل المشكلة + فرصة بيع إضافي ملائمة)، وقدّم تدريبًا دوريًا على مهارات التعاطف، تقنيات الاستماع، وإدارة الاعتراضات. فعّل التعلم من التسجيلات: جلسات استماع قصيرة لاستخراج أفضل الممارسات وتعميمها.
+// التقنية وحدها لا تكفي. طوّر **سكربتات محادثة** موجهة للنتيجة (حل المشكلة + فرصة بيع إضافي ملائمة)، وقدّم تدريبًا دوريًا على مهارات التعاطف، تقنيات الاستماع، وإدارة الاعتراضات. فعّل التعلم من التسجيلات: جلسات استماع قصيرة لاستخراج أفضل الممارسات وتعميمها.
 
-## 10) خطة تنفيذ 90 يومًا
+// ## 10) خطة تنفيذ 90 يومًا
 
-**الأسبوع 1–2:** رسم رحلة العميل وتحديد مؤشرات الأداء والموافقة على الأهداف.
-**الأسبوع 3–4:** تفعيل مركز الاتصال السحابي (IVR، ACD، القنوات، التسجيل).
-**الأسبوع 5–6:** تكامل CRM، إعداد البطاقات والقوالب، وأتمتة رسائل ما بعد الخدمة.
-**الأسبوع 7–8:** إطلاق تجريبي لروبوت ضيافة في نطاق محدود مع سيناريوهات واضحة.
-**الأسبوع 9–10:** نشر مساعد ذكاء اصطناعي مدرّب على قاعدة معرفية داخلية.
-**الأسبوع 11–12:** مراجعة مؤشرات الأداء، تطبيق تحسينات سريعة، ثم توسيع النطاق.
+// **الأسبوع 1–2:** رسم رحلة العميل وتحديد مؤشرات الأداء والموافقة على الأهداف.
+// **الأسبوع 3–4:** تفعيل مركز الاتصال السحابي (IVR، ACD، القنوات، التسجيل).
+// **الأسبوع 5–6:** تكامل CRM، إعداد البطاقات والقوالب، وأتمتة رسائل ما بعد الخدمة.
+// **الأسبوع 7–8:** إطلاق تجريبي لروبوت ضيافة في نطاق محدود مع سيناريوهات واضحة.
+// **الأسبوع 9–10:** نشر مساعد ذكاء اصطناعي مدرّب على قاعدة معرفية داخلية.
+// **الأسبوع 11–12:** مراجعة مؤشرات الأداء، تطبيق تحسينات سريعة، ثم توسيع النطاق.
 
-## 11) دروس سريعة لتجنّب الأخطاء الشائعة
+// ## 11) دروس سريعة لتجنّب الأخطاء الشائعة
 
-* لا تبدأ بالأدوات قبل فهم الرحلة والمقاييس.
-* لا تجمع بيانات لا تستخدمها؛ اجعل كل حقل له هدف.
-* لا تُفرط في الأتمتة لدرجة فقدان اللمسة البشرية عند الحاجة.
-* لا تُهمل تجربة الموظف؛ أدوات معقدة تعني خدمة أبطأ حتى لو كانت “أقوى”.
+// * لا تبدأ بالأدوات قبل فهم الرحلة والمقاييس.
+// * لا تجمع بيانات لا تستخدمها؛ اجعل كل حقل له هدف.
+// * لا تُفرط في الأتمتة لدرجة فقدان اللمسة البشرية عند الحاجة.
+// * لا تُهمل تجربة الموظف؛ أدوات معقدة تعني خدمة أبطأ حتى لو كانت “أقوى”.
 
-## الخلاصة
+// ## الخلاصة
 
-تجربة العميل الذكية هي **منهج تشغيل** قبل أن تكون منصات وبرمجيات. حين توحّد القنوات سحابيًا، وتثري الخدمة ببيانات CRM/ERP، وتوظّف روبوتات عند الحاجة، وتضيف طبقة ذكاء اصطناعي مدعومة بقاعدة معرفية داخلية—ستحصل على مزيجٍ يرفع الرضا ويُخفض التكلفة ويصنع نموًا مستدامًا. ابدأ بخريطة واضحة، قِس باستمرار، وحسّن كل أسبوع؛ ومع الوقت ستتحوّل خدمة العملاء من مركز تكلفة إلى **محرّك قيمة** لعملك.
+// تجربة العميل الذكية هي **منهج تشغيل** قبل أن تكون منصات وبرمجيات. حين توحّد القنوات سحابيًا، وتثري الخدمة ببيانات CRM/ERP، وتوظّف روبوتات عند الحاجة، وتضيف طبقة ذكاء اصطناعي مدعومة بقاعدة معرفية داخلية—ستحصل على مزيجٍ يرفع الرضا ويُخفض التكلفة ويصنع نموًا مستدامًا. ابدأ بخريطة واضحة، قِس باستمرار، وحسّن كل أسبوع؛ ومع الوقت ستتحوّل خدمة العملاء من مركز تكلفة إلى **محرّك قيمة** لعملك.
 
-`;
+// `;
 
 const Post = () => {
   const { t, i18n } = useTranslation();

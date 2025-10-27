@@ -40,6 +40,11 @@
 Options -MultiViews
 RewriteEngine On
 
+# Allow SEO files (robots.txt, sitemap.xml) to be served directly
+RewriteRule ^robots\.txt$ - [L]
+RewriteRule ^sitemap\.xml$ - [L]
+RewriteRule ^sitemap.*\.xml$ - [L]
+
 # Handle Angular and React requests
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

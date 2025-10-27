@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { BackgroundBoxesLayout } from "@/layouts/styled-layouts/boxes-bg-layout";
+import SEOLayout from "@/layouts/main/SEOLayout";
 
 import {
   CheckCircle,
@@ -12,7 +13,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Suspense } from "react";
-import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 
@@ -20,10 +20,13 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <Helmet>
-        <title>{t("about.title")} - Oxygen</title>
-      </Helmet>
+    <SEOLayout
+      title="About Us - Oxygen Arabia ICT"
+      description="Learn about Oxygen Arabia ICT, our mission, vision, and commitment to Saudi Vision 2030. Leading ICT solutions provider with 500+ projects and 50+ team members."
+      keywords="about oxygen, company profile, Saudi Vision 2030, ICT company, mission, vision, values"
+      image="/images/about-us/about-1.jpeg"
+    >
+      <>
       <div className="relative h-[60vh] overflow-hidden">
         <Suspense
           fallback={
@@ -261,7 +264,8 @@ const About = () => {
           </section>
         </div>
       </section>
-    </>
+      </>
+    </SEOLayout>
   );
 };
 

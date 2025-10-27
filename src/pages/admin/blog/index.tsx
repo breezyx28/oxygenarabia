@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 import AdminNav from "@/components/admin/AdminNav";
 
 const AdminBlogList = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const lang = i18n.language === "ar" ? "ar" : "en";
   const { data: posts = [], isLoading } = useGetBlogPostsQuery(lang);
   const [deleteBlogPost] = useDeleteBlogPostMutation();

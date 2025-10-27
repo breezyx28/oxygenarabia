@@ -7,9 +7,13 @@
     "dev": "vite",
     "serve:api": "node ./server/index.mjs",
     "dev:full": "concurrently -k \"npm:serve:api\" \"vite\"",
-    "build": "tsc -b && vite build",
+    "build": "node server/sitemap.mjs && tsc -b && vite build",
+    "build:static": "npm run build && node generate-static-seo.mjs",
+    "build:seo": "npm run build && node server/index.mjs",
+    "generate:sitemap": "node server/sitemap.mjs",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server/index.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",

@@ -21,6 +21,9 @@ export const Projects = lazy(() => import("../pages/projects"));
 export const Products = lazy(() => import("../pages/products"));
 export const Services = lazy(() => import("../pages/services"));
 export const Team = lazy(() => import("../pages/team"));
+export const PrivacyPolicy = lazy(() => import("../pages/legal/privacy-policy"));
+export const TermsOfUse = lazy(() => import("../pages/legal/terms-of-use"));
+export const CookiePolicy = lazy(() => import("../pages/legal/cookie-policy"));
 
 // ----------------------------------------------------------------------
 
@@ -55,6 +58,9 @@ export default function Router() {
         { path: "careers", element: <Career /> },
         { path: "blog", element: <Blog /> },
         { path: "blog/:slug", element: <Post /> },
+        { path: "privacy-policy", element: <PrivacyPolicy /> },
+        { path: "terms-of-use", element: <TermsOfUse /> },
+        { path: "cookie-policy", element: <CookiePolicy /> },
         {
           path: "admin/blog",
           element: (

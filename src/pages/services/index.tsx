@@ -13,7 +13,7 @@ import {
   Server,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
+import SEOLayout from "@/layouts/main/SEOLayout";
 // import { motion } from "motion/react";
 // import ServiceCard1 from "../../components/cards/ServiceCard1";
 // import LanguageSwitcher from "../../components/LanguageSwitcher";
@@ -26,10 +26,13 @@ import { ServiceCard } from "./service-card";
 const Services = () => {
   const { t } = useTranslation();
   return (
-    <>
-      <Helmet>
-        <title>{t("services.title")} - Oxygen</title>
-      </Helmet>
+    <SEOLayout
+      title="Our Services - Oxygen Arabia ICT"
+      description="Comprehensive ICT services including AI solutions, cloud services, CRM, ERP, VoIP systems, call center solutions, and IT outsourcing. Transform your business with cutting-edge technology."
+      keywords="ICT services, AI solutions, cloud services, CRM, ERP, VoIP, call center, IT outsourcing, digital transformation"
+      image="/images/services.jpg"
+    >
+      <>
       {/* <DotBackgroundJumbotron title={"Our Services"} /> */}
       <div className="relative h-[60vh] overflow-hidden">
         <BackgroundBoxesLayout
@@ -105,7 +108,8 @@ const Services = () => {
           </div>
         </div>
       </section>
-    </>
+      </>
+    </SEOLayout>
   );
 };
 

@@ -596,5 +596,243 @@
         "position": "CTO"
       }
     }
+  },
+  "legal": {
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "subtitle": "How we collect, use, and protect your personal information",
+      "lastUpdated": "Last Updated",
+      "introduction": {
+        "title": "Introduction",
+        "content": "At Oxygen Arabia ICT, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services."
+      },
+      "informationCollection": {
+        "title": "Information We Collect",
+        "personal": {
+          "title": "Personal Information",
+          "items": {
+            "name": "Full name and contact details",
+            "email": "Email address",
+            "phone": "Phone number",
+            "company": "Company name and job title"
+          }
+        },
+        "technical": {
+          "title": "Technical Information",
+          "items": {
+            "ip": "IP address and location data",
+            "browser": "Browser type and version",
+            "device": "Device information",
+            "usage": "Website usage patterns and preferences"
+          }
+        }
+      },
+      "howWeUse": {
+        "title": "How We Use Your Information",
+        "items": {
+          "services": "To provide and maintain our services",
+          "communication": "To communicate with you about our services",
+          "improvement": "To improve our website and services",
+          "legal": "To comply with legal obligations",
+          "marketing": "To send you marketing communications (with your consent)"
+        }
+      },
+      "dataProtection": {
+        "title": "Data Protection and Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
+        "measures": {
+          "encryption": "Data encryption in transit and at rest",
+          "access": "Restricted access controls",
+          "monitoring": "Regular security monitoring",
+          "backup": "Secure backup procedures"
+        }
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "items": {
+          "access": "Right to access your personal data",
+          "correction": "Right to correct inaccurate data",
+          "deletion": "Right to request deletion of your data",
+          "portability": "Right to data portability",
+          "objection": "Right to object to processing"
+        }
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy or our data practices, please contact us:",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "addressValue": "Riyadh, Saudi Arabia"
+      }
+    },
+    "termsOfUse": {
+      "title": "Terms of Use",
+      "subtitle": "Terms and conditions for using our services",
+      "lastUpdated": "Last Updated",
+      "introduction": {
+        "title": "Agreement to Terms",
+        "content": "These Terms of Use constitute a legally binding agreement between you and Oxygen Arabia ICT regarding your use of our website and services. By accessing or using our services, you agree to be bound by these terms."
+      },
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service."
+      },
+      "services": {
+        "title": "Description of Services",
+        "content": "Oxygen Arabia ICT provides cloud-based communication and technology solutions including:",
+        "items": {
+          "cloudPbx": "Cloud PBX and contact center solutions",
+          "contactCenter": "Omnichannel customer communication platforms",
+          "aiServices": "AI-powered automation and analytics",
+          "crmErp": "CRM and ERP integration services",
+          "consulting": "Technology consulting and support"
+        }
+      },
+      "userResponsibilities": {
+        "title": "User Responsibilities",
+        "content": "As a user of our services, you agree to:",
+        "items": {
+          "accurate": "Provide accurate and complete information",
+          "lawful": "Use our services only for lawful purposes",
+          "security": "Maintain the security of your account credentials",
+          "prohibited": "Not engage in any prohibited activities",
+          "compliance": "Comply with all applicable laws and regulations"
+        }
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property Rights",
+        "content": "All content, features, and functionality of our services are owned by Oxygen Arabia ICT and are protected by copyright, trademark, and other intellectual property laws.",
+        "items": {
+          "ownership": "We retain all rights to our proprietary technology",
+          "license": "You receive a limited license to use our services",
+          "restrictions": "You may not copy, modify, or distribute our content without permission"
+        }
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "warning": "Important Legal Notice",
+        "content": "To the fullest extent permitted by law, Oxygen Arabia ICT shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues."
+      },
+      "availability": {
+        "title": "Service Availability",
+        "content": "While we strive to maintain high service availability, we do not guarantee uninterrupted access to our services. Scheduled maintenance and unforeseen circumstances may affect service availability."
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "We reserve the right to terminate or suspend your access to our services at any time, without prior notice, for conduct that we believe violates these Terms of Use or is harmful to other users."
+      },
+      "governingLaw": {
+        "title": "Governing Law",
+        "content": "These Terms of Use are governed by and construed in accordance with the laws of the Kingdom of Saudi Arabia, without regard to its conflict of law provisions."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "content": "If you have any questions about these Terms of Use, please contact us:",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "addressValue": "Riyadh, Saudi Arabia"
+      }
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy",
+      "subtitle": "How we use cookies and similar technologies",
+      "lastUpdated": "Last Updated",
+      "introduction": {
+        "title": "About This Policy",
+        "content": "This Cookie Policy explains how Oxygen Arabia ICT uses cookies and similar technologies when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them."
+      },
+      "whatAreCookies": {
+        "title": "What Are Cookies?",
+        "content": "Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners."
+      },
+      "typesOfCookies": {
+        "title": "Types of Cookies We Use",
+        "essential": {
+          "title": "Essential Cookies",
+          "description": "These cookies are necessary for the website to function properly and cannot be disabled.",
+          "examples": {
+            "session": "Session management cookies",
+            "security": "Security and authentication cookies",
+            "language": "Language preference cookies"
+          }
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "description": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+          "examples": {
+            "google": "Google Analytics cookies",
+            "usage": "Website usage statistics",
+            "performance": "Performance monitoring cookies"
+          }
+        },
+        "functional": {
+          "title": "Functional Cookies",
+          "description": "These cookies enable enhanced functionality and personalization, such as remembering your preferences.",
+          "examples": {
+            "preferences": "User preference cookies",
+            "forms": "Form data retention cookies",
+            "chat": "Live chat functionality cookies"
+          }
+        },
+        "marketing": {
+          "title": "Marketing Cookies",
+          "description": "These cookies are used to track visitors across websites to display relevant advertisements.",
+          "examples": {
+            "advertising": "Advertising network cookies",
+            "social": "Social media integration cookies",
+            "retargeting": "Retargeting and remarketing cookies"
+          }
+        }
+      },
+      "howWeUseCookies": {
+        "title": "How We Use Cookies",
+        "items": {
+          "authentication": "To authenticate users and prevent fraudulent use",
+          "preferences": "To remember your preferences and settings",
+          "analytics": "To analyze website traffic and usage patterns",
+          "security": "To enhance website security",
+          "functionality": "To provide enhanced website functionality"
+        }
+      },
+      "thirdParty": {
+        "title": "Third-Party Cookies",
+        "content": "We may use third-party services that place cookies on your device. These services help us provide better functionality and analyze website usage.",
+        "services": {
+          "title": "Third-party services we use include:",
+          "items": {
+            "googleAnalytics": "Google Analytics for website analytics",
+            "socialMedia": "Social media platforms for content sharing",
+            "customerSupport": "Customer support and chat services",
+            "advertising": "Advertising and marketing platforms"
+          }
+        }
+      },
+      "managingCookies": {
+        "title": "Managing Your Cookie Preferences",
+        "content": "You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences through various methods:",
+        "browser": {
+          "title": "Browser Settings",
+          "content": "Most web browsers allow you to control cookies through their settings preferences."
+        },
+        "optOut": {
+          "title": "Opt-Out Tools",
+          "content": "You can opt out of certain third-party cookies through industry opt-out tools."
+        }
+      },
+      "updates": {
+        "title": "Updates to This Policy",
+        "content": "We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Please check this page periodically for updates."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about our use of cookies or this Cookie Policy, please contact us:",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "addressValue": "Riyadh, Saudi Arabia"
+      }
+    }
   }
 }

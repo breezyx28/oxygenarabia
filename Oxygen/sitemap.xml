@@ -1,66 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
-    <loc>https://oxygen-arabia.com/</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://oxygenarabia.com</loc>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com" />
+    <xhtml:link rel="alternate" hreflang="ar-SA" href="https://oxygenarabia.com" />
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://oxygenarabia.com" />
+    <xhtml:link rel="alternate" hreflang="ar-QA" href="https://oxygenarabia.com" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en" />
   </url>
   <url>
-    <loc>https://oxygen-arabia.com/about</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://oxygen-arabia.com/services</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://oxygen-arabia.com/projects</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://oxygenarabia.com/about.html</loc>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/about.html" />
   </url>
   <url>
-    <loc>https://oxygen-arabia.com/achievements</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://oxygen-arabia.com/team</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://oxygen-arabia.com/events</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://oxygenarabia.com/services.html</loc>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/services.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/services.html" />
   </url>
   <url>
-    <loc>https://oxygen-arabia.com/blog</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://oxygen-arabia.com/contact</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://oxygen-arabia.com/careers</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://oxygenarabia.com/contact.html</loc>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/contact.html" />
+  </url>
+  <url>
+    <loc>https://oxygenarabia.com/projects.html</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/projects.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/projects.html" />
+  </url>
+  <url>
+    <loc>https://oxygenarabia.com/achievements.html</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/achievements.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/achievements.html" />
+  </url>
+  <url>
+    <loc>https://oxygenarabia.com/team.html</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/team.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/team.html" />
+  </url>
+  <url>
+    <loc>https://oxygenarabia.com/careers.html</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/careers.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/careers.html" />
+  </url>
+  <url>
+    <loc>https://oxygenarabia.com/privacy-policy.html</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://oxygenarabia.com/terms-of-use.html</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/terms-of-use.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/terms-of-use.html" />
+  </url>
+  <url>
+    <loc>https://oxygenarabia.com/cookie-policy.html</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="ar" href="https://oxygenarabia.com/cookie-policy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://oxygenarabia.com/en/cookie-policy.html" />
   </url>
 </urlset>
